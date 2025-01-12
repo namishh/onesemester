@@ -67,7 +67,7 @@ export const TaskComponent = ({ task, className = "" }: { task: Task; className?
                         rel="noopener noreferrer"
                         className="text-emerald-500 text-wrap hover:text-emerald-600 underline"
                     >
-                        {url}
+                        {url.length > 30 ? url.slice(0, 30) + '...' : url}
                     </a>
                 </div>
             ))}
@@ -102,7 +102,7 @@ export const TaskComponent = ({ task, className = "" }: { task: Task; className?
                         <Accordion title="Examples">
                             <ul className="list-disc flex flex-col pl-5 space-y-1">
                                 {task.details.examples.map((example, idx) => (
-                                    <a className="text-emerald-500 text-wrap hover:text-emerald-600 underline" key={idx} href={example} target="_blank" rel="noopener noreferrer">{example}</a>
+                                    <a className="text-emerald-500 text-wrap hover:text-emerald-600 underline" key={idx} href={example} target="_blank" rel="noopener noreferrer">{example.length > 30 ? example.slice(0, 30) + '...' : example}</a>
                                 ))}
                             </ul>
                         </Accordion>
