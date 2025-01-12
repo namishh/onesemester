@@ -1,0 +1,107 @@
+{
+	"lesson": "Full Stack Javascript",
+	"months": [
+
+	
+		{
+			"month": 1,
+			"weeks": [
+				{
+					"week": 1,
+					"description": "HTML, CSS and SASS",
+					"tasks": [
+
+						{
+							"type": "Resource",
+							"content": "Basics of HTML and CSS",
+							"url": "https://learn-html.org/en/Welcome "
+						},
+						{
+							"type": "Video",
+							"content": "HTML & CSS Full Course for free | BroCode",
+							"url": "https://www.youtube.com/watch?v=HGTJBPNC-Gw"
+						},
+						{
+							"type": "Project",
+							"content": "Clone the landing page of x dot com",
+							"image": "https://i.imgur.com/GqE3rC7.png",
+							"details": {
+								"features": ["Use flexbox and grid", "Make the tabs above work only with css", "Make a 3 second loading screen animation"]
+							}
+						},
+						{
+							"type": "Resource",
+							"content": "Sass Tutorial",
+							"url": "https://sass-lang.com/guide/"
+						},
+						{
+							"type": "Video",
+							"content": "Sass Crash Course 2022",
+							"url": "https://www.youtube.com/watch?v=BEdCOvJ5RY4"
+						},
+						{
+							"type": "Project",
+							"content": "Improve your previous landing page of x dot com",
+							"details": {
+								"features": ["Rewrite the whole CSS and make it more readable with SASS",
+								"Try using mixins to write media queries more easily"]
+							}
+						},
+						{
+							"type": "Project",
+							"content": "Clone the landing page of weglot dot com",
+							"image": "https://i.imgur.com/85Bt5wb.png"
+						}
+					]
+
+				}
+				,
+				{
+					"week": 2,
+					"description": "Javascript",
+					"tasks": [
+						{
+							"type": "Resource",
+							"content": "Learn the complete part 1",
+							"url": "https://javascript.info/"
+						},
+						{
+							"type": "Project",
+							"content": "Simple CLI Projects",
+							"list": [
+								"Tic Tac Toe App",
+								"A Prisoners Dilemma Simulator",
+								"Scrape news websites and summarize them with OpenAI"
+							],
+							"details": {
+								"tips": [
+									"Try using Object Oriented Programming"
+								]
+							}
+						},
+						{
+							"type": "Resource",
+							"content": "Learn the complete part 2",
+							"url": "https://javascript.info/"
+						},
+						{
+							"type": "Project",
+							"content": "24/7 Lofi Radio Website",
+							"image": "https://i.imgur.com/qv3Lkkl.png",
+							"details": {
+								"features": [
+									"Those 24/7 live streams are just hidden youtube iframes",
+									"Try enhancing the website by adding a pomodoro timer",
+									"You can also add a very simple todo list"
+								]
+							}
+						}
+					]
+				}
+			]
+		}
+
+
+
+	]
+}
