@@ -89,6 +89,7 @@
 							"content": "24/7 Lofi Radio Website",
 							"image": "https://i.imgur.com/qv3Lkkl.png",
 							"details": {
+							"examples": ["https://cafe.namishh.me", "https://lofi.cafe"],
 								"features": [
 									"Those 24/7 live streams are just hidden youtube iframes",
 									"Try enhancing the website by adding a pomodoro timer",
@@ -107,12 +108,87 @@
 							"content": "A Hackernews Frontend",
 							"image": "https://i.imgur.com/sGCXhz4.png",
 							"details": {
+							"examples": ["https://hacknio.vercel.app"],
 							"features": [
 								"Use the Hackernews API to fetch the data",
 								"Try using the Intersection Observer API to lazy load the comments",
 								"Try rendering the html of the comments with style"
 							]
 						}
+						}
+					]
+				},
+				{
+					"week": 3,
+					"description": "React and Zustand",
+					"tasks": [
+						{
+							"type": "Video",
+							"content": "React 10 hour course",
+							"url": "https://www.youtube.com/watch?v=4UZrsTqkcW4"
+						},
+						{
+							"type": "Resource",
+							"content": "Learning blogs for zustand",
+							"urls" : [
+								"https://furkanbaytekin.dev/blogs/software/zustand-state-management-without-boilerplate",
+								"https://zustand.docs.pmnd.rs/getting-started/introduction",
+								"https://zustand.docs.pmnd.rs/guides/tutorial-tic-tac-toe",
+								"https://zustand.docs.pmnd.rs/integrations/immer-middleware"
+							]
+						},
+						{
+							"type": "Video",
+							"content": "1 Hour Video For Zustand",
+							"url": "https://www.youtube.com/watch?v=fZPgBnL2x-Q"
+						},
+						{
+							"type": "Project",
+							"image": "https://i.imgur.com/9MsMV9R.png",
+							"content": "Colorscheme Generator",
+							"details": {
+								"examples": ["https://www.radix-ui.com/colors/custom"]
+							}
+						},
+						{
+							"type" : "Project",
+							"image": "https://i.imgur.com/eAZfH0a.png",
+							"content": "Desktop As A Website",
+							"details": {
+								"features": [
+									"Windows should be draggable and resizable",
+									"Implement a bunch of basic apps like calculator, stopwatch, calendar",
+									"Allow people to change the background wallpaper",
+									"Draggable deskrop icons"
+								]
+							}
+						}
+					]
+				},
+				{
+					"week": 4,
+					"description": "Tanstack Router and Query",
+					"tasks": [
+						{
+							"type": "Video",
+							"content": "Tanstack Router 30 Min Video",
+							"url": "https://www.youtube.com/watch?v=KcKkwF55Pes"
+						},
+						{
+							"type": "Video",
+							"content": "React Query 1 Hour Video",
+							"url": "https://www.youtube.com/watch?v=3e-higRXoaM"
+						},
+						{
+							"type" : "Project",
+							"content": "Blog Site",
+							"details": {
+								"features": [
+									"Use TanStack Query to fetch blog posts and manage their states",
+									"Implement routes for viewing individual blog posts while maintaining a list view of all posts",
+									"Add features like filtering by category or author using query parameters in the URL."
+								]
+							} 
 						}
 					]
 				}

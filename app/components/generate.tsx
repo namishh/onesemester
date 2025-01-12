@@ -93,7 +93,7 @@ const Generate = ({ learningPlan }: { learningPlan: LearningPlan }) => {
                                             id={`week-${month.month}-${week.week}`}
                                             className="space-y-4 scroll-mt-16"
                                         >
-                                            <h3 className="text-xl font-medium px-4">Week {week.week}</h3>
+                                            <h3 className="text-xl font-medium px-4">Week {week.week} | {week.description}</h3>
                                             {week.tasks.map((task, index) => (
                                                 <TaskComponent 
                                                     key={index} 

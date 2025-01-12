@@ -16,6 +16,7 @@ interface Task {
 
 interface Week {
   week: number;
+  description: string;
   tasks: Task[];
 }
 

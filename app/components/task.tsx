@@ -28,7 +28,7 @@ export const TaskComponent = ({ task, className = "" }: { task: Task; className?
                         href={task.url}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-emerald-700 hover:text-emerald-800 underline"
+                        className="text-emerald-500 hover:text-emerald-600 underline"
                     >
                         Open in YouTube
                     </a>
@@ -39,7 +39,7 @@ export const TaskComponent = ({ task, className = "" }: { task: Task; className?
                     href={task.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-4 text-emerald-700 hover:text-emerald-800 underline"
+                    className="px-4 text-emerald-500 hover:text-emerald-600 underline"
                 >
                     {task.url.length > 30 ? task.url.slice(0, 30) + '...' : task.url}
                 </a>
@@ -60,12 +60,12 @@ export const TaskComponent = ({ task, className = "" }: { task: Task; className?
                 />
             ))}
             {task.urls && task.urls.map((url, idx) => (
-                <div key={idx} className="mt-2 p-4">
+                <div key={idx} className="mt-4 px-4">
                     <a
                         href={url}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-emerald-700 hover:text-emerald-800 underline"
+                        className="text-emerald-500 hover:text-emerald-600 underline"
                     >
                         {url}
                     </a>
@@ -100,9 +100,9 @@ export const TaskComponent = ({ task, className = "" }: { task: Task; className?
                     )}
                     {task.details.examples && (
                         <Accordion title="Examples">
-                            <ul className="list-disc pl-5 space-y-1">
+                            <ul className="list-disc flex flex-col pl-5 space-y-1">
                                 {task.details.examples.map((example, idx) => (
-                                    <li key={idx}>{example}</li>
+                                    <a className="text-emerald-500 hover:text-emerald-600 underline" key={idx} href={example} target="_blank" rel="noopener noreferrer">{example}</a>
                                 ))}
                             </ul>
                         </Accordion>
