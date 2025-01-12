@@ -41,7 +41,7 @@ export const TaskComponent = ({ task, className = "" }: { task: Task; className?
                     rel="noopener noreferrer"
                     className="px-4 text-emerald-700 hover:text-emerald-800 underline"
                 >
-                    Learn more
+                    {task.url.length > 30 ? task.url.slice(0, 30) + '...' : task.url}
                 </a>
             )}
             {task.image && (
