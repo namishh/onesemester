@@ -47,7 +47,7 @@ const Generate = ({ learningPlan }: { learningPlan: LearningPlan }) => {
                                 className={`w-full text-left p-2 transition-colors ${
                                     selectedMonth === month.month
                                         ? 'bg-emerald-700 text-white'
-                                        : 'bg-transparent hover:bg-neutral-100'
+                                        : 'bg-transparent hover:bg-neutral-800'
                                 }`}
                             >
                                 <div className="flex items-center justify-between">
