@@ -95,6 +95,24 @@
 									"You can also add a very simple todo list"
 								]
 							}
+						},
+						{
+							"type": "Project",
+							"content": "Frontend Clone of iPad Pro Website",
+							"image": "https://i.imgur.com/tRagYjM.png",
+							"url": "https://www.apple.com/in/ipad-pro/"
+						},
+						{
+							"type": "Project",
+							"content": "A Hackernews Frontend",
+							"image": "https://i.imgur.com/sGCXhz4.png",
+							"details": {
+							"features": [
+								"Use the Hackernews API to fetch the data",
+								"Try using the Intersection Observer API to lazy load the comments",
+								"Try rendering the html of the comments with style"
+							]
+						}
 						}
 					]
 				}
