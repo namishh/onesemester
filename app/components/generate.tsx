@@ -3,8 +3,8 @@ import { useState } from 'react';
 import { TaskComponent } from './task';
 
 const Generate = ({ learningPlan }: { learningPlan: LearningPlan }) => {
-    const [selectedMonth, setSelectedMonth] = useState<number>(4);
-    const [expandedMonth, setExpandedMonth] = useState<number | null>(4);
+    const [selectedMonth, setSelectedMonth] = useState<number>(1);
+    const [expandedMonth, setExpandedMonth] = useState<number | null>(1);
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
     const scrollToWeek = (weekId: string) => {

@@ -342,6 +342,16 @@
 					"description": "Love At First Type",
 					"tasks": [
 						{
+							"type": "Resource",
+							"content": "Drizzle Docs",
+							"url": "https://orm.drizzle.team/docs/tutorials"
+						},
+						{
+							"type" : "Video",
+							"content": "Drizzle Tutorial",
+							"url": "https://youtube.com/watch?v=vyU5mJGCJMw"
+						},
+						{
 							"type": "Project",
 							"content": "A Dating Website",
 							"list": [
