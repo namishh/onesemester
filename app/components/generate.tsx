@@ -30,7 +30,8 @@ const Generate = ({ learningPlan }: { learningPlan: LearningPlan }) => {
                 {/* Sidebar with mobile responsive styles */}
                 <aside className={`
                     fixed md:relative top-0 left-0 h-full 
-                    w-64 md:w-48 p-2 
+                    w-64 md:w-48 p-2
+                    text-2xl 
                     bg-neutral-950 md:bg-transparent
                     transform transition-transform duration-300 ease-in-out
                     md:translate-x-0 z-40
@@ -70,7 +71,7 @@ const Generate = ({ learningPlan }: { learningPlan: LearningPlan }) => {
                                         <button
                                             key={week.week}
                                             onClick={() => scrollToWeek(`week-${month.month}-${week.week}`)}
-                                            className="w-full text-left p-2 text-sm text-neutral-400 hover:text-emerald-700 transition-colors"
+                                            className="w-full text-left p-2 text-xl text-neutral-400 hover:text-emerald-700 transition-colors"
                                         >
                                             Week {week.week}
                                         </button>
@@ -83,7 +84,7 @@ const Generate = ({ learningPlan }: { learningPlan: LearningPlan }) => {
 
                 {/* Main content */}
                 <main className="flex-1 p-0 md:p-0 w-full md:pl-0 border-l border-neutral-700 ">
-                    <h1 className="text-2xl md:text-3xl font-bold mb-2 px-4 pt-2">{learningPlan.lesson}</h1>
+                    <h1 className="text-3xl md:text-4xl font-bold mb-2 px-4 pt-2">{learningPlan.lesson}</h1>
 
                     {learningPlan.months
                         .filter((month) => month.month === selectedMonth)
@@ -96,7 +97,7 @@ const Generate = ({ learningPlan }: { learningPlan: LearningPlan }) => {
                                             id={`week-${month.month}-${week.week}`}
                                             className="space-y-4 scroll-mt-16"
                                         >
-                                            <h3 className="text-xl font-medium px-4">Week {week.week} | {week.description}</h3>
+                                            <h3 className="text-2xl font-medium px-4">Week {week.week} | {week.description}</h3>
                                             {week.tasks.map((task, index) => (
                                                 <TaskComponent 
                                                     key={index} 

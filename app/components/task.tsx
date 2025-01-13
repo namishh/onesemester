@@ -8,7 +8,7 @@ export const TaskComponent = ({ task, className = "" }: { task: Task; className?
     };
 
     return (
-        <div className={`py-4 ${className}`}>
+        <div className={`py-4 ${className} text-[22px]`}>
             <h4 className="font-medium px-4 mb-2">
                 <span className="text-emerald-400">##</span> {task.type.charAt(0).toUpperCase() + task.type.slice(1)}: {task.content}
             </h4>
