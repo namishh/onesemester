@@ -3,8 +3,8 @@ import { useState } from 'react';
 import { TaskComponent } from './task';
 
 const Generate = ({ learningPlan }: { learningPlan: LearningPlan }) => {
-    const [selectedMonth, setSelectedMonth] = useState<number>(1);
-    const [expandedMonth, setExpandedMonth] = useState<number | null>(1);
+    const [selectedMonth, setSelectedMonth] = useState<number>(2);
+    const [expandedMonth, setExpandedMonth] = useState<number | null>(2);
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
     const scrollToWeek = (weekId: string) => {
@@ -37,6 +37,9 @@ const Generate = ({ learningPlan }: { learningPlan: LearningPlan }) => {
                     ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'}
                 `}>
                     
+                            <a href="/"
+                                className={`w-full block text-left p-2 transition-color bg-transparent hover:bg-neutral-800`}
+                            >Home</a>
                     {learningPlan.months.map((month) => (
                         <div key={month.month}>
                             <button

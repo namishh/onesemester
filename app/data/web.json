@@ -1,8 +1,6 @@
 {
 	"lesson": "Full Stack Javascript",
 	"months": [
-
-	
 		{
 			"month": 1,
 			"weeks": [
@@ -10,7 +8,6 @@
 					"week": 1,
 					"description": "HTML, CSS and SASS",
 					"tasks": [
-
 						{
 							"type": "Resource",
 							"content": "Basics of HTML and CSS",
@@ -26,7 +23,11 @@
 							"content": "Clone the landing page of x dot com",
 							"image": "https://i.imgur.com/GqE3rC7.png",
 							"details": {
-								"features": ["Use flexbox and grid", "Make the tabs above work only with css", "Make a 3 second loading screen animation"]
+								"features": [
+									"Use flexbox and grid",
+									"Make the tabs above work only with css",
+									"Make a 3 second loading screen animation"
+								]
 							}
 						},
 						{
@@ -43,8 +44,10 @@
 							"type": "Project",
 							"content": "Improve your previous landing page of x dot com",
 							"details": {
-								"features": ["Rewrite the whole CSS and make it more readable with SASS",
-								"Try using mixins to write media queries more easily"]
+								"features": [
+									"Rewrite the whole CSS and make it more readable with SASS",
+									"Try using mixins to write media queries more easily"
+								]
 							}
 						},
 						{
@@ -53,9 +56,7 @@
 							"image": "https://i.imgur.com/85Bt5wb.png"
 						}
 					]
-
-				}
-				,
+				},
 				{
 					"week": 2,
 					"description": "Javascript",
@@ -89,7 +90,10 @@
 							"content": "24/7 Lofi Radio Website",
 							"image": "https://i.imgur.com/qv3Lkkl.png",
 							"details": {
-							"examples": ["https://cafe.namishh.me", "https://lofi.cafe"],
+								"examples": [
+									"https://cafe.namishh.me",
+									"https://lofi.cafe"
+								],
 								"features": [
 									"Those 24/7 live streams are just hidden youtube iframes",
 									"Try enhancing the website by adding a pomodoro timer",
@@ -108,13 +112,15 @@
 							"content": "A Hackernews Frontend",
 							"image": "https://i.imgur.com/sGCXhz4.png",
 							"details": {
-							"examples": ["https://hacknio.vercel.app"],
-							"features": [
-								"Use the Hackernews API to fetch the data",
-								"Try using the Intersection Observer API to lazy load the comments",
-								"Try rendering the html of the comments with style"
-							]
-						}
+								"examples": [
+									"https://hacknio.vercel.app"
+								],
+								"features": [
+									"Use the Hackernews API to fetch the data",
+									"Try using the Intersection Observer API to lazy load the comments",
+									"Try rendering the html of the comments with style"
+								]
+							}
 						}
 					]
 				},
@@ -130,7 +136,7 @@
 						{
 							"type": "Resource",
 							"content": "Learning blogs for zustand",
-							"urls" : [
+							"urls": [
 								"https://furkanbaytekin.dev/blogs/software/zustand-state-management-without-boilerplate",
 								"https://zustand.docs.pmnd.rs/getting-started/introduction",
 								"https://zustand.docs.pmnd.rs/guides/tutorial-tic-tac-toe",
@@ -147,11 +153,13 @@
 							"image": "https://i.imgur.com/9MsMV9R.png",
 							"content": "Colorscheme Generator",
 							"details": {
-								"examples": ["https://www.radix-ui.com/colors/custom"]
+								"examples": [
+									"https://www.radix-ui.com/colors/custom"
+								]
 							}
 						},
 						{
-							"type" : "Project",
+							"type": "Project",
 							"image": "https://i.imgur.com/eAZfH0a.png",
 							"content": "Desktop As A Website",
 							"details": {
@@ -180,7 +188,7 @@
 							"url": "https://www.youtube.com/watch?v=3e-higRXoaM"
 						},
 						{
-							"type" : "Project",
+							"type": "Project",
 							"content": "Blog Site",
 							"details": {
 								"features": [
@@ -188,12 +196,120 @@
 									"Implement routes for viewing individual blog posts while maintaining a list view of all posts",
 									"Add features like filtering by category or author using query parameters in the URL."
 								]
-							} 
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"month": 2,
+			"weeks": [
+				{
+					"week": 1,
+					"description": "Firebase",
+					"tasks": [
+						{
+							"type": "Video",
+							"content": "Firebase 4 Hour Video",
+							"url": "https://www.youtube.com/watch?v=fgdpvwEWJ9M"
+						},
+						{
+							"type": "Resource",
+							"content": "Firebase Docs",
+							"url": "https://firebase.google.com/docs/web/setup"
+						},
+						{
+							"type": "Project",
+							"content": "Modify Old Desktop As A Website",
+							"details": {
+								"features": [
+									"Add auth and save the state of your operating system with react.",
+									"Let users create their own text files // folders, or let them upload their own files.",
+									"BONUS: Add realtime chat features between two valid users."
+								]
+							}
+						},
+						{
+							"type": "Project",
+							"content": "General Purpose Discord Bot",
+							"details": {
+								"features": [
+									"Create a discord bot and save settings for each seperate guild like prefix, muted roles, welcome messages, etc.",
+									"Make a warn and ban system",
+									"Make a ticket system",
+									"Make a giveaway/poll system",
+									"Create a simple dank memer like economy",
+									"BONUS: make a web app to control and change the settings of the bot per guild."
+								]
+							}
+						}
+					]
+				},
+				{
+					"week": "2 & 3",
+					"description": "Starting with Backend",
+					"tasks": [
+						{
+							"type": "Video",
+							"content": "ExpressJS + Mongo Video",
+							"url": "https://www.youtube.com/watch?v=nH9E25nkk3I"
+						},
+						{
+							"type": "Resource",
+							"content": "ExpressJS Docs",
+							"url": "https://expressjs.com/en/guide/routing.html"
+						},
+						{
+							"type": "Project",
+							"image": "https://i.imgur.com/m87qXdv.png",
+							"content": "A template to host your own hunt/quiz",
+							"details": {
+								"features": [
+									"Implement user registration, login system, and basic user roles",
+									"Create the administrative dashboard with user management capabilities",
+									"Implement the question management system including support for multimedia content (images, videos, audio) and hint functionality",
+									"Build a leaderboard system"
+								],
+								"examples": [
+									"https://github.com/namishh/holmes"
+								]
+							}
+						},
+						{
+							"type": "Project",
+							"content": "Make A Comprehensive Auth System With",
+							"list": [
+								"Emailing for password reset",
+								"Rate limiting on many failed tries",
+								"Validated forms",
+								"Validate on signup with OTP",
+								"Logout of all other sessions on login",
+								"BONUS: Captchas"
+							]
+						}
+					]
+				},
+				{
+					"week": 4,
+					"description": "Final Month 2 Project",
+					"tasks": [
+						{
+							"type": "Project",
+							"content": "Real-time Text Editing App",
+							"details": {
+							"features": [
+								"Video calling with screen sharing",
+								"Document saving",
+								"User authentication and access control",
+								"OPTIONAL. Chat messaging between collaborators",
+								"OPTIONAL. Show cursor of other users"
+							]
+						}
 						}
 					]
 				}
 			]
 		}
-
 	]
 }
