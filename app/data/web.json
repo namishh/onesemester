@@ -317,7 +317,6 @@
 				{
 					"week": 1,
 					"description": "Basics of NextJS + TailwindCSS",
-					
 					"tasks": [
 						{
 							"type": "Resource",
@@ -343,7 +342,7 @@
 					"description": "Love At First Type",
 					"tasks": [
 						{
-							"type":"Project",
+							"type": "Project",
 							"content": "A Dating Website",
 							"list": [
 								"Also a good time to learn shadcn and typescript"
@@ -376,6 +375,66 @@
 							"image": "https://i.imgur.com/fzPuvvm.png"
 						}
 					]
+				}
+			]
+		},
+		{
+			"month": 4,
+			"tasks": [
+				{
+					"type": "Resource",
+					"content": "Get better at 2D animations",
+					"urls": [
+						"https://ibelick.com/lab",
+						"https://ibelick.com/blog",
+						"https://ui.ibelick.com/",
+						"https://motion.dev",
+						"https://examples.motion.dev/",
+						"https://motion.dev/docs"
+					]
+				},
+				{
+					"type": "Resource",
+					"content": "Three JS and Modelling",
+					"urls": [
+						"https://spline.design/",
+						"https://discoverthreejs.com/",
+						"https://r3f.docs.pmnd.rs/getting-started/introduction",
+						"https://threejs.org/"
+					]
+				},
+				{
+					"type": "Video",
+					"content": "Good starter for Three",
+					"url": "https://www.youtube.com/watch?v=UMqNHi1GDAE"
+				},
+				{
+					"type":"Video",
+					"content": "1 Hour Video For ThreeJS and Spline",
+					"url": "https://www.youtube.com/watch?v=3jgAcUKTyKw"
+				},
+				{
+					"type":"Video",
+					"content": "Building a 3D portfolio",
+					"url": "https://www.youtube.com/watch?v=kt0FrkQgw8w"
+				},
+				{
+					"type": "Project",
+					"content": "Clone Website #1",
+					"image": "https://i.imgur.com/ZuzsIRd.png",
+					"url": "https://bachoodesign.com/"
+				},
+				{
+					"type": "Project",
+					"content": "Clone Website #2",
+					"image": "https://i.imgur.com/Fh0T5GE.png",
+					"url": "https://opos.buzzworthystudio.com/"
+				},
+				{
+					"type": "Project",
+					"content": "Clone Website #3",
+					"image": "https://i.imgur.com/FDf4ySX.png",
+					"url": "https://www.monks.com/"
 				}
 			]
 		}
