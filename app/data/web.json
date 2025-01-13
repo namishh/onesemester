@@ -298,14 +298,82 @@
 							"type": "Project",
 							"content": "Real-time Text Editing App",
 							"details": {
-							"features": [
-								"Video calling with screen sharing",
-								"Document saving",
-								"User authentication and access control",
-								"OPTIONAL. Chat messaging between collaborators",
-								"OPTIONAL. Show cursor of other users"
-							]
+								"features": [
+									"Video calling with screen sharing",
+									"Document saving",
+									"User authentication and access control",
+									"OPTIONAL. Chat messaging between collaborators",
+									"OPTIONAL. Show cursor of other users"
+								]
+							}
 						}
+					]
+				}
+			]
+		},
+		{
+			"month": 3,
+			"weeks": [
+				{
+					"week": 1,
+					"description": "Basics of NextJS + TailwindCSS",
+					
+					"tasks": [
+						{
+							"type": "Resource",
+							"content": "Basics of NextJS and TailwindCSS",
+							"urls": [
+								"https://nextjs.org/docs",
+								"https://nextjs.org/learn",
+								"https://vercel.com/guides/nextjs-prisma-postgres",
+								"https://tailwindcss.com/",
+								"https://tailwindcss.com/docs/guides/nextjs"
+							]
+						},
+						{
+							"type": "Project",
+							"content": "Clone a habit tracking app",
+							"url": "https://habits.sh",
+							"image": "https://i.imgur.com/WwaGme3.png"
+						}
+					]
+				},
+				{
+					"week": 2,
+					"description": "Love At First Type",
+					"tasks": [
+						{
+							"type":"Project",
+							"content": "A Dating Website",
+							"list": [
+								"Also a good time to learn shadcn and typescript"
+							],
+							"details": {
+								"features": [
+									"Users can sign up, left and right swipe / click",
+									"Chat between matches",
+									"Highly customizable profile",
+									"Use actual complex algorithms to calculate recommendations instead of choosing at random."
+								]
+							}
+						}
+					]
+				},
+				{
+					"week": "3 & 4",
+					"description": "Either of these two projects",
+					"tasks": [
+						{
+							"type": "Project",
+							"url": "https://skribbl.io/",
+							"content": "Easy: Skribbl.io Clone",
+							"image": "https://miro.medium.com/v2/resize:fit:1400/1*WWyPJr1T_Vvm8hQFgPsiVQ.png"
+						},
+						{
+							"type": "Project",
+							"url": "https://garticphone.com/",
+							"content": "Hard: Gartic Phone Clone",
+							"image": "https://i.imgur.com/fzPuvvm.png"
 						}
 					]
 				}
