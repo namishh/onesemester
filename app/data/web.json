@@ -437,6 +437,38 @@
 					"url": "https://www.monks.com/"
 				}
 			]
+		},
+		{
+			"month": 5,
+			"tasks": [
+				{
+					"type": "Project",
+					"content": "The Ultimatum: Your own image editor.",
+					"image": "https://i.imgur.com/MiaYlE7.png",
+					"list": [
+						"Import images, export selections or whole canvas",
+						"Crop images",
+						"Rotate by angle",
+						"Copy pasting, duplication",
+						"Grouping ungrouping selections",
+						"Undo and Redo",
+						"Eraser / drawing tool",
+						"Zooming in and out",
+						"Adding shapes",
+						"Ability to add and modify text",
+						"Removing objects (duh)",
+						"Move layers up and down",
+						"Image effects like brightness, contrast, saturation",
+						"Ability to paste clipboard image",
+						"Optional - LARGE scrolling canvas",
+						"Optional - webgl shaders",
+						"Optional - warping selections",
+						"Optional - gif support",
+						"Optional - export it into files which can be imported later",
+						"Optional - keybinds"
+					]
+				}
+			]
 		}
 	]
 }
