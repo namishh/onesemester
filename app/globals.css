@@ -28,33 +28,6 @@ body {
   pointer-events: none;
 }
 
-@keyframes flicker {
-  0% {
-  opacity: 0.27861;
-  }
-  5% {
-  opacity: 0.34769;
-  }
-  10% {
-  opacity: 0.23604;
-  }
-  15% {
-  opacity: 0.10626;
-  }
-  20% {
-  opacity: 0.18128;
-  }
-  25% {
-  opacity: 0.10626;
-  }
-  30% {
-  opacity: 0.18128;
-  }
-  35% {
-  opacity: 0.23604;
-  }
-}
-
 .crt::after {
   content: " ";
   display: block;
@@ -67,5 +40,5 @@ body {
   opacity: 0;
   z-index: 2;
   pointer-events: none;
-  animation: flicker 0.15s infinite;
+
 }

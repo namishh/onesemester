@@ -1,0 +1,137 @@
+{
+    "author": {
+        "name": "quantinium",
+        "url": "https://quantinium.dev",
+        "image": "https://github.com/quantinium03.png",
+        "github": "https://github.com/quantinium03",
+        "twitter": "https://twitter.com/quantinium_dev"
+    },
+    "lesson": "C and Rust",
+    "months": [
+        {
+            "month": 1,
+            "weeks": [
+                {
+                    "week": 1,
+                    "description": "Learning C",
+                    "tasks": [
+                        {
+                            "type": "Prerequisite",
+                            "list": [
+                                "Install linux",
+                                "If not possible, install and setup WSL"
+                            ]
+                        },
+                        {
+                            "type": "Resource",
+                            "content": "Beej's Guide to C",
+                            "list": [
+                                "Complete till 7.1"
+                            ],
+                            "url": "https://beej.us/guide/bgc/html/split"
+                        },
+                        {
+                            "type": "Video",
+                            "content": "Complete C Tutorial If You are Lazy",
+                            "url": "https://www.youtube.com/watch?v=87SH2Cn0s9A"
+                        },
+                        {
+                            "type": "Video",
+                            "content": "A Must Watch Series On Pointers",
+                            "url": "https://www.youtube.com/watch?v=zuegQmMdy8M"
+                        },
+                        {
+                            "type": "Project",
+                            "content": "Simple Projects",
+                            "list": [
+                                "A Simple CLI Calculator",
+                                "Try implementing sorting algorithms like Merge Sort, Quick Sort and Bubble Sort"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "week": 2,
+                    "description": "Going deeper into C",
+                    "tasks": [
+                        {
+                            "type": "Resource",
+                            "content": "Beej's Guide to C",
+                            "list": [
+                                "Complete till 15. List of topics: ",
+                                "Structs, Enums ",
+                                "file I/O",
+                                "memory allocation",
+                                "Pointer arithmetic",
+                                "Type conversions",
+                                "Ascii characters",
+                                "Header file (managing bigger projects)"
+                            ],
+                            "url": "https://beej.us/guide/bgc/html/split"
+                        },
+                        {
+                            "type": "Project",
+                            "content": "Book Bot",
+                            "list": [
+                                "Take https://www.gutenberg.org/files/1342/1342-0.txt as input file",
+                                "Count how many times each letter and word appears in the book"
+                            ]
+                        },
+                        {
+                            "type": "Project",
+                            "content": "Arrays",
+                            "list": [
+                                "Implement data structures like stacks, queues, linked lists and doubly linked lists"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "week": 3,
+                    "description": "Two Basic Projects",
+                    "tasks": [
+                        {
+                            "type": "Project",
+                            "content": "Make a mini grep",
+                            "list": [
+                                "Try using grep yourself and implement different things"
+                            ],
+                            "urls": [
+                                "https://www.geeksforgeeks.org/grep-command-in-unixlinux/",
+                                "https://www.gnu.org/software/grep/manual/grep.html"
+                            ]
+                        },
+                        {
+                            "type": "Project",
+                            "content": "Implement your own hash table",
+                            "list": [
+                                "Learn about hash tables, collision management, hashing algorithms"
+                            ],
+                            "url": "https://github.com/jamesroutley/write-a-hash-table"
+                        }
+                    ]
+                },
+                {
+                    "week": 4,
+                    "description": "Final Project with C",
+                    "tasks": [
+                        {
+                            "type": "Project",
+                            "content": "Make a web server with C",
+                            "urls": [
+                                "https://github.com/namishh/webby",
+                                "https://beej.us/guide/bgnet/html/split/",
+                                "https://dev.to/jeffreythecoder/how-i-built-a-simple-http-server-from-scratch-using-c-739"
+                            ]
+                        },
+                        {
+                            "type": "Video",
+                            "content": "A Good Starting Point",
+                            "url": "https://www.youtube.com/watch?v=gk6NL1pZi1M"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

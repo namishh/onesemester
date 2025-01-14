@@ -41,7 +41,7 @@ export const TaskComponent = ({ task, className = "" }: { task: Task; className?
                     rel="noopener noreferrer"
                     className="px-4 text-emerald-500 text-wrap hover:text-emerald-600 underline"
                 >
-                    {task.url.length > 30 ? task.url.slice(0, 30) + '...' : task.url}
+                    {task.url.length > 50 ? task.url.slice(0, 50) + '...' : task.url}
                 </a>
             )}
             {task.image && (
@@ -67,7 +67,7 @@ export const TaskComponent = ({ task, className = "" }: { task: Task; className?
                         rel="noopener noreferrer"
                         className="text-emerald-500 text-wrap hover:text-emerald-600 underline"
                     >
-                        {url.length > 30 ? url.slice(0, 30) + '...' : url}
+                        {url.length > 50 ? url.slice(0, 50) + '...' : url}
                     </a>
                 </div>
             ))}
