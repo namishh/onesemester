@@ -26,7 +26,16 @@ interface Month {
   tasks?: Task[];
 }
 
-interface LearningPlan {
+interface Author {
+    name : string;
+    url : string;
+    github? : string;
+    twitter?: string;
+    image : string;
+}
+
+interface LearningPlan { 
+  author: Author; 
   lesson: string;
   months: Month[];
 }

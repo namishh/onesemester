@@ -85,7 +85,22 @@ const Generate = ({ learningPlan }: { learningPlan: LearningPlan }) => {
                 {/* Main content */}
                 <main className="flex-1 p-0 md:p-0 w-full md:pl-0 border-l border-neutral-700 ">
                     <h1 className="text-3xl md:text-4xl font-bold mb-2 px-4 pt-2">{learningPlan.lesson}</h1>
+                    <div className="flex px-4 pb-4 items-center">
+                        <img src={learningPlan.author.image} alt={learningPlan.author.name} className='h-8 w-8' />
+                        <p className="text-xl px-4 text-emerald-400">{learningPlan.author.name}</p>   
+                        <div className="flex gap-4">
+                            <a href={learningPlan.author.url} target='_blank' rel="noopener noreferrer" className="text-emerald-500 h-4 w-4 hover:text-emerald-600">
+                            <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"> <path d="M5 3h6v2H5v14h14v-6h2v8H3V3h2zm8 0h8v8h-2V7h-2V5h-4V3zm0 8h-2v2H9v2h2v-2h2v-2zm4-4h-2v2h-2v2h2V9h2V7z" fill="currentColor"/> </svg>    
+                            </a>
+                            {learningPlan.author.github && <a href={learningPlan.author.github} target='_blank' rel="noopener noreferrer" className="text-emerald-500 h-4 w-4 hover:text-emerald-600">
+                               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"> <path fill="currentColor" d="M5 2h4v2H7v2H5V2Zm0 10H3V6h2v6Zm2 2H5v-2h2v2Zm2 2v-2H7v2H3v-2H1v2h2v2h4v4h2v-4h2v-2H9Zm0 0v2H7v-2h2Zm6-12v2H9V4h6Zm4 2h-2V4h-2V2h4v4Zm0 6V6h2v6h-2Zm-2 2v-2h2v2h-2Zm-2 2v-2h2v2h-2Zm0 2h-2v-2h2v2Zm0 0h2v4h-2v-4Z"/> </svg> 
+                                </a>}
+                            {learningPlan.author.twitter && <a href={learningPlan.author.twitter} target='_blank' rel="noopener noreferrer" className="text-emerald-500 h-4 w-4 hover:text-emerald-600">
+                           <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"> <path d="M5 5h2v2H5V5zm4 4H7V7h2v2zm2 2H9V9h2v2zm2 0h-2v2H9v2H7v2H5v2h2v-2h2v-2h2v-2h2v2h2v2h2v2h2v-2h-2v-2h-2v-2h-2v-2zm2-2v2h-2V9h2zm2-2v2h-2V7h2zm0 0V5h2v2h-2z" fill="currentColor"/> </svg> 
+                            </a>}
 
+                        </div> 
+                    </div> 
                     {learningPlan.months
                         .filter((month) => month.month === selectedMonth)
                         .map((month) => (

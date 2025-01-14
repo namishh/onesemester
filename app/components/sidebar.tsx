@@ -31,6 +31,9 @@ const [isSidebarOpen, setIsSidebarOpen] = useState(false);
                             <a href="/"
                                 className={`w-full block text-left p-2 transition-color bg-transparent hover:bg-neutral-800`}
                             >AI (soon)</a>
+                            <a href="/"
+                                className={`w-full block text-left p-2 transition-color bg-transparent hover:bg-neutral-800`}
+                            >C // Rust (soon)</a>
                 </aside>
     </>
   );

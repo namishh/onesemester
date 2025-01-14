@@ -15,7 +15,9 @@ export default function Home() {
           <p className="text-2xl px-4 text-emerald-400">A guide to make projects</p>
           <p className="text-2xl px-4 py-2">Approach projects like it they would be in a production environment. Research as to how they are implemented and try to replicate it. Most of the time you will have to learn a new framework or library.</p>
           <p className="text-2xl px-4 text-emerald-400">Should I use AI?</p>
-          <p className="text-2xl px-4">Yes and No. Do not use AI as the driving seat of your learning // project making. Use it to consult and ask how the underlying things work and clearing up concepts.</p> 
+          <p className="text-2xl px-4 py-2">Yes and No. Do not use AI as the driving seat of your learning // project making. Use it to consult and ask how the underlying things work and clearing up concepts.</p> 
+          <p className="text-2xl px-4 text-emerald-400">Contact</p>
+          <p className="text-2xl px-4 py-2">Shoot us a mail at <a className="text-emerald-400 underline underline-offset-4" href="mailto:contact@onesemester.tech">contact@onesemester.tech</a></p>
         </main>
       </div>
     </div>

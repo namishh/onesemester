@@ -1,4 +1,11 @@
 {
+	"author": {
+		"name": "namishh",
+		"url": "https://namishh.me",
+		"image": "https://github.com/namishh.png",
+		"github": "https://github.com/namishh",
+		"twitter": "https://twitter.com/namishh_"
+	},
 	"lesson": "Full Stack Javascript",
 	"months": [
 		{
