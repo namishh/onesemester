@@ -287,6 +287,164 @@
                     ]
                 }
             ]
+        },
+        {
+            "month": 3,
+            "weeks": [
+                {
+                    "week": "1", 
+                    "description": "Completing the book",
+                    "tasks": [
+                        {
+                            "type": "Resource",
+                            "content": "Rust Book",
+                            "url": "https://doc.rust-lang.org/book/",
+                            "list": ["Complete the rust book"]
+                        },
+                        {
+                            "type": "Project",
+                            "content": "Make the web server project from rust book",
+                            "list": [
+                                "After this, you can explore frameworks like Tokio, Actix, Tonic and Rocket",
+                                "Combine this with the Diesel ORM to make a full stack app",
+                                "Maybe combine this with your personal tracker so you can show your stats to all."
+                            ]
+                        }
+                    ] 
+                },
+                {
+                    "week": 2,
+                    "description": "Miscellaneous Projects", 
+                    "tasks": [
+                        {
+                            "type": "Project",
+                            "content": "Implement a hashmap"
+                        },
+                        {
+                            "type": "Video",
+                            "content": "Video for above project",
+                            "url": "https://www.youtube.com/watch?v=k6xR2kf9hlA"
+                        },
+                        {
+                            "type": "Project",
+                            "content": "Make a ffmpeg library",
+                            "list": [
+                                "Speed or slow down video by x times",
+                                "Crop videos from specified positions",
+                                "Convert videos to different formats",
+                                "Can also try to make a screen recorder from it"
+                            ]
+                        },
+                        {
+                            "type": "Project",
+                            "content": "Parser",
+                            "list": [
+                                "Parse markdown or a custom markup format and allow people to create their own webpages"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "week": 3, 
+                    "description": "Graphics with Raylib // Bevy",
+                    "tasks": [
+                       {
+                           "type": "Resource",
+                           "content": "Raylib Rust Bindings",
+                           "url": "https://docs.rs/raylib/latest/raylib/"
+                       } ,
+                       {
+                        "type": "Resource",
+                        "content": "Bevy Quick Start",
+                        "url": "https://bevyengine.org/learn/quick-start/introduction/"
+                       },
+                       {
+                        "type": "Project", 
+                        "content": "The Snake Game",
+                        "url": "https://snakegame.org/",
+                        "image": "https://i.imgur.com/8rUsMRp.png"
+                       },
+                       {
+                        "type": "Project", 
+                        "content": "Asteroids",
+                        "url": "https://www.echalk.co.uk/amusements/Games/asteroidsClassic/ateroids.html",
+                        "image": "https://i.imgur.com/6tVrK4r.png"
+                       },
+                       {
+                        "type": "Project", 
+                        "content": "Galaga Clone",
+                        "url": "https://www.retrogames.cz/play_018-NES.php",
+                        "image": "https://i.imgur.com/4hg8lIc.png"
+                       }
+                    ]
+                },
+                {
+                    "week": 4, 
+                    "description": "Garbage Truck Ahead",
+                    "tasks": [
+                        {
+                            "type": "Project",
+                            "content": "Build your own garbage collector",
+                            "urls" : [
+                                "https://manishearth.github.io/blog/2021/04/05/a-tour-of-safe-tracing-gc-designs-in-rust/",
+                                "https://manishearth.github.io/blog/2015/09/01/designing-a-gc-in-rust/"
+                            ]
+                        }
+                    ]
+                } 
+            ]
+        },
+        {
+            "month": 4,
+            "tasks": [
+                {
+                    "type": "Project", 
+                    "content": "Build a image // video to ascii converter",
+                    "urls": [
+                        "https://youtu.be/gg40RWiaHRY?feature=shared"
+                    ]
+                },
+                {
+
+                    "type": "Project",
+                    "content": "Create your own text editor",
+                    "url": "https://flenker.blog/hecto/",
+                    "image": "https://bear-images.sfo2.cdn.digitaloceanspaces.com/flenker-1719070814.png",
+                    "list": [
+                        "Extend editor with: ",
+                        "Auto close brackets",
+                        "Auto indent on new line",
+                        "Configurable dashboard art",
+                        "Undo / Redo Tree",
+                        "Multiple buffers",
+                        "Vim bindings - Normal and select mode",
+                        "A much more beautiful statusline",
+                        "File Tree",
+                        "Configuration File"
+                    ]
+                }
+            ]
+        },
+        {
+            "month": 5, 
+            "tasks" : [
+                {
+                    "type": "Project",
+                    "content": "Build a 3D WASM renderer",
+                    "list": [
+                        "Render easy stuff such as chemistry compounds, BCC, FCC structures",
+                        "Bonus: Render Liquids and Light"
+                    ],
+                    "image": "https://i.imgur.com/6z103YE.png",
+                    "urls": [
+                        "https://docs.rs/nalgebra/latest/nalgebra/",
+                        "https://docs.rs/wasm-bindgen/latest/wasm_bindgen/",
+                        "https://chinedufn.github.io/landon/introduction.html",
+                        "https://docs.rs/js-sys/latest/js_sys",
+                        "https://www.chinedufn.com/3d-webgl-basic-water-tutorial/"
+                    ]
+                }
+            ]
         }
     ]
 }

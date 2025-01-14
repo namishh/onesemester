@@ -25,15 +25,15 @@ export default function Sidebar() {
                 <a href="/"
                     className={`w-full block text-left p-2 transition-color bg-transparent hover:bg-neutral-800`}
                 >Home</a>
-                <a href="/web"
-                    className={`w-full block text-left p-2 transition-color bg-transparent hover:bg-neutral-800`}
-                >Web</a>
                 <a href="/"
                     className={`w-full block text-left p-2 transition-color bg-transparent hover:bg-neutral-800`}
                 >AI (soon)</a>
                 <a href="/low"
                     className={`w-full block text-left p-2 transition-color bg-transparent hover:bg-neutral-800`}
-                >C // Rust (wip)</a>
+                >C // Rust</a>
+                <a href="/web"
+                    className={`w-full block text-left p-2 transition-color bg-transparent hover:bg-neutral-800`}
+                >Web Dev</a>
             </aside>
         </>
     );

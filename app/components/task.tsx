@@ -39,9 +39,9 @@ export const TaskComponent = ({ task, className = "" }: { task: Task; className?
                     href={task.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-4 text-emerald-500 text-wrap hover:text-emerald-600 underline"
+                    className="px-4 text-emerald-500 text-wrap break-words hover:text-emerald-600 underline"
                 >
-                    {task.url.length > 50 ? task.url.slice(0, 50) + '...' : task.url}
+                    {task.url.length > 30 ? task.url.slice(0, 30) + '...' : task.url}
                 </a>
             )}
             {task.image && (
@@ -65,14 +65,14 @@ export const TaskComponent = ({ task, className = "" }: { task: Task; className?
                         href={url}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-emerald-500 text-wrap hover:text-emerald-600 underline"
+                        className="text-emerald-500 text-wrap break-words hover:text-emerald-600 underline"
                     >
-                        {url.length > 50 ? url.slice(0, 50) + '...' : url}
+                        {url.length > 30 ? url.slice(0, 30) + '...' : url}
                     </a>
                 </div>
             ))}
             {task.list && (
-                <ul className="list-disc mt-4 pl-8 px-4 space-y-1">
+                <ul className="list-disc mt-4 text-wrap break-words	pl-8 px-4 space-y-1">
                     {task.list.map((item, idx) => (
                         <li key={idx}>{item}</li>
                     ))}
@@ -82,7 +82,7 @@ export const TaskComponent = ({ task, className = "" }: { task: Task; className?
                 <div className="mt-4 px-4">
                     {task.details.features && (
                         <Accordion title="Features">
-                            <ul className="list-disc pl-5 space-y-1">
+                            <ul className="list-disc break-words pl-5 space-y-1">
                                 {task.details.features.map((feature, idx) => (
                                     <li key={idx}>{feature}</li>
                                 ))}
@@ -91,7 +91,7 @@ export const TaskComponent = ({ task, className = "" }: { task: Task; className?
                     )}
                     {task.details.tips && (
                         <Accordion title="Tips">
-                            <ul className="list-disc pl-5 space-y-1">
+                            <ul className="list-disc break-words pl-5 space-y-1">
                                 {task.details.tips.map((tip, idx) => (
                                     <li key={idx}>{tip}</li>
                                 ))}
@@ -100,7 +100,7 @@ export const TaskComponent = ({ task, className = "" }: { task: Task; className?
                     )}
                     {task.details.examples && (
                         <Accordion title="Examples">
-                            <ul className="list-disc flex flex-col pl-5 space-y-1">
+                            <ul className="list-disc break-words flex flex-col pl-5 space-y-1">
                                 {task.details.examples.map((example, idx) => (
                                     <a className="text-emerald-500 text-wrap hover:text-emerald-600 underline" key={idx} href={example} target="_blank" rel="noopener noreferrer">{example.length > 30 ? example.slice(0, 30) + '...' : example}</a>
                                 ))}
