@@ -165,8 +165,124 @@
                         },
                         {
                             "type": "Video",
+                            "content": "Threads in C",
+                            "url": "https://www.youtube.com/watch?v=d9s_d28yJq0&list=PLfqABt5AS4FmuQf70psXrsMLEDQXNkLq2"
+                        },
+                        {
+                            "type": "Video",
                             "content": "A Good Starting Point",
                             "url": "https://www.youtube.com/watch?v=gk6NL1pZi1M"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "month": 2,
+            "weeks": [
+                {
+                    "week": 1,
+                    "description": "Starting with Rust",
+                    "tasks": [
+                        {
+                            "type": "Resource",
+                            "content": "Rust Book",
+                            "url": "https://doc.rust-lang.org/book/",
+                            "list": ["Read till Chapter 5"]
+                        },
+                        {
+                            "type": "Video",
+                            "content": "Let's Get Rusty",
+                            "list": ["Literally the video version of the rust book."],
+                            "url": "https://www.youtube.com/watch?v=OX9HJsJUDxA&list=PLai5B987bZ9CoVR-QEIN9foz4QCJ0H2Y8"
+                        },
+                        {
+                            "type": "Project",
+                            "content": "Simple Number Guessing Game",
+                            "url": "https://rust-book.cs.brown.edu/ch02-00-guessing-game-tutorial.html"
+                        }, 
+                        {
+                            "type": "Exercise",
+                            "content": "Solve rustlings",
+                            "url": "https://github.com/rust-lang/rustlings"
+                        },
+                        {
+                            "type": "Project",
+                            "content": "Calculate area of different shapes",
+                            "list": ["Try to use structs and impls"]
+                        } 
+                    ]
+                },
+                {
+                    "week": 2,
+                    "description": "Memory and Rust",
+                    "tasks": [
+                        {
+                            "type": "Resource",
+                            "content": "Playlist on Memory Management",
+                            "url": "https://www.youtube.com/playlist?list=PLai5B987bZ9BnS7dBlTF9HRop55vYUL7r"
+                        },
+                        {
+                            "type": "Resource",
+                            "content": "Rust Book",
+                            "url": "https://doc.rust-lang.org/book/",
+                            "list": ["Read till Chapter 13"]
+                        },
+                        {
+                            "type": "Project",
+                            "content": "Cloning simple GNU tools: cat and wc",
+                            "urls": [
+                                "https://man7.org/linux/man-pages/man1/cat.1.html",
+                                "https://linux.die.net/man/1/wc"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "week": 3,
+                    "description": "2 Small Projects",
+                    "tasks": [
+                        {
+                            "type": "Project",
+                            "content": "Clone grep",
+                            "urls": [
+                                "https://www.geeksforgeeks.org/grep-command-in-unixlinux/",
+                                "https://www.gnu.org/software/grep/manual/grep.html"
+                            ]
+                        },
+                        {
+                            "type": "Project",
+                            "content": "Implement stack from",
+                            "url": "https://rust-unofficial.github.io/too-many-lists/index.html"
+                        }
+                    ]
+                },
+                {
+                    "week": 4,
+                    "description": "Smart Pointers, Concurrency and Async",
+                    "tasks": [
+                        {
+                            "type": "Resource",
+                            "content": "Rust Book",
+                            "url": "https://doc.rust-lang.org/book/",
+                            "list": ["Read till Chapter 18"]
+                        },
+                        {
+                            "type": "Project",
+                            "content": "Implement dequeue from",
+                            "url": "https://rust-unofficial.github.io/too-many-lists/index.html"
+                        },
+                        {
+                            "type": "Project",
+                            "content": "Desktop Tracker",
+                            "list": [
+                                "Make a tracker for yourself, counts number of keypresses, mouse click, mouse travel, screenshot images every defined interval and saves them."
+                            ],
+                            "details": {
+                                "examples" : [
+                                    "https://github.com/nanovin/gaze"
+                                ]
+                            }
                         }
                     ]
                 }
