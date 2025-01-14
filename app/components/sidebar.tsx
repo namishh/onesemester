@@ -14,7 +14,7 @@ export default function Sidebar() {
 
             <aside className={`
                     fixed md:relative top-0 left-0 h-full 
-                    w-64 md:w-48 p-2
+                    w-64 lg:w-52 p-2
                     text-2xl 
                     bg-neutral-950 md:bg-transparent
                     transform transition-transform duration-300 ease-in-out
@@ -23,17 +23,20 @@ export default function Sidebar() {
                 `}>
 
                 <a href="/"
-                    className={`w-full block text-left p-2 transition-color bg-transparent hover:bg-neutral-800`}
+                    className={`w-full block text-left p-2 transition-colors bg-transparent hover:bg-neutral-800`}
                 >Home</a>
                 <a href="/web"
-                    className={`w-full block text-left p-2 transition-color bg-transparent hover:bg-neutral-800`}
+                    className={`w-full block text-left p-2 transition-colors bg-transparent hover:bg-neutral-800`}
                 >Web</a>
                 <a href="/"
-                    className={`w-full block text-left p-2 transition-color bg-transparent hover:bg-neutral-800`}
+                    className={`w-full block text-left p-2 transition-colors bg-transparent hover:bg-neutral-800`}
                 >AI (soon)</a>
                 <a href="/low"
-                    className={`w-full block text-left p-2 transition-color bg-transparent hover:bg-neutral-800`}
+                    className={`w-full block text-left p-2 transition-colors bg-transparent hover:bg-neutral-800`}
                 >C // Rust (wip)</a>
+                <a href="/devops"
+                    className={`w-full block text-nowrap text-left p-2 transition-colors bg-transparent hover:bg-neutral-800`}
+                >DevOps / Systems</a>
             </aside>
         </>
     );
