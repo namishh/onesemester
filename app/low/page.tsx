@@ -33,7 +33,7 @@ export const metadata: Metadata = {
 
 
 type Props = {
-    searchParams: { m?: string }
+    searchParams: Promise<{ m?: string }>
 }
 
 export default async function Low({ searchParams }: Props) {
