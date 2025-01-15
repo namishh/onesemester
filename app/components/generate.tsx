@@ -12,7 +12,6 @@ const Generate = ({ learningPlan, defaultMonth = 1 }: { learningPlan: LearningPl
         if (element) {
             element.scrollIntoView({ behavior: 'smooth' });
         }
-        // Close sidebar on mobile after navigation
         setIsSidebarOpen(false);
     };
 
