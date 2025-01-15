@@ -2,9 +2,17 @@
 import React, { useState, useEffect, useRef, useMemo } from 'react';
 import { useRouter } from 'next/navigation';
 
+const fetchJson = async (path: string) => {
+  const response = await fetch(process.env.NEXT_PUBLIC_URL! + path);
+  if (!response.ok) {
+    throw new Error(`Failed to fetch ${path}`);
+  }
+  return response.json();
+};
+
 const searchData = {
-  web: (await import('../data/web.json')).default,
-  low: (await import('../data/low.json')).default
+  web: await fetchJson('/data/web.json'),
+  low: await fetchJson('/data/low.json')
 };
 
 const addToIndex = (word: string, item: any, index: Map<string, any[]>) => {
@@ -24,7 +32,7 @@ const createSearchIndex = () => {
   const index = new Map();
   
   Object.entries(searchData).forEach(([path, data]) => {
-    data.months.forEach(month => {
+    data.months.forEach((month: any) => {
       const processTask = (task: any) => {
         const result = {
           path,
@@ -80,7 +88,7 @@ const createSearchIndex = () => {
       };
 
       if (month.weeks) {
-        month.weeks.forEach(week => {
+        month.weeks.forEach((week: Week) => {
           if (week.tasks) {
             week.tasks.forEach(processTask);
           }

@@ -36,9 +36,10 @@ type Props = {
 }
 
 export default async function Web({ searchParams }: Props) {
-    const file = await fs.readFile(process.cwd() + '/app/data/web.json', 'utf8');
-    const data = JSON.parse(file) as LearningPlan;
+    const response = await fetch(process.env.NEXT_PUBLIC_URL! + '/data/web.json');
+    console.log(response)
+    const data: LearningPlan = await response.json();
     let month = await searchParams
-    const m = parseInt(month.m!); 
+    const m = parseInt(month.m!);
     return <Generate learningPlan={data} defaultMonth={m || 1} />
 }

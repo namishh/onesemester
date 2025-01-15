@@ -17,7 +17,7 @@ export const metadata: Metadata = {
         description: 'Low level programming languages',
         images: [
             {
-                url: 'https://i.imgur.com/BwGG7Ch.png', 
+                url: 'https://i.imgur.com/BwGG7Ch.png',
                 width: 800,
                 height: 600,
             },
@@ -37,9 +37,9 @@ type Props = {
 }
 
 export default async function Low({ searchParams }: Props) {
-    const file = await fs.readFile(process.cwd() + '/app/data/low.json', 'utf8');
-    const data = JSON.parse(file) as LearningPlan;
+    const response = await fetch(process.env.NEXT_PUBLIC_URL! + '/data/web.json');
+    const data: LearningPlan = await response.json();
     let month = await searchParams
-    const m = parseInt(month.m!); 
+    const m = parseInt(month.m!);
     return <Generate learningPlan={data} defaultMonth={m || 1} />
 }
