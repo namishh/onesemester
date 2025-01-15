@@ -9,7 +9,7 @@ export const generateMetadata = (): Metadata => {
       card: 'summary_large_image',
       title: 'One Semester Is All You Need',
       description: 'Learn programming in one semester with structured roadmaps',
-      images: ['https://i.imgur.com/sy7ZTsr.png'],
+      images: ['https://i.imgur.com/oqu9P9j.png'],
     },
     openGraph: {
       siteName: "One Semester",
@@ -17,12 +17,12 @@ export const generateMetadata = (): Metadata => {
       description: 'Learn programming in one semester with structured roadmaps',
       images: [
         {
-          url: 'https://i.imgur.com/sy7ZTsr.png',
+          url: 'https://i.imgur.com/oqu9P9j.png',
           width: 800,
           height: 600,
         },
         {
-          url: 'https://i.imgur.com/sy7ZTsr.png',
+          url: 'https://i.imgur.com/oqu9P9j.png',
           width: 1800,
           height: 1600,
           alt: 'One Semester Programming Roadmaps',
