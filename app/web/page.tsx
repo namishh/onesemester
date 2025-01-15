@@ -12,7 +12,7 @@ const Web = () => {
         setMonth(m);
 
         const fetchData = async () => {
-            const response = await fetch(process.env.NEXT_PUBLIC_URL! + '/data/web.json');
+            const response = await fetch(`${process.env.NEXT_PUBLIC_URL}/data/web.json`);
             const data: LearningPlan = await response.json();
             setLearningPlan(data);
         };
