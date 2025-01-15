@@ -163,9 +163,14 @@ const SearchBar = () => {
 	}, [isOpen]);
 
 	const handleResultClick = (result: any) => {
-		router.push(`/${result.path}?m=${result.month}&w=${result.week}`);
+		if (result.week) {
+			location.assign(`/${result.path}?m=${result.month}&w=${result.week}`);
+		} else {
+			location.assign(`/${result.path}?m=${result.month}`);
+		}
 		setIsOpen(false);
 		setQuery('');
+		setResults([]);
 	};
 
 	return (
@@ -187,9 +192,13 @@ const SearchBar = () => {
 
 			{isOpen && (
 				<div className="fixed inset-0 z-50">
-					<div className="fixed inset-0 bg-black/50" onClick={() => setIsOpen(false)} />
+					<div className="fixed inset-0 bg-black/50" onClick={() => {
+						setIsOpen(false)
+						setQuery('');
+						setResults([]);
+					}} />
 
-					<div className="relative w-full mx-4 sm:mx-auto sm:max-w-2xl mt-20">
+					<div className="relative w-full sm:mx-4 mx-0 sm:mx-auto sm:max-w-2xl mt-20">
 						<div className="bg-neutral-900 shadow-xl overflow-hidden">
 							<div className="relative">
 								<input
