@@ -37,9 +37,10 @@ type Props = {
 }
 
 export default async function Low({ searchParams }: Props) {
-    const response = await fetch(process.env.NEXT_PUBLIC_URL! + '/data/web.json');
+    const response = await fetch(process.env.NEXT_PUBLIC_URL! + '/data/low.json');
     const data: LearningPlan = await response.json();
     let month = await searchParams
     const m = parseInt(month.m!);
     return <Generate learningPlan={data} defaultMonth={m || 1} />
 }
+export const dynamic = 'force-static'

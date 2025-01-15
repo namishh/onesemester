@@ -1,6 +1,5 @@
 import { Metadata } from "next";
 import Generate from "../components/generate";
-import { promises as fs } from 'fs';
 
 export const metadata: Metadata = {
     title: "Web Development Roadmap",
@@ -43,3 +42,4 @@ export default async function Web({ searchParams }: Props) {
     const m = parseInt(month.m!);
     return <Generate learningPlan={data} defaultMonth={m || 1} />
 }
+export const dynamic = 'force-static'
