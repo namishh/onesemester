@@ -31,8 +31,14 @@ export const metadata: Metadata = {
     }
 }
 
-export default async function Web() {
+type Props = {
+    searchParams: { m?: string }
+}
+
+export default async function Web({ searchParams }: Props) {
     const file = await fs.readFile(process.cwd() + '/app/data/web.json', 'utf8');
     const data = JSON.parse(file) as LearningPlan;
-    return <Generate learningPlan={data} />
+    let month = await searchParams
+    const m = parseInt(month.m!); 
+    return <Generate learningPlan={data} defaultMonth={m || 1} />
 }

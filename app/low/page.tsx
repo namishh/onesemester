@@ -32,8 +32,14 @@ export const metadata: Metadata = {
 }
 
 
-export default async function Low() {
-  const file = await fs.readFile(process.cwd() + '/app/data/low.json', 'utf8');
-  const data = JSON.parse(file) as LearningPlan;
-  return <Generate learningPlan={data}/>
+type Props = {
+    searchParams: { m?: string }
+}
+
+export default async function Low({ searchParams }: Props) {
+    const file = await fs.readFile(process.cwd() + '/app/data/low.json', 'utf8');
+    const data = JSON.parse(file) as LearningPlan;
+    let month = await searchParams
+    const m = parseInt(month.m!); 
+    return <Generate learningPlan={data} defaultMonth={m || 1} />
 }
