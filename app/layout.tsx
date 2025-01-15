@@ -14,8 +14,32 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "One Semester Is All You Need", 
-  description: "Roadmaps to get you started",
+  title: "One Semester Is All You Need",
+  description: "Learn programming in one semester with structured roadmaps",
+  twitter: {
+    card: 'summary_large_image',
+    title: 'One Semester Is All You Need',
+    description: 'Learn programming in one semester with structured roadmaps',
+    images: ['https://i.imgur.com/sy7ZTsr.png'],
+  },
+  openGraph: {
+    siteName: "One Semester",
+    title: 'One Semester Is All You Need',
+    description: 'Learn programming in one semester with structured roadmaps',
+    images: [
+      {
+        url: 'https://i.imgur.com/sy7ZTsr.png',
+        width: 800,
+        height: 600,
+      },
+      {
+        url: 'https://i.imgur.com/sy7ZTsr.png',
+        width: 1800,
+        height: 1600,
+        alt: 'One Semester Programming Roadmaps',
+      },
+    ],
+  }
 };
 
 export default function RootLayout({
