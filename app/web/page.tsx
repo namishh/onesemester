@@ -1,30 +1,25 @@
 "use client";
 import Generate from "../components/generate";
 import { useEffect, useState } from "react";
+import data from "@/app/data/web.json"
 
 const Web = () => {
-    const [learningPlan, setLearningPlan] = useState<LearningPlan | null>(null);
-    const [month, setMonth] = useState<number>(1);
+    const [month, setMonth] = useState<number>(0);
+    const [week, setWeek] = useState<number>(0);
 
     useEffect(() => {
         const params = new URLSearchParams(window.location.search);
         const m = parseInt(params.get('m') || '1');
+        const w  = parseInt(params.get('w') || '0');
         setMonth(m);
-
-        const fetchData = async () => {
-            const response = await fetch(`${process.env.NEXT_PUBLIC_URL}/data/web.json`);
-            const data: LearningPlan = await response.json();
-            setLearningPlan(data);
-        };
-
-        fetchData();
+        setWeek(w);
     }, []);
 
-    if (!learningPlan) {
+    if (!month) {
         return <div>Loading...</div>;
     }
 
-    return <Generate learningPlan={learningPlan} defaultMonth={month} />;
+    return <Generate learningPlan={data} defaultMonth={month} defaultWeek={week} />;
 };
 
 export default Web;

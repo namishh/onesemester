@@ -1,18 +1,12 @@
 "use client";
 import React, { useState, useEffect, useRef, useMemo } from 'react';
 import { useRouter } from 'next/navigation';
-
-const fetchJson = async (path: string) => {
-	const response = await fetch(`${process.env.NEXT_PUBLIC_URL}${path}`);
-	if (!response.ok) {
-		throw new Error(`Failed to fetch ${path}`);
-	}
-	return response.json();
-};
+import webData from '@/app/data/web.json';
+import lowData from '@/app/data/low.json';
 
 const searchData = {
-	web: await fetchJson('/data/web.json'),
-	low: await fetchJson('/data/low.json')
+	web: webData,
+	low: lowData
 };
 
 const addToIndex = (word: string, item: any, index: Map<string, any[]>) => {

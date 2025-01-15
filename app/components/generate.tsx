@@ -1,8 +1,8 @@
 "use client";
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { TaskComponent } from './task';
 
-const Generate = ({ learningPlan, defaultMonth = 1 }: { learningPlan: LearningPlan, defaultMonth?: number }) => {
+const Generate = ({ learningPlan, defaultMonth = 1, defaultWeek = 1 }: { learningPlan: LearningPlan, defaultMonth?: number, defaultWeek?: number }) => {
     const [selectedMonth, setSelectedMonth] = useState<number>(defaultMonth);
     const [expandedMonth, setExpandedMonth] = useState<number | null>(defaultMonth);
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -13,7 +13,13 @@ const Generate = ({ learningPlan, defaultMonth = 1 }: { learningPlan: LearningPl
             element.scrollIntoView({ behavior: 'smooth' });
         }
         setIsSidebarOpen(false);
-    };
+    }; 
+
+    useEffect(() => {
+        if (defaultWeek) {
+            scrollToWeek(`week-${defaultMonth}-${defaultWeek}`);
+        }
+    })
 
     return (
         <div className="flex flex-col min-h-screen items-center justify-center relative">
