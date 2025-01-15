@@ -1,4 +1,36 @@
+import type { Metadata } from "next";
 import Sidebar from "./components/sidebar";
+
+export const generateMetadata = (): Metadata => {
+  return {
+    title: "One Semester Is All You Need",
+    description: "Learn programming in one semester with structured roadmaps",
+    twitter: {
+      card: 'summary_large_image',
+      title: 'One Semester Is All You Need',
+      description: 'Learn programming in one semester with structured roadmaps',
+      images: ['https://i.imgur.com/sy7ZTsr.png'],
+    },
+    openGraph: {
+      siteName: "One Semester",
+      title: 'One Semester Is All You Need',
+      description: 'Learn programming in one semester with structured roadmaps',
+      images: [
+        {
+          url: 'https://i.imgur.com/sy7ZTsr.png',
+          width: 800,
+          height: 600,
+        },
+        {
+          url: 'https://i.imgur.com/sy7ZTsr.png',
+          width: 1800,
+          height: 1600,
+          alt: 'One Semester Programming Roadmaps',
+        },
+      ],
+    }
+  }
+}
 
 export default function Home() {
   return (
