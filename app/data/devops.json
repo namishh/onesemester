@@ -13,121 +13,46 @@
             "weeks": [
                 {
                     "week": 1,
-                    "description": "Learning C",
+                    "description": "Learning Go",
                     "tasks": [
                         {
                             "type": "Prerequisite",
                             "list": [
-                                "Install linux",
-                                "If not possible, install and setup WSL"
+                                "Install A Stable Linux Distro",
+                                "Install Go"
                             ]
                         },
                         {
-                            "type": "Resource",
-                            "content": "Beej's Guide to C",
+                            "type": "Textual Resource",
+                            "content": "The Official Go Tutorial",
                             "list": [
-                                "Complete till 7.1"
+                                "Complete till Govulncheck"
                             ],
-                            "url": "https://beej.us/guide/bgc/html/split"
+                            "url": "https://go.dev/doc/tutorial/"
                         },
                         {
                             "type": "Video",
-                            "content": "Complete C Tutorial If You are Lazy",
-                            "url": "https://www.youtube.com/watch?v=87SH2Cn0s9A"
+                            "content": "Go for Beginners (textual is better tho^)",
+                            "url": "https://youtu.be/yyUHQIec83I?si=pjqP0dWUNVVjI-pF"
                         },
                         {
                             "type": "Video",
-                            "content": "A Must Watch Series On Pointers",
-                            "url": "https://www.youtube.com/watch?v=zuegQmMdy8M"
-                        },
-                        {
-                            "type": "Project",
-                            "content": "Simple Projects",
-                            "list": [
-                                "A Simple CLI Calculator",
-                                "Try implementing sorting algorithms like Merge Sort, Quick Sort and Bubble Sort"
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "week": 2,
-                    "description": "Going deeper into C",
-                    "tasks": [
-                        {
-                            "type": "Resource",
-                            "content": "Beej's Guide to C",
-                            "list": [
-                                "Complete till 15. List of topics: ",
-                                "Structs, Enums ",
-                                "file I/O",
-                                "memory allocation",
-                                "Pointer arithmetic",
-                                "Type conversions",
-                                "Ascii characters",
-                                "Header file (managing bigger projects)"
-                            ],
-                            "url": "https://beej.us/guide/bgc/html/split"
-                        },
-                        {
-                            "type": "Project",
-                            "content": "Book Bot",
-                            "list": [
-                                "Take https://www.gutenberg.org/files/1342/1342-0.txt as input file",
-                                "Count how many times each letter and word appears in the book"
-                            ]
-                        },
-                        {
-                            "type": "Project",
-                            "content": "Arrays",
-                            "list": [
-                                "Implement data structures like stacks, queues, linked lists and doubly linked lists"
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "week": 3,
-                    "description": "Two Basic Projects",
-                    "tasks": [
-                        {
-                            "type": "Project",
-                            "content": "Make a mini grep",
-                            "list": [
-                                "Try using grep yourself and implement different things"
-                            ],
-                            "urls": [
-                                "https://www.geeksforgeeks.org/grep-command-in-unixlinux/",
-                                "https://www.gnu.org/software/grep/manual/grep.html"
-                            ]
-                        },
-                        {
-                            "type": "Project",
-                            "content": "Implement your own hash table",
-                            "list": [
-                                "Learn about hash tables, collision management, hashing algorithms"
-                            ],
-                            "url": "https://github.com/jamesroutley/write-a-hash-table"
-                        }
-                    ]
-                },
-                {
-                    "week": 4,
-                    "description": "Final Project with C",
-                    "tasks": [
-                        {
-                            "type": "Project",
-                            "content": "Make a web server with C",
-                            "urls": [
-                                "https://github.com/namishh/webby",
-                                "https://beej.us/guide/bgnet/html/split/",
-                                "https://dev.to/jeffreythecoder/how-i-built-a-simple-http-server-from-scratch-using-c-739"
-                            ]
+                            "content": "Generics Explained",
+                            "url": "https://youtu.be/WpTKqnfp5dY?si=pqRNUHST1vdBRRuz"
                         },
                         {
                             "type": "Video",
-                            "content": "A Good Starting Point",
-                            "url": "https://www.youtube.com/watch?v=gk6NL1pZi1M"
+                            "content": "Building REST APIs in Go",
+                            "url": "https://www.youtube.com/watch?v=tgLvIghsJFo"
+                        },
+                        {
+                            "type": "Learning",
+                            "content": "Build Simple Projects",
+                            "list": [
+                                "Task Scheduler CLI: Create, manage and prioritize tasks with due dates. Learn user input, slices, and time handling",
+                                "Contact List API: Simple REST API to manage contacts. Includes listing, adding, viewing, and deleting contacts",
+                                "URL Shortener: CLI tool to create and manage short URL aliases. Store and retrieve URLs from a local file"
+                            ]
                         }
                     ]
                 }
