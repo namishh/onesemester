@@ -17,6 +17,7 @@
                     "tasks": [
                         {
                             "type": "Prerequisite",
+                            "content": "Do either of the following",
                             "list": [
                                 "Install linux",
                                 "If not possible, install and setup WSL"
