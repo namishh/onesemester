@@ -3,8 +3,8 @@ import React, { useState, useEffect, useRef, useMemo } from 'react';
 import { useRouter } from 'next/navigation';
 
 const searchData = {
-  web: (await import('@/app/data/web.json')).default,
-  low: (await import('@/app/data/low.json')).default
+  web: (await import('../data/web.json')).default,
+  low: (await import('../data/low.json')).default
 };
 
 const addToIndex = (word: string, item: any, index: Map<string, any[]>) => {
