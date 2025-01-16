@@ -257,7 +257,7 @@ const SearchBar = () => {
 						</svg>
 						<span className='text-xl'>Search...</span>
 					</div>
-					<span className="ml-2 border border-emerald-400 px-2 py-0.5">⌘ K</span>
+					<span className="ml-2 border text-lg border-emerald-400 px-2 py-0.5">SP F</span>
 				</button>
 			</div>
 
@@ -296,7 +296,6 @@ const SearchBar = () => {
 									</svg>
 								</button>
 							</div>
-
               {results.length > 0 && (
                 <div ref={resultsContainerRef} className="max-h-96 custom-scroll overflow-y-auto p-4">
                   {results.map((result, index) => (
