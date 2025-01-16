@@ -198,7 +198,7 @@ const SearchBar = () => {
 						setResults([]);
 					}} />
 
-					<div className="relative w-full sm:mx-4 mx-0 sm:mx-auto sm:max-w-2xl mt-20">
+					<div className="relative w-5/6 sm:mx-4 mx-auto sm:mx-auto sm:max-w-2xl mt-20">
 						<div className="bg-neutral-900 shadow-xl overflow-hidden">
 							<div className="relative">
 								<input
