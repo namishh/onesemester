@@ -9,6 +9,20 @@
   --foreground: #ededed;
 }
 
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animation-spin {
+  animation: spin 2s linear infinite;
+}
+
+
 body {
   color: var(--foreground);
   background: var(--background);
