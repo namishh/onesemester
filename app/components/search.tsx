@@ -27,10 +27,11 @@ const createSearchIndex = () => {
 
 	Object.entries(searchData).forEach(([path, data]) => {
 		data.months.forEach((month: any) => {
-			const processTask = (task: any) => {
+			const processTask = (task: any, weekNumber?: number | string) => {
 				const result = {
 					path,
 					month: month.month,
+					week: weekNumber, // Include the week number
 					lesson: data.lesson,
 					content: task.content,
 					type: task.type,
@@ -84,13 +85,13 @@ const createSearchIndex = () => {
 			if (month.weeks) {
 				month.weeks.forEach((week: Week) => {
 					if (week.tasks) {
-						week.tasks.forEach(processTask);
+						week.tasks.forEach(task => processTask(task, week.week)); // Pass the week number
 					}
 				});
 			}
 
 			if (month.tasks) {
-				month.tasks.forEach(processTask);
+				month.tasks.forEach((task: Task) => processTask(task)); // No week number for tasks directly under month
 			}
 		});
 	});
@@ -162,11 +163,15 @@ const SearchBar = () => {
 	}, [isOpen]);
 
 	const handleResultClick = (result: any) => {
-		router.push(`/${result.path}?m=${result.month}`);
+		if (result.week) {
+			location.assign(`/${result.path}?m=${result.month}&w=${result.week}`);
+		} else {
+			location.assign(`/${result.path}?m=${result.month}`);
+		}
 		setIsOpen(false);
 		setQuery('');
+		setResults([]);
 	};
-
 
 	return (
 		<>
@@ -187,9 +192,13 @@ const SearchBar = () => {
 
 			{isOpen && (
 				<div className="fixed inset-0 z-50">
-					<div className="fixed inset-0 bg-black/50" onClick={() => setIsOpen(false)} />
+					<div className="fixed inset-0 bg-black/50" onClick={() => {
+						setIsOpen(false)
+						setQuery('');
+						setResults([]);
+					}} />
 
-					<div className="relative w-full mx-4 sm:mx-auto sm:max-w-2xl mt-20">
+					<div className="relative w-full sm:mx-4 mx-0 sm:mx-auto sm:max-w-2xl mt-20">
 						<div className="bg-neutral-900 shadow-xl overflow-hidden">
 							<div className="relative">
 								<input
@@ -204,7 +213,11 @@ const SearchBar = () => {
 									className="w-full px-4 py-4 border-b border-neutral-700 text-emerald-300 text-xl bg-neutral-900 placeholder:text-neutral-500 focus:outline-none"
 								/>
 								<button
-									onClick={() => setIsOpen(false)}
+									onClick={() => {
+										setIsOpen(false)
+										setQuery('')
+										setResults([])
+									}}
 									className="absolute right-4 top-4 text-gray-400 hover:text-gray-600"
 								>
 									<svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -214,7 +227,7 @@ const SearchBar = () => {
 							</div>
 
 							{results.length > 0 && (
-								<div className="max-h-96 overflow-y-auto p-4">
+								<div className="max-h-96 custom-scroll overflow-y-auto p-4">
 									{results.map((result: any, index: number) => (
 										<button
 											key={index}
@@ -225,7 +238,7 @@ const SearchBar = () => {
 												{result.content}
 											</div>
 											<div className="mt-1 text-neutral-500">
-												{result.lesson} - Month {result.month}
+												{result.lesson} - Month {result.month}{result.week ? `, Week ${result.week}` : ''}
 											</div>
 										</button>
 									))}
