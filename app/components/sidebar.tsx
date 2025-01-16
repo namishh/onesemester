@@ -34,6 +34,9 @@ export default function Sidebar() {
                 <a href="/web"
                     className={`w-full block text-left p-2 transition-color bg-transparent hover:bg-neutral-800`}
                 >Web Dev</a>
+                <a href="/devops"
+                    className={`w-full block text-left p-2 transition-color bg-transparent hover:bg-neutral-800`}
+                >DevOps</a>
             </aside>
         </>
     );
