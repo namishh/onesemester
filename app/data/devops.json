@@ -716,50 +716,6 @@
                     ]
                 }
             ]
-        },
-        {
-            "month": 6,
-            "weeks": [
-                {
-                    "week": 1,
-                    "description": "Cloud Platforms Deep Dive",
-                    "tasks": [
-                        {
-                            "type": "Video",
-                            "content": "Cloud Platforms Comparison",
-                            "url": "https://www.youtube.com/watch?v=G9bw8NEV9IE"
-                        },
-                        {
-                            "type": "Learning",
-                            "content": "Cloud Services Deep Dive",
-                            "list": [
-                                "AWS Core Services (EC2, S3, RDS)",
-                                "GCP Main Services (Compute Engine, Cloud Storage)",
-                                "Azure Fundamentals (VM, Blob Storage)",
-                                "Multi-cloud Strategy and Management"
-                            ]
-                        },
-                        {
-                            "type": "Resource",
-                            "content": "Cloud Platform Guides",
-                            "list": [
-                                "AWS Well-Architected Framework",
-                                "GCP Architecture Framework",
-                                "Azure Architecture Center"
-                            ]
-                        },
-                        {
-                            "type": "Project",
-                            "content": "Multi-cloud Projects",
-                            "list": [
-                                "Deploy same app on different cloud providers",
-                                "Implement cloud-agnostic infrastructure",
-                                "Create multi-cloud monitoring setup"
-                            ]
-                        }
-                    ]
-                }
-            ]
         }
     ]
 }
