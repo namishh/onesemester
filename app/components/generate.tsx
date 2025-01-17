@@ -118,8 +118,7 @@ const Generate = ({ learningPlan, defaultMonth = 1, defaultWeek = 1 }: { learnin
                 {/* Sidebar with mobile responsive styles */}
                 <aside className={`
                     fixed md:relative top-0 left-0 h-full 
-                    w-64 md:w-48 p-2
-                    text-2xl 
+                    w-64 md:w-48                    text-2xl 
                     bg-neutral-950 md:bg-transparent
                     transform transition-transform duration-300 ease-in-out
                     md:translate-x-0 z-40
@@ -127,7 +126,7 @@ const Generate = ({ learningPlan, defaultMonth = 1, defaultWeek = 1 }: { learnin
                 `}>
 
                     <a href="/"
-                        className={`w-full block text-left p-2 transition-color bg-transparent hover:bg-neutral-800`}
+                        className={`w-full block text-left px-4 py-2 transition-color bg-transparent hover:bg-neutral-800`}
                     >Home</a>
                     {learningPlan.months.map((month) => (
                         <div key={month.month}>
@@ -136,7 +135,7 @@ const Generate = ({ learningPlan, defaultMonth = 1, defaultWeek = 1 }: { learnin
                                     setSelectedMonth(month.month);
                                     setExpandedMonth(expandedMonth === month.month ? null : month.month);
                                 }}
-                                className={`w-full text-left p-2 transition-colors ${selectedMonth === month.month
+                                className={`w-full text-left px-4 py-2 transition-colors ${selectedMonth === month.month
                                     ? 'bg-emerald-700 text-white'
                                     : 'bg-transparent hover:bg-neutral-800'
                                     }`}
@@ -167,6 +166,11 @@ const Generate = ({ learningPlan, defaultMonth = 1, defaultWeek = 1 }: { learnin
                             )}
                         </div>
                     ))}
+				<a href="https://github.com/namishh/semester"
+					className="border-t-[1px] border-neutral-700 w-full block text-left  px-4 py-2 transition-color bg-transparent hover:bg-neutral-800"
+				>
+					Github
+				</a>
                 </aside>
 
                 {/* Main content */}

@@ -18,7 +18,7 @@ export default function Sidebar() {
 
 			<aside className={`
                 fixed md:relative top-0 left-0 h-full 
-                w-64 md:w-48 p-2
+                w-64 md:w-48
                 text-2xl 
                 bg-neutral-950 md:bg-transparent
                 transform transition-transform duration-300 ease-in-out
@@ -26,24 +26,29 @@ export default function Sidebar() {
                 ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'}
             `}>
 				<a href="/"
-					className="w-full block text-left p-2 transition-color bg-transparent hover:bg-neutral-800"
+					className="w-full block text-left px-4 py-2 transition-color bg-transparent hover:bg-neutral-800"
 				>
 					Home
 				</a>
 				<a href="/"
-					className="w-full block text-left p-2 transition-color bg-transparent hover:bg-neutral-800"
+					className="w-full block text-left  px-4 py-2 transition-color bg-transparent hover:bg-neutral-800"
 				>
 					AI (soon)
 				</a>
 				<a href="/low"
-					className="w-full block text-left p-2 transition-color bg-transparent hover:bg-neutral-800"
+					className="w-full block text-left  px-4 py-2 transition-color bg-transparent hover:bg-neutral-800"
 				>
 					C // Rust
 				</a>
 				<a href="/web"
-					className="w-full block text-left p-2 transition-color bg-transparent hover:bg-neutral-800"
+					className="w-full block text-left  px-4 py-2 transition-color bg-transparent hover:bg-neutral-800"
 				>
 					Web Dev
+				</a>
+				<a href="https://github.com/namishh/semester"
+					className="w-full border-t-[1px] border-neutral-700 block text-left  px-4 py-2 transition-color bg-transparent hover:bg-neutral-800"
+				>
+					Github
 				</a>
 			</aside>
 		</>
