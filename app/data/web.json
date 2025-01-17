@@ -254,7 +254,7 @@
 					]
 				},
 				{
-					"week": "2 & 3",
+					"week": 2,
 					"description": "Starting with Backend",
 					"tasks": [
 						{
@@ -266,7 +266,13 @@
 							"type": "Resource",
 							"content": "ExpressJS Docs",
 							"url": "https://expressjs.com/en/guide/routing.html"
-						},
+						}
+					]
+				},
+				{
+					"week": 3,
+					"description": "2 Backend Projects",
+					"tasks": [
 						{
 							"type": "Project",
 							"image": "https://i.imgur.com/m87qXdv.png",
@@ -354,7 +360,7 @@
 							"url": "https://orm.drizzle.team/docs/tutorials"
 						},
 						{
-							"type" : "Video",
+							"type": "Video",
 							"content": "Drizzle Tutorial",
 							"url": "https://youtube.com/watch?v=vyU5mJGCJMw"
 						},
@@ -376,8 +382,8 @@
 					]
 				},
 				{
-					"week": "3 & 4",
-					"description": "Either of these two projects",
+					"week": "3",
+					"description": "Start with either of these two projects",
 					"tasks": [
 						{
 							"type": "Project",
@@ -390,6 +396,33 @@
 							"url": "https://garticphone.com/",
 							"content": "Hard: Gartic Phone Clone",
 							"image": "https://i.imgur.com/fzPuvvm.png"
+						},
+						{
+							"type": "Details",
+							"content": "Basic todo list. (modify to your needs)",
+							"list": [
+								"Obvious step: set up nextjs + drizzle project",
+								"Add a very basic canvas to draw on",
+								"Establish connection between two users in the form of rooms",
+								"Use websockets for real-time communication and update canvas"
+							]
+						}
+					]
+				},
+				{
+					"week": "4",
+					"description": "Continue with the final project",
+					"tasks": [
+						{
+							"type": "Details",
+							"content": "Finishing and polishing",
+							"list": [
+								"Create the game loop.",
+								"Implement a chat board and leaderboard (if skribbl)",
+								"Beautify the frontend",
+								"Make customisable random avatars",
+								"Make the canvas better with tools like eraser, color picker, undo/redo, thickness of pen, etc."
+							]
 						}
 					]
 				}
@@ -426,12 +459,12 @@
 					"url": "https://www.youtube.com/watch?v=UMqNHi1GDAE"
 				},
 				{
-					"type":"Video",
+					"type": "Video",
 					"content": "1 Hour Video For ThreeJS and Spline",
 					"url": "https://www.youtube.com/watch?v=3jgAcUKTyKw"
 				},
 				{
-					"type":"Video",
+					"type": "Video",
 					"content": "Building a 3D portfolio",
 					"url": "https://www.youtube.com/watch?v=kt0FrkQgw8w"
 				},
