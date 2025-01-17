@@ -382,7 +382,7 @@
 					]
 				},
 				{
-					"week": "3",
+					"week": 3,
 					"description": "Start with either of these two projects",
 					"tasks": [
 						{
@@ -410,7 +410,7 @@
 					]
 				},
 				{
-					"week": "4",
+					"week": 4,
 					"description": "Continue with the final project",
 					"tasks": [
 						{

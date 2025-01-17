@@ -293,7 +293,7 @@
             "month": 3,
             "weeks": [
                 {
-                    "week": "1", 
+                    "week": 1, 
                     "description": "Completing the book",
                     "tasks": [
                         {
