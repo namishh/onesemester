@@ -6,7 +6,7 @@ import lowData from '@/app/data/low.json';
 
 const searchData = {
 	web: webData,
-	low: lowData
+	low: lowData,
 };
 
 const addToIndex = (word: string, item: any, index: Map<string, any[]>) => {
@@ -19,7 +19,7 @@ const addToIndex = (word: string, item: any, index: Map<string, any[]>) => {
 const indexText = (text: string, item: any, index: Map<string, any[]>) => {
 	if (!text) return;
 	const words = text.toLowerCase().split(/\s+/);
-	words.forEach(word => addToIndex(word, item, index));
+	words.forEach((word) => addToIndex(word, item, index));
 };
 
 const createSearchIndex = () => {
@@ -36,7 +36,7 @@ const createSearchIndex = () => {
 					content: task.content,
 					type: task.type,
 					matchedField: '',
-					matchedText: ''
+					matchedText: '',
 				};
 
 				// Index all possible fields
@@ -83,15 +83,15 @@ const createSearchIndex = () => {
 			};
 
 			if (month.weeks) {
-				month.weeks.forEach((week: Week) => {
+				month.weeks.forEach((week: any) => {
 					if (week.tasks) {
-						week.tasks.forEach(task => processTask(task, week.week)); // Pass the week number
+						week.tasks.forEach((task: any) => processTask(task, week.week)); // Pass the week number
 					}
 				});
 			}
 
 			if (month.tasks) {
-				month.tasks.forEach((task: Task) => processTask(task)); // No week number for tasks directly under month
+				month.tasks.forEach((task: any) => processTask(task)); // No week number for tasks directly under month
 			}
 		});
 	});
@@ -102,8 +102,10 @@ const createSearchIndex = () => {
 const SearchBar = () => {
 	const [isOpen, setIsOpen] = useState(false);
 	const [query, setQuery] = useState('');
-	const [results, setResults] = useState<any>([]);
+	const [results, setResults] = useState<any[]>([]);
+	const [selectedIndex, setSelectedIndex] = useState(0);
 	const inputRef = useRef<HTMLInputElement>(null);
+	const resultsContainerRef = useRef<HTMLDivElement>(null);
 	const router = useRouter();
 
 	const searchIndex = useMemo(() => createSearchIndex(), []);
@@ -117,7 +119,7 @@ const SearchBar = () => {
 		const words = searchQuery.toLowerCase().split(/\s+/);
 		const resultMap = new Map();
 
-		words.forEach(word => {
+		words.forEach((word) => {
 			searchIndex.forEach((items, indexWord) => {
 				if (indexWord.includes(word)) {
 					items.forEach((item: any) => {
@@ -137,18 +139,39 @@ const SearchBar = () => {
 			.slice(0, 10);
 
 		setResults(sortedResults);
+		setSelectedIndex(0); // Reset selection when search results change
 	};
+
+	const isInputElement = (element: HTMLElement | null): boolean => {
+		if (!element) return false;
+
+		const tagName = element.tagName.toLowerCase();
+		return (
+			tagName === 'input' ||
+			tagName === 'textarea' ||
+			tagName === 'select' ||
+			element.isContentEditable
+		);
+	};
+
+	const lastBKeyPressTime = useRef<number>(0);
 
 	useEffect(() => {
 		const handleKeyDown = (e: KeyboardEvent) => {
-			if (e.key === 'k' && (e.metaKey || e.ctrlKey)) {
-				e.preventDefault();
-				setIsOpen(true);
-			}
 			if (e.key === 'Escape') {
 				setIsOpen(false);
 				setResults([]);
 				setQuery('');
+			}
+			if (isInputElement(e.target as HTMLElement)) return;
+			if (e.key === ' ') {
+				lastBKeyPressTime.current = Date.now();
+			} else if (e.key === 'f') {
+				const currentTime = Date.now();
+				if (currentTime - lastBKeyPressTime.current < 300) {
+					e.preventDefault();
+					setIsOpen(true);
+				}
 			}
 		};
 
@@ -162,11 +185,59 @@ const SearchBar = () => {
 		}
 	}, [isOpen]);
 
+	useEffect(() => {
+		const handleArrowKeys = (e: KeyboardEvent) => {
+			if (isOpen) {
+				if (e.key === 'ArrowDown') {
+					e.preventDefault();
+					setSelectedIndex((prev) => (prev + 1) % results.length);
+				} else if (e.key === 'ArrowUp') {
+					e.preventDefault();
+					setSelectedIndex((prev) => (prev - 1 + results.length) % results.length);
+				} else if (e.key === 'Enter') {
+					e.preventDefault();
+					if (results[selectedIndex]) {
+						handleResultClick(results[selectedIndex]);
+					}
+				}
+			}
+		};
+
+		document.addEventListener('keydown', handleArrowKeys);
+		return () => document.removeEventListener('keydown', handleArrowKeys);
+	}, [isOpen, results, selectedIndex]);
+
+	// Auto-scroll to the selected item
+	useEffect(() => {
+		if (resultsContainerRef.current && results.length > 0) {
+			const selectedItem = resultsContainerRef.current.children[selectedIndex] as HTMLElement;
+			if (selectedItem) {
+				const container = resultsContainerRef.current;
+				const itemTop = selectedItem.offsetTop;
+				const itemBottom = itemTop + selectedItem.offsetHeight;
+				const containerTop = container.scrollTop;
+				const containerBottom = containerTop + container.clientHeight;
+
+				if (itemTop < containerTop + 80) {
+					container.scrollTo({
+						top: itemTop - 80,
+						behavior: 'smooth',
+					});
+				} else if (itemBottom > containerBottom) {
+					container.scrollTo({
+						top: itemBottom - container.clientHeight,
+						behavior: 'smooth',
+					});
+				}
+			}
+		}
+	}, [selectedIndex, results]);
+
 	const handleResultClick = (result: any) => {
 		if (result.week) {
-			location.assign(`/${result.path}?m=${result.month}&w=${result.week}`);
+			router.push(`/${result.path}?m=${result.month}&w=${result.week}`);
 		} else {
-			location.assign(`/${result.path}?m=${result.month}`);
+			router.push(`/${result.path}?m=${result.month}`);
 		}
 		setIsOpen(false);
 		setQuery('');
@@ -186,7 +257,7 @@ const SearchBar = () => {
 						</svg>
 						<span className='text-xl'>Search...</span>
 					</div>
-					<span className="ml-2 border border-emerald-400 px-2 py-0.5">⌘ K</span>
+					<span className="ml-2 border text-lg border-emerald-400 px-2 py-0.5">SP F</span>
 				</button>
 			</div>
 
@@ -198,7 +269,7 @@ const SearchBar = () => {
 						setResults([]);
 					}} />
 
-					<div className="relative w-full sm:mx-4 mx-0 sm:mx-auto sm:max-w-2xl mt-20">
+					<div className="relative w-5/6 sm:mx-4 mx-auto sm:mx-auto sm:max-w-2xl mt-20">
 						<div className="bg-neutral-900 shadow-xl overflow-hidden">
 							<div className="relative">
 								<input
@@ -225,25 +296,25 @@ const SearchBar = () => {
 									</svg>
 								</button>
 							</div>
-
-							{results.length > 0 && (
-								<div className="max-h-96 custom-scroll overflow-y-auto p-4">
-									{results.map((result: any, index: number) => (
-										<button
-											key={index}
-											onClick={() => handleResultClick(result)}
-											className="w-full text-xl p-4 text-left hover:bg-neutral-800 text-white group"
-										>
-											<div className="font-medium text-emerald-500">
-												{result.content}
-											</div>
-											<div className="mt-1 text-neutral-500">
-												{result.lesson} - Month {result.month}{result.week ? `, Week ${result.week}` : ''}
-											</div>
-										</button>
-									))}
-								</div>
-							)}
+              {results.length > 0 && (
+                <div ref={resultsContainerRef} className="max-h-96 custom-scroll overflow-y-auto p-4">
+                  {results.map((result, index) => (
+                    <button
+                      key={index}
+                      onClick={() => handleResultClick(result)}
+                      className={`w-full text-xl p-4 text-left hover:bg-neutral-800 ${
+                        index === selectedIndex ? 'bg-neutral-800' : ''
+                      } text-white group`}
+                    >
+                      <div className="font-medium text-emerald-500">{result.content}</div>
+                      <div className="mt-1 text-neutral-500">
+                        {result.lesson} - Month {result.month}
+                        {result.week ? `, Week ${result.week}` : ''}
+                      </div>
+                    </button>
+                  ))}
+                </div>
+              )}
 						</div>
 					</div>
 				</div>

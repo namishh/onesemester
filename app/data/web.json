@@ -28,7 +28,7 @@
 						{
 							"type": "Project",
 							"content": "Clone the landing page of x dot com",
-							"image": "https://i.imgur.com/GqE3rC7.png",
+							"image": "https://i.imgur.com/GqE3rC7.webp",
 							"details": {
 								"features": [
 									"Use flexbox and grid",
@@ -60,7 +60,7 @@
 						{
 							"type": "Project",
 							"content": "Clone the landing page of weglot dot com",
-							"image": "https://i.imgur.com/85Bt5wb.png"
+							"image": "https://i.imgur.com/85Bt5wb.webp"
 						}
 					]
 				},
@@ -95,7 +95,7 @@
 						{
 							"type": "Project",
 							"content": "24/7 Lofi Radio Website",
-							"image": "https://i.imgur.com/qv3Lkkl.png",
+							"image": "https://i.imgur.com/qv3Lkkl.webp",
 							"details": {
 								"examples": [
 									"https://cafe.namishh.me",
@@ -111,13 +111,13 @@
 						{
 							"type": "Project",
 							"content": "Frontend Clone of iPad Pro Website",
-							"image": "https://i.imgur.com/tRagYjM.png",
+							"image": "https://i.imgur.com/tRagYjM.webp",
 							"url": "https://www.apple.com/in/ipad-pro/"
 						},
 						{
 							"type": "Project",
 							"content": "A Hackernews Frontend",
-							"image": "https://i.imgur.com/sGCXhz4.png",
+							"image": "https://i.imgur.com/sGCXhz4.webp",
 							"details": {
 								"examples": [
 									"https://hacknio.vercel.app"
@@ -157,7 +157,7 @@
 						},
 						{
 							"type": "Project",
-							"image": "https://i.imgur.com/9MsMV9R.png",
+							"image": "https://i.imgur.com/9MsMV9R.webp",
 							"content": "Colorscheme Generator",
 							"details": {
 								"examples": [
@@ -167,7 +167,7 @@
 						},
 						{
 							"type": "Project",
-							"image": "https://i.imgur.com/eAZfH0a.png",
+							"image": "https://i.imgur.com/eAZfH0a.webp",
 							"content": "Desktop As A Website",
 							"details": {
 								"features": [
@@ -254,7 +254,7 @@
 					]
 				},
 				{
-					"week": "2 & 3",
+					"week": 2,
 					"description": "Starting with Backend",
 					"tasks": [
 						{
@@ -266,10 +266,16 @@
 							"type": "Resource",
 							"content": "ExpressJS Docs",
 							"url": "https://expressjs.com/en/guide/routing.html"
-						},
+						}
+					]
+				},
+				{
+					"week": 3,
+					"description": "2 Backend Projects",
+					"tasks": [
 						{
 							"type": "Project",
-							"image": "https://i.imgur.com/m87qXdv.png",
+							"image": "https://i.imgur.com/m87qXdv.webp",
 							"content": "A template to host your own hunt/quiz",
 							"details": {
 								"features": [
@@ -340,7 +346,7 @@
 							"type": "Project",
 							"content": "Clone a habit tracking app",
 							"url": "https://habits.sh",
-							"image": "https://i.imgur.com/WwaGme3.png"
+							"image": "https://i.imgur.com/WwaGme3.webp"
 						}
 					]
 				},
@@ -354,7 +360,7 @@
 							"url": "https://orm.drizzle.team/docs/tutorials"
 						},
 						{
-							"type" : "Video",
+							"type": "Video",
 							"content": "Drizzle Tutorial",
 							"url": "https://youtube.com/watch?v=vyU5mJGCJMw"
 						},
@@ -376,8 +382,8 @@
 					]
 				},
 				{
-					"week": "3 & 4",
-					"description": "Either of these two projects",
+					"week": 3,
+					"description": "Start with either of these two projects",
 					"tasks": [
 						{
 							"type": "Project",
@@ -389,7 +395,34 @@
 							"type": "Project",
 							"url": "https://garticphone.com/",
 							"content": "Hard: Gartic Phone Clone",
-							"image": "https://i.imgur.com/fzPuvvm.png"
+							"image": "https://i.imgur.com/fzPuvvm.webp"
+						},
+						{
+							"type": "Details",
+							"content": "Basic todo list. (modify to your needs)",
+							"list": [
+								"Obvious step: set up nextjs + drizzle project",
+								"Add a very basic canvas to draw on",
+								"Establish connection between two users in the form of rooms",
+								"Use websockets for real-time communication and update canvas"
+							]
+						}
+					]
+				},
+				{
+					"week": 4,
+					"description": "Continue with the final project",
+					"tasks": [
+						{
+							"type": "Details",
+							"content": "Finishing and polishing",
+							"list": [
+								"Create the game loop.",
+								"Implement a chat board and leaderboard (if skribbl)",
+								"Beautify the frontend",
+								"Make customisable random avatars",
+								"Make the canvas better with tools like eraser, color picker, undo/redo, thickness of pen, etc."
+							]
 						}
 					]
 				}
@@ -426,31 +459,31 @@
 					"url": "https://www.youtube.com/watch?v=UMqNHi1GDAE"
 				},
 				{
-					"type":"Video",
+					"type": "Video",
 					"content": "1 Hour Video For ThreeJS and Spline",
 					"url": "https://www.youtube.com/watch?v=3jgAcUKTyKw"
 				},
 				{
-					"type":"Video",
+					"type": "Video",
 					"content": "Building a 3D portfolio",
 					"url": "https://www.youtube.com/watch?v=kt0FrkQgw8w"
 				},
 				{
 					"type": "Project",
 					"content": "Clone Website #1",
-					"image": "https://i.imgur.com/ZuzsIRd.png",
+					"image": "https://i.imgur.com/ZuzsIRd.webp",
 					"url": "https://bachoodesign.com/"
 				},
 				{
 					"type": "Project",
 					"content": "Clone Website #2",
-					"image": "https://i.imgur.com/Fh0T5GE.png",
+					"image": "https://i.imgur.com/Fh0T5GE.webp",
 					"url": "https://opos.buzzworthystudio.com/"
 				},
 				{
 					"type": "Project",
 					"content": "Clone Website #3",
-					"image": "https://i.imgur.com/FDf4ySX.png",
+					"image": "https://i.imgur.com/FDf4ySX.webp",
 					"url": "https://www.monks.com/"
 				}
 			]
@@ -461,7 +494,7 @@
 				{
 					"type": "Project",
 					"content": "The Ultimatum: Your own image editor.",
-					"image": "https://i.imgur.com/MiaYlE7.png",
+					"image": "https://i.imgur.com/MiaYlE7.webp",
 					"list": [
 						"Import images, export selections or whole canvas",
 						"Crop images",

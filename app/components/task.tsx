@@ -1,4 +1,6 @@
 import { Accordion } from "./accordian";
+import Image from 'next/image'
+
 
 export const TaskComponent = ({ task, className = "" }: { task: Task; className?: string }) => {
     const getYouTubeId = (url: string) => {
@@ -17,9 +19,9 @@ export const TaskComponent = ({ task, className = "" }: { task: Task; className?
                     <iframe
                         width="100%"
                         height="315"
+                        loading="lazy"
                         src={`https://www.youtube.com/embed/${getYouTubeId(task.url)}`}
                         title={task.content}
-                        frameBorder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowFullScreen
                         className="mb-4"
@@ -52,11 +54,14 @@ export const TaskComponent = ({ task, className = "" }: { task: Task; className?
                 />
             )}
             {task.images && task.images.map((image, idx) => (
-                <img
+                <Image
                     key={idx}
                     src={image}
+                    loading="lazy"
                     alt={task.content}
                     className="p-4"
+                    quality={50}
+                    fill
                 />
             ))}
             {task.urls && task.urls.map((url, idx) => (

@@ -293,7 +293,7 @@
             "month": 3,
             "weeks": [
                 {
-                    "week": "1", 
+                    "week": 1, 
                     "description": "Completing the book",
                     "tasks": [
                         {
@@ -363,19 +363,19 @@
                         "type": "Project", 
                         "content": "The Snake Game",
                         "url": "https://snakegame.org/",
-                        "image": "https://i.imgur.com/8rUsMRp.png"
+                        "image": "https://i.imgur.com/8rUsMRp.webp"
                        },
                        {
                         "type": "Project", 
                         "content": "Asteroids",
                         "url": "https://www.echalk.co.uk/amusements/Games/asteroidsClassic/ateroids.html",
-                        "image": "https://i.imgur.com/6tVrK4r.png"
+                        "image": "https://i.imgur.com/6tVrK4r.webp"
                        },
                        {
                         "type": "Project", 
                         "content": "Galaga Clone",
                         "url": "https://www.retrogames.cz/play_018-NES.php",
-                        "image": "https://i.imgur.com/4hg8lIc.png"
+                        "image": "https://i.imgur.com/4hg8lIc.webp"
                        }
                     ]
                 },
@@ -436,7 +436,7 @@
                         "Render easy stuff such as chemistry compounds, BCC, FCC structures",
                         "Bonus: Render Liquids and Light"
                     ],
-                    "image": "https://i.imgur.com/6z103YE.png",
+                    "image": "https://i.imgur.com/6z103YE.webp",
                     "urls": [
                         "https://docs.rs/nalgebra/latest/nalgebra/",
                         "https://docs.rs/wasm-bindgen/latest/wasm_bindgen/",

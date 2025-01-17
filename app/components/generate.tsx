@@ -1,11 +1,25 @@
 "use client";
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import { TaskComponent } from './task';
 
 const Generate = ({ learningPlan, defaultMonth = 1, defaultWeek = 1 }: { learningPlan: LearningPlan, defaultMonth?: number, defaultWeek?: number }) => {
     const [selectedMonth, setSelectedMonth] = useState<number>(defaultMonth);
     const [expandedMonth, setExpandedMonth] = useState<number | null>(defaultMonth);
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+    const currentWeekRef = useRef<number>(1);
+
+    const lastBKeyPressTime = useRef<number>(0);
+
+    const isInputElement = (element: HTMLElement | null): boolean => {
+        if (!element) return false;
+        const tagName = element.tagName.toLowerCase();
+        return (
+            tagName === 'input' ||
+            tagName === 'textarea' ||
+            tagName === 'select' ||
+            element.isContentEditable
+        );
+    };
 
     const scrollToWeek = (weekId: string) => {
         const element = document.getElementById(weekId);
@@ -13,13 +27,82 @@ const Generate = ({ learningPlan, defaultMonth = 1, defaultWeek = 1 }: { learnin
             element.scrollIntoView({ behavior: 'smooth' });
         }
         setIsSidebarOpen(false);
-    }; 
+    };
+
+    const moveToAdjacentWeek = (direction: 'prev' | 'next') => {
+        const currentMonth = learningPlan.months.find(m => m.month === selectedMonth);
+        if (!currentMonth?.weeks) return;
+
+        const maxWeeks = currentMonth.weeks.length;
+        let nextWeek = currentWeekRef.current;
+
+        if (direction === 'next' && nextWeek < maxWeeks) {
+            nextWeek += 1;
+        } else if (direction === 'prev' && nextWeek > 1) {
+            nextWeek -= 1;
+        }
+
+        if (nextWeek !== currentWeekRef.current) {
+            currentWeekRef.current = nextWeek;
+            scrollToWeek(`week-${selectedMonth}-${nextWeek}`);
+        }
+    };
+
+
+    const changeMonth = (direction: 'prev' | 'next') => {
+        const monthIndex = learningPlan.months.findIndex(m => m.month === selectedMonth);
+        if (direction === 'next' && monthIndex < learningPlan.months.length - 1) {
+            setSelectedMonth(learningPlan.months[monthIndex + 1].month);
+        } else if (direction === 'prev' && monthIndex > 0) {
+            setSelectedMonth(learningPlan.months[monthIndex - 1].month);
+        }
+    };
 
     useEffect(() => {
         if (defaultWeek) {
             scrollToWeek(`week-${defaultMonth}-${defaultWeek}`);
         }
-    })
+
+        const handleKeyDown = (event: KeyboardEvent) => {
+            // Check if we're in an input element
+            const target = event.target as HTMLElement;
+            if (isInputElement(target)) {
+                return;
+            }
+
+            // Handle 'bd' combination for going back to home
+            if (event.key === 'b') {
+                lastBKeyPressTime.current = Date.now();
+            } else if (event.key === 'd') {
+                const currentTime = Date.now();
+                if (currentTime - lastBKeyPressTime.current < 300) {
+                    window.location.href = '/';
+                }
+            }
+
+            // Prevent default for our navigation keys
+            if (['{', '}', 'h', 'l'].includes(event.key)) {
+                event.preventDefault();
+            }
+
+            // Handle week navigation
+            if (event.key === '{') {
+                moveToAdjacentWeek('prev');
+            } else if (event.key === '}') {
+                moveToAdjacentWeek('next');
+            }
+
+            // Handle month navigation
+            if (event.key === 'h') {
+                changeMonth('prev');
+            } else if (event.key === 'l') {
+                changeMonth('next');
+            }
+        };
+
+        window.addEventListener('keydown', handleKeyDown);
+        return () => window.removeEventListener('keydown', handleKeyDown);
+    }, [defaultWeek, defaultMonth, selectedMonth]);
 
     return (
         <div className="flex flex-col min-h-screen items-center justify-center relative">
@@ -35,8 +118,7 @@ const Generate = ({ learningPlan, defaultMonth = 1, defaultWeek = 1 }: { learnin
                 {/* Sidebar with mobile responsive styles */}
                 <aside className={`
                     fixed md:relative top-0 left-0 h-full 
-                    w-64 md:w-48 p-2
-                    text-2xl 
+                    w-64 md:w-48                    text-2xl 
                     bg-neutral-950 md:bg-transparent
                     transform transition-transform duration-300 ease-in-out
                     md:translate-x-0 z-40
@@ -44,7 +126,7 @@ const Generate = ({ learningPlan, defaultMonth = 1, defaultWeek = 1 }: { learnin
                 `}>
 
                     <a href="/"
-                        className={`w-full block text-left p-2 transition-color bg-transparent hover:bg-neutral-800`}
+                        className={`w-full block text-left px-4 py-2 transition-color bg-transparent hover:bg-neutral-800`}
                     >Home</a>
                     {learningPlan.months.map((month) => (
                         <div key={month.month}>
@@ -53,9 +135,9 @@ const Generate = ({ learningPlan, defaultMonth = 1, defaultWeek = 1 }: { learnin
                                     setSelectedMonth(month.month);
                                     setExpandedMonth(expandedMonth === month.month ? null : month.month);
                                 }}
-                                className={`w-full text-left p-2 transition-colors ${selectedMonth === month.month
-                                        ? 'bg-emerald-700 text-white'
-                                        : 'bg-transparent hover:bg-neutral-800'
+                                className={`w-full text-left px-4 py-2 transition-colors ${selectedMonth === month.month
+                                    ? 'bg-emerald-700 text-white'
+                                    : 'bg-transparent hover:bg-neutral-800'
                                     }`}
                             >
                                 <div className="flex items-center justify-between">
@@ -84,6 +166,11 @@ const Generate = ({ learningPlan, defaultMonth = 1, defaultWeek = 1 }: { learnin
                             )}
                         </div>
                     ))}
+				<a href="https://github.com/namishh/semester"
+					className="border-t-[1px] border-neutral-700 w-full block text-left  px-4 py-2 transition-color bg-transparent hover:bg-neutral-800"
+				>
+					Github
+				</a>
                 </aside>
 
                 {/* Main content */}
