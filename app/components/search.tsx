@@ -1,6 +1,5 @@
 "use client";
 import React, { useState, useEffect, useRef, useMemo } from 'react';
-import { useRouter } from 'next/navigation';
 import webData from '@/app/data/web.json';
 import lowData from '@/app/data/low.json';
 import devopsData from '@/app/data/devops.json';
@@ -108,7 +107,6 @@ const SearchBar = () => {
 	const [selectedIndex, setSelectedIndex] = useState(0);
 	const inputRef = useRef<HTMLInputElement>(null);
 	const resultsContainerRef = useRef<HTMLDivElement>(null);
-	const router = useRouter();
 
 	const searchIndex = useMemo(() => createSearchIndex(), []);
 
@@ -235,16 +233,19 @@ const SearchBar = () => {
 		}
 	}, [selectedIndex, results]);
 
-	const handleResultClick = (result: any) => {
-		if (result.week) {
-			router.push(`/${result.path}?m=${result.month}&w=${result.week}`);
-		} else {
-			router.push(`/${result.path}?m=${result.month}`);
-		}
-		setIsOpen(false);
-		setQuery('');
-		setResults([]);
-	};
+  const handleResultClick = (result: any) => {
+    const baseUrl = `/${result.path}`;
+    const queryString = result.week 
+      ? `?m=${result.month}&w=${result.week}`
+      : `?m=${result.month}`;
+
+    window.location.href = baseUrl + queryString;
+
+    setIsOpen(false);
+    setQuery('');
+    setResults([]);
+  };
+
 
 	return (
 		<>
@@ -298,25 +299,24 @@ const SearchBar = () => {
 									</svg>
 								</button>
 							</div>
-              {results.length > 0 && (
-                <div ref={resultsContainerRef} className="max-h-96 custom-scroll overflow-y-auto p-4">
-                  {results.map((result, index) => (
-                    <button
-                      key={index}
-                      onClick={() => handleResultClick(result)}
-                      className={`w-full text-xl p-4 text-left hover:bg-neutral-800 ${
-                        index === selectedIndex ? 'bg-neutral-800' : ''
-                      } text-white group`}
-                    >
-                      <div className="font-medium text-emerald-500">{result.content}</div>
-                      <div className="mt-1 text-neutral-500">
-                        {result.lesson} - Month {result.month}
-                        {result.week ? `, Week ${result.week}` : ''}
-                      </div>
-                    </button>
-                  ))}
-                </div>
-              )}
+							{results.length > 0 && (
+								<div ref={resultsContainerRef} className="max-h-96 custom-scroll overflow-y-auto p-4">
+									{results.map((result, index) => (
+										<button
+											key={index}
+											onClick={() => handleResultClick(result)}
+											className={`w-full text-xl p-4 text-left hover:bg-neutral-800 ${index === selectedIndex ? 'bg-neutral-800' : ''
+												} text-white group`}
+										>
+											<div className="font-medium text-emerald-500">{result.content}</div>
+											<div className="mt-1 text-neutral-500">
+												{result.lesson} - Month {result.month}
+												{result.week ? `, Week ${result.week}` : ''}
+											</div>
+										</button>
+									))}
+								</div>
+							)}
 						</div>
 					</div>
 				</div>
