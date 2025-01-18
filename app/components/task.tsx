@@ -16,7 +16,7 @@ export const TaskComponent = ({ task, className = "", monthId,
         const match = url.match(regExp);
         return (match && match[2].length === 11) ? match[2] : null;
     };
-    
+
     const { isTaskComplete, toggleTask } = useProgress();
     const completed = isTaskComplete(monthId, weekId, taskIndex);
   
@@ -45,7 +45,7 @@ export const TaskComponent = ({ task, className = "", monthId,
                 htmlFor={`task-${monthId}-${weekId}-${taskIndex}`}
                 className="inline mr-4"
             >
-                {completed ? <svg fill="none" xmlns="http://www.w3.org/2000/svg" className="text-emerald-500 h-6 w-6" viewBox="0 0 24 24"> <path d="M5 3H3v18h18V3H5zm0 2h14v14H5V5zm4 7H7v2h2v2h2v-2h2v-2h2v-2h2V8h-2v2h-2v2h-2v2H9v-2z" fill="currentColor"/> </svg> : <svg fill="none" xmlns="http://www.w3.org/2000/svg" className="text-neutral-400 h-6 w-6" viewBox="0 0 24 24"> <path d="M3 3h18v18H3V3zm16 16V5H5v14h14z" fill="currentColor"/> </svg>}
+                {completed ? <svg fill="none" xmlns="http://www.w3.org/2000/svg" className="cursor-pointer text-emerald-500 h-6 w-6" viewBox="0 0 24 24"> <path d="M5 3H3v18h18V3H5zm0 2h14v14H5V5zm4 7H7v2h2v2h2v-2h2v-2h2v-2h2V8h-2v2h-2v2h-2v2H9v-2z" fill="currentColor"/> </svg> : <svg fill="none" xmlns="http://www.w3.org/2000/svg" className="text-neutral-400 h-6 w-6 cursor-pointer" viewBox="0 0 24 24"> <path d="M3 3h18v18H3V3zm16 16V5H5v14h14z" fill="currentColor"/> </svg>}
             </label>
             <span>
                {task.type.charAt(0).toUpperCase() + task.type.slice(1)}: {task.content}

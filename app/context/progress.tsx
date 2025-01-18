@@ -25,7 +25,6 @@ export function ProgressProvider({
   const [progress, setProgress] = useState<TaskProgress[]>([]);
   const [isInitialized, setIsInitialized] = useState(false);
 
-  // Load initial state from localStorage
   useEffect(() => {
     const loadProgress = () => {
       try {
@@ -92,7 +91,7 @@ export function ProgressProvider({
   };
 
   if (!isInitialized) {
-    return null; // Or a loading spinner if you prefer
+    return null;
   }
 
   return (
