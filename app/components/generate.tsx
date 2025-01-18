@@ -95,8 +95,10 @@ const Generate = ({ learningPlan, defaultMonth = 1, defaultWeek = 1 }: { learnin
 			// Handle month navigation
 			if (event.key === 'h') {
 				changeMonth('prev');
+				window.scrollTo({ top: 0, behavior: 'smooth' })
 			} else if (event.key === 'l') {
 				changeMonth('next');
+				window.scrollTo({ top: 0, behavior: 'smooth' })
 			}
 		};
 
