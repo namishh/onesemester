@@ -197,8 +197,39 @@
 				},
 				{
 					"week": 2,
-					"description": "Advanced DevOps with Go",
+					"description": "Advanced DevOps with Go & Docker",
 					"tasks": [
+						{
+							"type": "Video",
+							"content": "Docker Crash Course by TechWorld with Nana",
+							"url": "https://youtu.be/pg19Z8LL06w"
+						},
+						{
+							"type": "Learning",
+							"content": "Docker Fundamentals",
+							"list": [
+								"Docker Installation and Setup",
+								"Building Docker Images",
+								"Docker Compose",
+								"Docker Networking",
+								"Docker Best Practices"
+							]
+						},
+						{
+							"type": "Video",
+							"content": "AWS EC2 Complete Tutorial",
+							"url": "https://youtu.be/8TlukLu11Yo"
+						},
+						{
+							"type": "Learning",
+							"content": "Cloud Server Setup",
+							"list": [
+								"Setting up AWS EC2/Digital Ocean Droplet",
+								"Basic Server Security",
+								"Domain and SSL Configuration",
+								"Deploying Applications"
+							]
+						},
 						{
 							"type": "Video",
 							"content": "Building Kubernetes Operators with Go",
@@ -208,6 +239,8 @@
 							"type": "Learning",
 							"content": "Advanced Projects",
 							"list": [
+								"Containerize a Go Application",
+								"Deploy to AWS/Digital Ocean",
 								"Build a Kubernetes Operator in Go",
 								"Create a Monitoring System with Prometheus",
 								"Implement a Service Mesh Controller"
