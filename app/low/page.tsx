@@ -1,9 +1,10 @@
-// low/page.tsx
 "use client";
 import Generate from "../components/generate";
 import { useEffect, useState } from "react";
 import data from "@/app/data/low.json"
 import { ProgressProvider } from "../context/progress";
+import ProgressBar from "../components/progressbar";
+import { calculateTotalTasks } from "../utils/util";
 
 const Low = () => {
     const [month, setMonth] = useState<number>(0);
@@ -24,6 +25,7 @@ const Low = () => {
     }
 
     return <ProgressProvider roadmapId="low">
+     <ProgressBar total={calculateTotalTasks(data)}/>
      <Generate learningPlan={data} defaultMonth={month} defaultWeek={week} />;
     </ProgressProvider>;
 };

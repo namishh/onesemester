@@ -23,7 +23,7 @@ export const metadata: Metadata = {
         url: 'https://i.imgur.com/AjiMYsf.png',
         width: 1800,
         height: 1600,
-        alt: 'Low-Level Programming Roadmap Preview',
+        alt: 'Devops and Systems Design Roadmap Preview',
       },
     ],
   }

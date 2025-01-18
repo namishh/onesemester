@@ -12,6 +12,10 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      transitionProperty: {
+        'width': 'width'
+    },
+
     },
   },
   plugins: [],

@@ -3,6 +3,8 @@ import Generate from "../components/generate";
 import { useEffect, useState } from "react";
 import data from "@/app/data/devops.json"
 import { ProgressProvider } from "../context/progress";
+import ProgressBar from "../components/progressbar";
+import { calculateTotalTasks } from "../utils/util";
 
 const Devops = () => {
     const [month, setMonth] = useState<number>(0);
@@ -23,6 +25,7 @@ const Devops = () => {
     }
 
     return <ProgressProvider roadmapId="devops">
+        <ProgressBar total={calculateTotalTasks(data)}/>
         <Generate learningPlan={data} defaultMonth={month} defaultWeek={week} />;
     </ProgressProvider>;
 };
