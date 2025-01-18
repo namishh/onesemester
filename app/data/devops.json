@@ -35,13 +35,13 @@
                         },
                         {
                             "type": "Video",
-                            "content": "Go for Beginners",
-                            "url": "https://youtu.be/yyUHQIec83I?si=pjqP0dWUNVVjI-pF"
+                            "content": "Go for Beginners by TechWorld with Nana",
+                            "url": "https://youtu.be/yyUHQIec83I"
                         },
                         {
                             "type": "Video",
-                            "content": "Generics Explained",
-                            "url": "https://youtu.be/WpTKqnfp5dY?si=pqRNUHST1vdBRRuz"
+                            "content": "Go Generics Explained by TechWorld with Nana",
+                            "url": "https://youtu.be/WpTKqnfp5dY"
                         },
                         {
                             "type": "Project",
@@ -60,8 +60,8 @@
                     "tasks": [
                         {
                             "type": "Video",
-                            "content": "Go Data Structures and Algorithms",
-                            "url": "https://www.youtube.com/watch?v=YS4e4q9oBaU"
+                            "content": "Go Programming (Golang) Full Course by freeCodeCamp",
+                            "url": "https://youtu.be/YS4e4q9oBaU"
                         },
                         {
                             "type": "Learning",
@@ -95,8 +95,8 @@
                     "tasks": [
                         {
                             "type": "Video",
-                            "content": "Go Concurrency Patterns (Google I/O 2012)",
-                            "url": "https://www.youtube.com/watch?v=f6kdp27TYZs"
+                            "content": "Go Concurrency Patterns by Rob Pike",
+                            "url": "https://youtu.be/f6kdp27TYZs"
                         },
                         {
                             "type": "Learning",
@@ -177,8 +177,8 @@
                         },
                         {
                             "type": "Video",
-                            "content": "20 System Design Concepts by Neetcode",
-                            "url": "https://www.youtube.com/watch?v=i53Gi_K3o7I"
+                            "content": "20 System Design Concepts Explained by NeetCode",
+                            "url": "https://youtu.be/i53Gi_K3o7I"
                         },
                         {
                             "type": "Learning",
@@ -210,8 +210,8 @@
                     "tasks": [
                         {
                             "type": "Video",
-                            "content": "Kubernetes & Go",
-                            "url": "https://www.youtube.com/watch?v=QIMz4V9WxVc"
+                            "content": "Building Kubernetes Operators with Go",
+                            "url": "https://youtu.be/QIMz4V9WxVc"
                         },
                         {
                             "type": "Learning",
@@ -239,9 +239,14 @@
                     "description": "Distributed Systems",
                     "tasks": [
                         {
+                            "type":"Textual Resource",
+                            "content": "Distributed Systems in Go",
+                            "url": "https://go.dev/talks/2013/distsys.slide#1"
+                        },
+                        {
                             "type": "Video",
                             "content": "Distributed Systems in Go",
-                            "url": "https://www.youtube.com/watch?v=QsDcH6g5Yoo"
+                            "url": "https://www.youtube.com/watch?v=ezaCIoOTTrY"
                         },
                         {
                             "type": "Learning",
@@ -299,10 +304,9 @@
                             "type": "Resource",
                             "content": "Cloud Service Models Overview",
                             "list": [
-                                "IaaS Examples: AWS EC2, DigitalOcean Droplets, Linode",
-                                "PaaS Examples: Heroku, Google App Engine, Render",
-                                "VPS Providers: DigitalOcean, Linode, Vultr",
-                                "Serverless: AWS Lambda, Vercel, Netlify"
+                                "IaaS Examples: AWS EC2 (aws.amazon.com/ec2), DigitalOcean Droplets (digitalocean.com), Linode (linode.com)",
+                                "PaaS Examples: Zerops (zerops.io), Fly.io (fly.io), Google App Engine (cloud.google.com/appengine), Render (render.com)",
+                                "Serverless: AWS Lambda (aws.amazon.com/lambda), Vercel (vercel.com), Netlify (netlify.com)"
                             ]
                         },
                         {
@@ -317,8 +321,8 @@
                         },
                         {
                             "type": "Video",
-                            "content": "Cloud Native Go",
-                            "url": "https://www.youtube.com/watch?v=G4SWt-_c4Jw"
+                            "content": "Cloud Native Go Development",
+                            "url": "https://www.youtube.com/watch?v=fuHGzQcOeDI&t=180s&pp=ygUbQ2xvdWQgTmF0aXZlIEdvIERldmVsb3BtZW50"
                         },
                         {
                             "type": "Learning",
@@ -327,7 +331,8 @@
                                 "Container Orchestration with Kubernetes",
                                 "Service Mesh Implementation",
                                 "Cloud Native Storage Solutions",
-                                "Distributed Tracing"
+                                "Distributed Tracing",
+                                "Cluster Abstractions"
                             ]
                         },
                         {
@@ -347,8 +352,8 @@
                     "tasks": [
                         {
                             "type": "Video",
-                            "content": "Terraform with Go",
-                            "url": "https://www.youtube.com/watch?v=Y2hvtthO5-Y"
+                            "content": "Terraform Explained by Nana",
+                            "url": "https://www.youtube.com/watch?v=l5k1ai_GBDE&pp=ygURVGVycmFmb3JtIHdpdGggR28%3D"
                         },
                         {
                             "type": "Learning",
