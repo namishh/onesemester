@@ -469,7 +469,7 @@
                         {
                             "type": "Video",
                             "content": "DevSecOps Basics",
-                            "url": "https://www.youtube.com/watch?v=nrhxNNH5lt4"
+                            "url": "https://youtu.be/gLJdrXPn0ns?si=mF6HhHDmyu_DMdKv"
                         },
                         {
                             "type": "Learning",
@@ -530,7 +530,7 @@
                         {
                             "type": "Video",
                             "content": "Chaos Engineering Fundamentals",
-                            "url": "https://www.youtube.com/watch?v=4etB5tXH3-A"
+                            "url": "https://youtu.be/7UKYnbUbzFM?si=S-2NFYslJ45-sOF4"
                         },
                         {
                             "type": "Learning",
@@ -600,9 +600,9 @@
                     "description": "Advanced Cloud Architecture",
                     "tasks": [
                         {
-                            "type": "Video",
+                            "type": "Resource",
                             "content": "Advanced Cloud Architecture Patterns",
-                            "url": "https://www.youtube.com/watch?v=b7M3ayJXuoQ"
+                            "url": "https://github.com/ohari5336/book-1/blob/master/%5BCLOUD%5D%5BCloud%20Architecture%20Patterns%5D.pdf"
                         },
                         {
                             "type": "Learning",
