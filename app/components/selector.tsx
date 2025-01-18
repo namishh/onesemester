@@ -3,8 +3,9 @@ import React, { useState, useEffect, useRef } from 'react';
 import { useRouter } from 'next/navigation';
 
 const paths = [
+	{ name: 'low', label: 'C and Rust' },
+	{ name: 'devops', label: 'DevOps' },
 	{ name: 'web', label: 'Full Stack Javascript' },
-	{ name: 'low', label: 'C // Rust' },
 ];
 
 const PathSelector = () => {

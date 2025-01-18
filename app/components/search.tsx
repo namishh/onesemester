@@ -3,10 +3,12 @@ import React, { useState, useEffect, useRef, useMemo } from 'react';
 import { useRouter } from 'next/navigation';
 import webData from '@/app/data/web.json';
 import lowData from '@/app/data/low.json';
+import devopsData from '@/app/data/devops.json';
 
 const searchData = {
 	web: webData,
 	low: lowData,
+	devops: devopsData,
 };
 
 const addToIndex = (word: string, item: any, index: Map<string, any[]>) => {
