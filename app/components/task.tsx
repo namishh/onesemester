@@ -1,18 +1,55 @@
+import { useCallback } from "react";
+import { useProgress } from '../context/progress';
 import { Accordion } from "./accordian";
 import Image from 'next/image'
 
 
-export const TaskComponent = ({ task, className = "" }: { task: Task; className?: string }) => {
+export const TaskComponent = ({ task, className = "", monthId,
+    weekId,
+    taskIndex }: {
+        task: Task; className?: string, monthId: number;
+        weekId?: number | null;
+        taskIndex: number;
+    }) => {
     const getYouTubeId = (url: string) => {
         const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|&v=)([^#&?]*).*/;
         const match = url.match(regExp);
         return (match && match[2].length === 11) ? match[2] : null;
     };
+    
+    const { isTaskComplete, toggleTask } = useProgress();
+    const completed = isTaskComplete(monthId, weekId, taskIndex);
+  
+    const handleCheckboxChange = () => {
+      toggleTask(monthId, weekId, taskIndex);
+    };
+  
 
     return (
         <div className={`py-4 ${className} text-[22px]`}>
-            <h4 className="font-medium px-4 mb-2">
-                <span className="text-emerald-400">##</span> {task.type.charAt(0).toUpperCase() + task.type.slice(1)}: {task.content}
+
+            <input
+                type="checkbox"
+                checked={completed}
+                onChange={handleCheckboxChange}
+                hidden
+                name={`task-${monthId}-${weekId}-${taskIndex}`}
+                key={`${monthId}-${weekId}-${taskIndex}-${completed}`}
+                id={`task-${monthId}-${weekId}-${taskIndex}`}
+            />
+
+
+
+            <h4 className="font-medium flex px-4 mb-2 items-center">
+            <label
+                htmlFor={`task-${monthId}-${weekId}-${taskIndex}`}
+                className="inline mr-4"
+            >
+                {completed ? <svg fill="none" xmlns="http://www.w3.org/2000/svg" className="text-emerald-500 h-6 w-6" viewBox="0 0 24 24"> <path d="M5 3H3v18h18V3H5zm0 2h14v14H5V5zm4 7H7v2h2v2h2v-2h2v-2h2v-2h2V8h-2v2h-2v2h-2v2H9v-2z" fill="currentColor"/> </svg> : <svg fill="none" xmlns="http://www.w3.org/2000/svg" className="text-neutral-400 h-6 w-6" viewBox="0 0 24 24"> <path d="M3 3h18v18H3V3zm16 16V5H5v14h14z" fill="currentColor"/> </svg>}
+            </label>
+            <span>
+               {task.type.charAt(0).toUpperCase() + task.type.slice(1)}: {task.content}
+               </span>
             </h4>
             {task.type === "Video" && task.url && (
                 <div className="px-4 mb-4">

@@ -14,6 +14,13 @@ interface Task {
   };
 }
 
+interface TaskProgress {
+  monthId: number;
+  weekId?: number | null;
+  taskIndex: number;
+  completed: boolean;
+}
+
 interface Week {
   week: number;
   description: string;

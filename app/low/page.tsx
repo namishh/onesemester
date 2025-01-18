@@ -1,7 +1,9 @@
+// low/page.tsx
 "use client";
 import Generate from "../components/generate";
 import { useEffect, useState } from "react";
 import data from "@/app/data/low.json"
+import { ProgressProvider } from "../context/progress";
 
 const Low = () => {
     const [month, setMonth] = useState<number>(0);
@@ -21,7 +23,9 @@ const Low = () => {
         </div>
     }
 
-    return <Generate learningPlan={data} defaultMonth={month} defaultWeek={week} />;
+    return <ProgressProvider roadmapId="low">
+     <Generate learningPlan={data} defaultMonth={month} defaultWeek={week} />;
+    </ProgressProvider>;
 };
 
 export default Low;

@@ -2,6 +2,7 @@
 import Generate from "../components/generate";
 import { useEffect, useState } from "react";
 import data from "@/app/data/devops.json"
+import { ProgressProvider } from "../context/progress";
 
 const Devops = () => {
     const [month, setMonth] = useState<number>(0);
@@ -21,7 +22,9 @@ const Devops = () => {
         </div>
     }
 
-    return <Generate learningPlan={data} defaultMonth={month} defaultWeek={week} />;
+    return <ProgressProvider roadmapId="devops">
+        <Generate learningPlan={data} defaultMonth={month} defaultWeek={week} />;
+    </ProgressProvider>;
 };
 
 export default Devops;
