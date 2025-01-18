@@ -56,22 +56,12 @@
                 },
                 {
                     "week": 2,
-                    "description": "Go Core Concepts",
+                    "description": "Unique Go Concepts",
                     "tasks": [
                         {
                             "type": "Video",
-                            "content": "Go Programming (Golang) Full Course by freeCodeCamp",
-                            "url": "https://youtu.be/YS4e4q9oBaU"
-                        },
-                        {
-                            "type": "Learning",
-                            "content": "Core Go Concepts",
-                            "list": [
-                                "Slices and Maps in depth",
-                                "Structs and Interfaces",
-                                "Methods and Receivers",
-                                "Error Handling Patterns"
-                            ]
+                            "content": "10+ Unique GO Concepts/Conventions",
+                            "url": "https://youtu.be/CK5rLpZk5A8?si=yaBeKJuAM6uqu2TG"
                         },
                         {
                             "type": "Resource",
