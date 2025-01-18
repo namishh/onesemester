@@ -642,8 +642,8 @@
                     "tasks": [
                         {
                             "type": "Video",
-                            "content": "Performance Engineering Deep Dive",
-                            "url": "https://www.youtube.com/watch?v=M4q3pSVqxks"
+                            "content": "Performance Engineering",
+                            "url": "https://youtu.be/VDW5oxTaN00?si=Uk2lvrp1dBl2O1kE"
                         },
                         {
                             "type": "Learning",
@@ -685,7 +685,7 @@
                         {
                             "type": "Video",
                             "content": "FinOps Fundamentals",
-                            "url": "https://www.youtube.com/watch?v=YZR__vxqkr0"
+                            "url": "https://youtu.be/GDLpQMsQFz4?si=ASc7TKhkV_rIWAJX"
                         },
                         {
                             "type": "Learning",
