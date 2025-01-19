@@ -13,7 +13,114 @@
 			"weeks": [
 				{
 					"week": 1,
-					"description": "Learning Go Fundamentals",
+					"description": "Linux and Command Line Fundamentals",
+					"tasks": [
+						{
+							"type": "Prerequisites",
+							"content": "Basic Setup",
+							"list": [
+								"Install A Stable Linux Distro",
+								"Install Git",
+								"Setup SSH keys"
+							]
+						},
+						{
+							"type": "Video",
+							"content": "Linux Command Line Basics",
+							"url": "https://youtu.be/ZtqBQ68cfJc"
+						},
+						{
+							"type": "Learning",
+							"content": "Terminal Essentials",
+							"list": [
+								"Basic Bash Commands and Navigation",
+								"File Permissions and Management",
+								"Process Management",
+								"Text Manipulation (grep, sed, awk)",
+								"Shell Scripting Basics"
+							]
+						},
+						{
+							"type": "Project",
+							"content": "Bash Projects",
+							"list": [
+								"Create automation scripts",
+								"Build a log parser",
+								"System monitoring script"
+							]
+						}
+					]
+				},
+				{
+					"week": 2,
+					"description": "Infrastructure and Networking Basics",
+					"tasks": [
+						{
+							"type": "Video",
+							"content": "Networking Fundamentals",
+							"url": "https://youtu.be/qiQR5rTSshw"
+						},
+						{
+							"type": "Learning",
+							"content": "Core Infrastructure Concepts",
+							"list": [
+								"DNS and Domain Management",
+								"Load Balancers and Reverse Proxies",
+								"Caching Servers (Redis, Memcached)",
+								"Basic Security and Firewalls",
+								"SSL/TLS and HTTPS"
+							]
+						},
+						{
+							"type": "Video",
+							"content": "Nginx Crash Course",
+							"url": "https://youtu.be/7VAI73roXaY"
+						},
+						{
+							"type": "Project",
+							"content": "Infrastructure Setup",
+							"list": [
+								"Configure Nginx as reverse proxy",
+								"Setup basic caching with Redis",
+								"Implement SSL with Let's Encrypt"
+							]
+						}
+					]
+				},
+				{
+					"week": 3,
+					"description": "Cloud Platforms Introduction",
+					"tasks": [
+						{
+							"type": "Video",
+							"content": "AWS Fundamentals",
+							"url": "https://youtu.be/3hLmDS179YE"
+						},
+						{
+							"type": "Learning",
+							"content": "Cloud Basics",
+							"list": [
+								"AWS Core Services (EC2, S3, RDS)",
+								"GCP Basic Concepts",
+								"Digital Ocean Basics",
+								"Cloud Security Best Practices",
+								"Cost Management"
+							]
+						},
+						{
+							"type": "Project",
+							"content": "Cloud Projects",
+							"list": [
+								"Deploy basic web server on EC2/DO",
+								"Setup S3 bucket with CDN",
+								"Configure basic monitoring"
+							]
+						}
+					]
+				},
+				{
+					"week": 4,
+					"description": "Go Programming Fundamentals",
 					"tasks": [
 						{
 							"type": "Prerequisites",
@@ -51,103 +158,6 @@
 								"CLI Todo App: Basic CRUD operations with file storage",
 								"Simple HTTP Server: Build a basic web server",
 								"File Processing Tool: Process and analyze text files"
-							]
-						}
-					]
-				},
-				{
-					"week": 2,
-					"description": "Unique Go Concepts",
-					"tasks": [
-						{
-							"type": "Video",
-							"content": "10+ Unique GO Concepts/Conventions",
-							"url": "https://youtu.be/CK5rLpZk5A8?si=yaBeKJuAM6uqu2TG"
-						},
-						{
-							"type": "Resource",
-							"content": "Go by Example",
-							"url": "https://gobyexample.com/"
-						},
-						{
-							"type": "Project",
-							"content": "Data Structure Projects",
-							"list": [
-								"Build a Custom Data Structure",
-								"Implement a Key-Value Store",
-								"Create a Simple Cache System"
-							]
-						}
-					]
-				},
-				{
-					"week": 3,
-					"description": "Go Concurrency",
-					"tasks": [
-						{
-							"type": "Video",
-							"content": "Go Concurrency Patterns by Rob Pike",
-							"url": "https://youtu.be/f6kdp27TYZs"
-						},
-						{
-							"type": "Learning",
-							"content": "Concurrency Basics",
-							"list": [
-								"Goroutines and Channels",
-								"Select Statement",
-								"Mutex and Atomic Operations",
-								"Context Package",
-								"Worker Pools Pattern"
-							]
-						},
-						{
-							"type": "Resource",
-							"content": "Go Concurrency Guide",
-							"url": "https://go.dev/doc/effective_go#concurrency"
-						},
-						{
-							"type": "Project",
-							"content": "Concurrency Projects",
-							"list": [
-								"Build a Concurrent Web Crawler",
-								"Create a Job Queue System",
-								"Implement a Rate Limiter"
-							]
-						}
-					]
-				},
-				{
-					"week": 4,
-					"description": "Go Testing and Tools",
-					"tasks": [
-						{
-							"type": "Video",
-							"content": "Go Testing Deep Dive",
-							"url": "https://www.youtube.com/watch?v=ndmB0bj7eyw"
-						},
-						{
-							"type": "Learning",
-							"content": "Testing and Tooling",
-							"list": [
-								"Unit Testing Best Practices",
-								"Table-Driven Tests",
-								"Benchmarking",
-								"Profiling and Optimization",
-								"Go Tools (vet, lint, fmt)"
-							]
-						},
-						{
-							"type": "Resource",
-							"content": "Go Testing Package",
-							"url": "https://pkg.go.dev/testing"
-						},
-						{
-							"type": "Project",
-							"content": "Testing",
-							"list": [
-								"Write Tests for Previous Projects",
-								"Create a Test Coverage Report",
-								"Profile and Optimize Performance"
 							]
 						}
 					]
