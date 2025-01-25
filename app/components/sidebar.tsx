@@ -50,8 +50,13 @@ export default function Sidebar() {
 				>
 					Web Dev
 				</a>
+				<a href="/res"
+					className="w-full block border-t-[1px] border-neutral-700 text-left  px-4 py-2 transition-color bg-transparent hover:bg-neutral-800"
+				>
+					Resources
+				</a>
 				<a href="https://github.com/namishh/semester"
-					className="w-full border-t-[1px] border-neutral-700 block text-left  px-4 py-2 transition-color bg-transparent hover:bg-neutral-800"
+					className="w-full block text-left  px-4 py-2 transition-color bg-transparent hover:bg-neutral-800"
 				>
 					Github
 				</a>
