@@ -13,15 +13,55 @@
 			"weeks": [
 				{
 					"week": 1,
-					"description": "Docker Fundamentals",
+					"description": "Linux and Shell Scripting",
 					"tasks": [
 						{
 							"type": "Prerequisites",
 							"content": "Basic Setup",
 							"list": [
+								"Install Linux (Ubuntu recommended for beginners)",
+								"Setup Terminal",
+								"Install Git"
+							]
+						},
+						{
+							"type": "Video",
+							"content": "Linux Command Line Basics",
+							"url": "https://youtu.be/ZtqBQ68cfJc"
+						},
+						{
+							"type": "Learning",
+							"content": "Linux Essentials",
+							"list": [
+								"File System Navigation",
+								"Process Management",
+								"Shell Scripting Basics",
+								"Text Processing (grep, sed)",
+								"System Monitoring"
+							]
+						},
+						{
+							"type": "Project",
+							"content": "Linux Projects",
+							"list": [
+								"Basic Shell Scripts",
+								"Process Management Script",
+								"Log Analysis Tool"
+							]
+						}
+					]
+				},
+				{
+					"week": 2,
+					"description": "Docker Fundamentals",
+					"tasks": [
+						{
+							"type": "Prerequisites",
+							"content": "Docker Setup",
+							"list": [
 								"Install Docker Desktop/Engine",
 								"Setup Docker Hub account",
-								"Install Git"
+								"Basic Linux knowledge (from Week 1)"
 							]
 						},
 						{
@@ -52,7 +92,7 @@
 					]
 				},
 				{
-					"week": 2,
+					"week": 3,
 					"description": "Advanced Docker & Compose",
 					"tasks": [
 						{
@@ -78,37 +118,6 @@
 								"Multi-container Applications",
 								"Custom Network Setup",
 								"Production-ready Dockerfiles"
-							]
-						}
-					]
-				},
-				{
-					"week": 3,
-					"description": "Linux and Shell Scripting",
-					"tasks": [
-						{
-							"type": "Video",
-							"content": "Linux Command Line Basics",
-							"url": "https://youtu.be/ZtqBQ68cfJc"
-						},
-						{
-							"type": "Learning",
-							"content": "Linux Essentials",
-							"list": [
-								"File System Navigation",
-								"Process Management",
-								"Shell Scripting Basics",
-								"Text Processing (grep, sed)",
-								"System Monitoring"
-							]
-						},
-						{
-							"type": "Project",
-							"content": "Automation Scripts",
-							"list": [
-								"Container Health Check",
-								"Log Analysis Script",
-								"System Monitoring"
 							]
 						}
 					]
