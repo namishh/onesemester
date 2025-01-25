@@ -7,7 +7,7 @@ const paths = [
   { name: 'low', label: 'C and Rust' },
   { name: 'devops', label: 'DevOps' },
   { name: 'web', label: 'Full Stack Javascript' },
-  {name: "res", label: "Resources"}
+  {name: "beyond", label: "Beyond One Semester"}
 ];
 
 const PathSelector = () => {
