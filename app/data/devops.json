@@ -13,141 +13,142 @@
 			"weeks": [
 				{
 					"week": 1,
-					"description": "Learning Go Fundamentals",
+					"description": "Linux and Shell Scripting",
 					"tasks": [
 						{
 							"type": "Prerequisites",
 							"content": "Basic Setup",
 							"list": [
-								"Install A Stable Linux Distro",
-								"Install Go",
-								"An IDE or Vim based editor"
+								"Install Linux (Ubuntu recommended for beginners)",
+								"Setup Terminal",
+								"Install Git"
 							]
 						},
 						{
-							"type": "Textual Resource",
-							"content": "The Official Go Tutorial",
+							"type": "Video",
+							"content": "Linux Command Line Basics",
+							"url": "https://youtu.be/ZtqBQ68cfJc"
+						},
+						{
+							"type": "Learning",
+							"content": "Linux Essentials",
 							"list": [
-								"Complete till Govulncheck",
-								"Practice Go modules and packages",
-								"Understand error handling in Go"
-							],
-							"url": "https://go.dev/doc/tutorial/"
-						},
-						{
-							"type": "Video",
-							"content": "Go for Beginners by TechWorld with Nana",
-							"url": "https://youtu.be/yyUHQIec83I"
-						},
-						{
-							"type": "Video",
-							"content": "Go Generics Explained by TechWorld with Nana",
-							"url": "https://youtu.be/WpTKqnfp5dY"
+								"File System Navigation",
+								"Process Management",
+								"Shell Scripting Basics",
+								"Text Processing (grep, sed)",
+								"System Monitoring"
+							]
 						},
 						{
 							"type": "Project",
-							"content": "Beginner Go Projects",
+							"content": "Linux Projects",
 							"list": [
-								"CLI Todo App: Basic CRUD operations with file storage",
-								"Simple HTTP Server: Build a basic web server",
-								"File Processing Tool: Process and analyze text files"
+								"Basic Shell Scripts",
+								"Process Management Script",
+								"Log Analysis Tool"
 							]
 						}
 					]
 				},
 				{
 					"week": 2,
-					"description": "Unique Go Concepts",
+					"description": "Docker Fundamentals",
 					"tasks": [
 						{
-							"type": "Video",
-							"content": "10+ Unique GO Concepts/Conventions",
-							"url": "https://youtu.be/CK5rLpZk5A8?si=yaBeKJuAM6uqu2TG"
+							"type": "Prerequisites",
+							"content": "Docker Setup",
+							"list": [
+								"Install Docker Desktop/Engine",
+								"Setup Docker Hub account",
+								"Basic Linux knowledge (from Week 1)"
+							]
 						},
 						{
-							"type": "Resource",
-							"content": "Go by Example",
-							"url": "https://gobyexample.com/"
+							"type": "Video",
+							"content": "Docker Crash Course for Beginners",
+							"url": "https://youtu.be/pg19Z8LL06w"
+						},
+						{
+							"type": "Learning",
+							"content": "Docker Basics",
+							"list": [
+								"Understanding Containers vs VMs",
+								"Basic Docker Commands",
+								"Working with Images",
+								"Container Lifecycle",
+								"Docker Hub and Registries"
+							]
 						},
 						{
 							"type": "Project",
-							"content": "Data Structure Projects",
+							"content": "Docker Projects",
 							"list": [
-								"Build a Custom Data Structure",
-								"Implement a Key-Value Store",
-								"Create a Simple Cache System"
+								"Containerize a Simple App",
+								"Work with Docker Hub",
+								"Container Management"
 							]
 						}
 					]
 				},
 				{
 					"week": 3,
-					"description": "Go Concurrency",
+					"description": "Advanced Docker & Compose",
 					"tasks": [
 						{
-							"type": "Video",
-							"content": "Go Concurrency Patterns by Rob Pike",
-							"url": "https://youtu.be/f6kdp27TYZs"
-						},
-						{
 							"type": "Learning",
-							"content": "Concurrency Basics",
+							"content": "Docker Advanced",
 							"list": [
-								"Goroutines and Channels",
-								"Select Statement",
-								"Mutex and Atomic Operations",
-								"Context Package",
-								"Worker Pools Pattern"
+								"Multi-stage Builds",
+								"Docker Compose",
+								"Docker Networks",
+								"Volume Management",
+								"Container Security Basics"
 							]
 						},
 						{
-							"type": "Resource",
-							"content": "Go Concurrency Guide",
-							"url": "https://go.dev/doc/effective_go#concurrency"
+							"type": "Video",
+							"content": "Docker Compose Deep Dive",
+							"url": "https://youtu.be/HG6yIjZapSA"
 						},
 						{
 							"type": "Project",
-							"content": "Concurrency Projects",
+							"content": "Advanced Docker Projects",
 							"list": [
-								"Build a Concurrent Web Crawler",
-								"Create a Job Queue System",
-								"Implement a Rate Limiter"
+								"Multi-container Applications",
+								"Custom Network Setup",
+								"Production-ready Dockerfiles"
 							]
 						}
 					]
 				},
 				{
 					"week": 4,
-					"description": "Go Testing and Tools",
+					"description": "Git and CI/CD Basics",
 					"tasks": [
 						{
 							"type": "Video",
-							"content": "Go Testing Deep Dive",
-							"url": "https://www.youtube.com/watch?v=ndmB0bj7eyw"
+							"content": "Git and GitHub for Beginners",
+							"url": "https://youtu.be/RGOj5yH7evk"
 						},
 						{
 							"type": "Learning",
-							"content": "Testing and Tooling",
+							"content": "Version Control & CI",
 							"list": [
-								"Unit Testing Best Practices",
-								"Table-Driven Tests",
-								"Benchmarking",
-								"Profiling and Optimization",
-								"Go Tools (vet, lint, fmt)"
+								"Git Fundamentals",
+								"GitHub Actions Basics",
+								"Basic CI/CD Concepts",
+								"Automated Testing",
+								"Basic Deployment Flows"
 							]
 						},
 						{
-							"type": "Resource",
-							"content": "Go Testing Package",
-							"url": "https://pkg.go.dev/testing"
-						},
-						{
 							"type": "Project",
-							"content": "Testing",
+							"content": "CI/CD Projects",
 							"list": [
-								"Write Tests for Previous Projects",
-								"Create a Test Coverage Report",
-								"Profile and Optimize Performance"
+								"Setup GitHub Actions",
+								"Automate Docker Builds",
+								"Basic Deployment Pipeline"
 							]
 						}
 					]
@@ -159,126 +160,125 @@
 			"weeks": [
 				{
 					"week": 1,
-					"description": "System Design Fundamentals",
+					"description": "Networking and Load Balancing",
 					"tasks": [
 						{
-							"type": "Textual Resource",
-							"content": "System Design Concepts (just better)",
-							"url": "https://medium.com/@shivambhadani_/system-design-for-beginners-everything-you-need-in-one-article-c74eb702540b"
-						},
-						{
 							"type": "Video",
-							"content": "20 System Design Concepts Explained by NeetCode",
-							"url": "https://youtu.be/i53Gi_K3o7I"
+							"content": "Networking Fundamentals",
+							"url": "https://youtu.be/qiQR5rTSshw"
 						},
 						{
 							"type": "Learning",
-							"content": "System Design Concepts",
+							"content": "Network Concepts",
 							"list": [
-								"Vertical/Horizontal Scaling, Load Balancers, CDN",
-								"Caching, IP Address, TCP/IP, DNS",
-								"HTTP, REST, GraphQL, gRPC",
-								"WebSockets, SQL, ACID",
-								"NoSQL, Sharding, Replication",
-								"CAP Theorem, Message Queues"
+								"TCP/IP Fundamentals",
+								"Load Balancing Patterns",
+								"Reverse Proxies",
+								"gRPC Basics",
+								"Service Discovery"
 							]
 						},
 						{
 							"type": "Project",
-							"content": "System Design Implementation",
+							"content": "Network Projects",
 							"list": [
-								"Build a Load Balancer with Multiple Strategies",
-								"Implement a Caching System with Redis",
-								"Create a Simple Message Queue",
-								"Design a Basic Service with REST and gRPC APIs"
+								"Setup Load Balancer",
+								"Implement Service Discovery",
+								"gRPC Service Setup"
 							]
 						}
 					]
 				},
 				{
 					"week": 2,
-					"description": "Advanced DevOps with Go",
+					"description": "System Design & Scaling",
 					"tasks": [
 						{
 							"type": "Video",
-							"content": "Building Kubernetes Operators with Go",
-							"url": "https://youtu.be/QIMz4V9WxVc"
+							"content": "System Design Fundamentals",
+							"url": "https://youtu.be/i53Gi_K3o7I"
 						},
 						{
 							"type": "Learning",
-							"content": "Advanced Projects",
+							"content": "Scaling Concepts",
 							"list": [
-								"Build a Kubernetes Operator in Go",
-								"Create a Monitoring System with Prometheus",
-								"Implement a Service Mesh Controller"
+								"Horizontal vs Vertical Scaling",
+								"Database Scaling",
+								"Caching Strategies",
+								"Message Queues",
+								"Microservices Architecture"
 							]
 						},
 						{
-							"type": "Resource",
-							"content": "DevOps Best Practices",
+							"type": "Project",
+							"content": "Scaling Projects",
 							"list": [
-								"Infrastructure as Code",
-								"Continuous Monitoring",
-								"Automated Testing",
-								"GitOps Workflow"
+								"Implement Caching Layer",
+								"Setup Message Queue",
+								"Scale Microservices"
 							]
 						}
 					]
 				},
 				{
 					"week": 3,
-					"description": "Distributed Systems",
+					"description": "Cloud Infrastructure - AWS Part 1",
 					"tasks": [
 						{
-							"type": "Resource",
-							"content": "Distributed Systems in Go",
-							"url": "https://go.dev/talks/2013/distsys.slide#1"
-						},
-						{
 							"type": "Video",
-							"content": "Distributed Systems in Go",
-							"url": "https://www.youtube.com/watch?v=ezaCIoOTTrY"
+							"content": "AWS Core Services",
+							"url": "https://youtu.be/3hLmDS179YE"
 						},
 						{
 							"type": "Learning",
-							"content": "Distributed Concepts",
+							"content": "AWS Fundamentals",
 							"list": [
-								"Consensus Algorithms",
-								"Distributed Transactions",
-								"CAP Theorem",
-								"Event Sourcing"
+								"IAM & Security",
+								"VPC Networking",
+								"EC2 & Auto Scaling",
+								"S3 Storage",
+								"RDS Basics"
 							]
 						},
 						{
-							"type": "Resource",
-							"content": "Distributed Systems Reading",
-							"url": "https://github.com/theanalyst/awesome-distributed-systems"
+							"type": "Project",
+							"content": "AWS Projects",
+							"list": [
+								"Setup VPC & Network",
+								"Deploy Scalable App",
+								"Implement S3 Storage"
+							]
 						}
 					]
 				},
 				{
 					"week": 4,
-					"description": "API Design and Microservices",
+					"description": "Cloud Infrastructure - AWS Part 2",
 					"tasks": [
 						{
 							"type": "Video",
-							"content": "Microservices with Go",
-							"url": "https://www.youtube.com/watch?v=VzBGi_n65iU"
+							"content": "AWS Advanced Services",
+							"url": "https://youtu.be/8TlukLu11Yo"
 						},
 						{
 							"type": "Learning",
-							"content": "API Design Patterns",
+							"content": "Advanced AWS",
 							"list": [
-								"RESTful API Best Practices",
-								"gRPC Implementation",
-								"API Gateway Patterns",
-								"Service Discovery"
+								"ECS & Container Services",
+								"Lambda & Serverless",
+								"CloudWatch Monitoring",
+								"Route 53 & CDN",
+								"Cost Management"
 							]
 						},
 						{
-							"type": "Resource",
-							"content": "Microservices Patterns",
-							"url": "https://microservices.io/patterns/index.html"
+							"type": "Project",
+							"content": "Advanced Cloud Projects",
+							"list": [
+								"Containerized Deployment",
+								"Serverless Application",
+								"Monitoring Setup"
+							]
 						}
 					]
 				}
@@ -289,132 +289,125 @@
 			"weeks": [
 				{
 					"week": 1,
-					"description": "Cloud Service Models and Native Development",
+					"description": "Infrastructure as Code",
 					"tasks": [
 						{
-							"type": "Resource",
-							"content": "Cloud Service Models Overview",
-							"list": [
-								"IaaS Examples: AWS EC2 (aws.amazon.com/ec2), DigitalOcean Droplets (digitalocean.com), Linode (linode.com)",
-								"PaaS Examples: Zerops (zerops.io), Fly.io (fly.io), Google App Engine (cloud.google.com/appengine), Render (render.com)",
-								"Serverless: AWS Lambda (aws.amazon.com/lambda), Vercel (vercel.com), Netlify (netlify.com)"
-							]
-						},
-						{
-							"type": "Learning",
-							"content": "Cloud Infrastructure Fundamentals",
-							"list": [
-								"Understanding IaaS vs PaaS vs SaaS",
-								"When to use VPS vs Cloud Services",
-								"Cost comparisons and considerations",
-								"Basic server management and SSH"
-							]
-						},
-						{
 							"type": "Video",
-							"content": "Cloud Native Go Development",
-							"url": "https://www.youtube.com/watch?v=fuHGzQcOeDI&t=180s&pp=ygUbQ2xvdWQgTmF0aXZlIEdvIERldmVsb3BtZW50"
+							"content": "Terraform Fundamentals",
+							"url": "https://youtu.be/l5k1ai_GBDE"
 						},
 						{
 							"type": "Learning",
-							"content": "Cloud Native Concepts",
+							"content": "IaC Fundamentals",
 							"list": [
-								"Container Orchestration with Kubernetes",
-								"Service Mesh Implementation",
-								"Cloud Native Storage Solutions",
-								"Distributed Tracing",
-								"Cluster Abstractions"
+								"Infrastructure as Code Concepts",
+								"Terraform Basics",
+								"AWS with Terraform",
+								"State Management",
+								"IaC Best Practices"
 							]
 						},
 						{
 							"type": "Project",
-							"content": "Cloud Setup Projects",
+							"content": "Terraform Projects",
 							"list": [
-								"Set up applications on different cloud models (IaaS, PaaS)",
-								"Compare deployment workflows and maintenance",
-								"Implement monitoring and scaling for each model"
+								"AWS Infrastructure with Terraform",
+								"Multi-environment Setup",
+								"State Management Implementation"
 							]
 						}
 					]
 				},
 				{
 					"week": 2,
-					"description": "Infrastructure as Code",
+					"description": "Kubernetes Fundamentals",
 					"tasks": [
 						{
 							"type": "Video",
-							"content": "Terraform Explained by Nana",
-							"url": "https://www.youtube.com/watch?v=l5k1ai_GBDE&pp=ygURVGVycmFmb3JtIHdpdGggR28%3D"
+							"content": "Kubernetes Crash Course",
+							"url": "https://youtu.be/s_o8dwzRlu4"
 						},
 						{
 							"type": "Learning",
-							"content": "IaC Projects",
+							"content": "K8s Basics",
 							"list": [
-								"Build a Terraform Provider in Go",
-								"Create Custom Kubernetes Resources",
-								"Implement a Configuration Management Tool"
+								"Kubernetes Architecture",
+								"Pods and Deployments",
+								"Services and Networking",
+								"ConfigMaps and Secrets",
+								"Basic Cluster Management"
 							]
 						},
 						{
 							"type": "Project",
-							"content": "IaC Implementation",
+							"content": "K8s Projects",
 							"list": [
-								"Create a custom Terraform provider",
-								"Build an infrastructure automation tool",
-								"Implement a configuration management system"
+								"Deploy Multi-tier Application",
+								"Setup Basic Monitoring",
+								"Implement Rolling Updates"
 							]
 						}
 					]
 				},
 				{
 					"week": 3,
-					"description": "GitOps and CI/CD",
+					"description": "Advanced Kubernetes",
 					"tasks": [
 						{
 							"type": "Video",
-							"content": "GitOps with ArgoCD",
-							"url": "https://www.youtube.com/watch?v=MeU5_k9ssrs"
+							"content": "Advanced Kubernetes Features",
+							"url": "https://youtu.be/0oTh1CXRaQ0"
 						},
 						{
 							"type": "Learning",
-							"content": "CI/CD Practices",
+							"content": "K8s Advanced",
 							"list": [
-								"GitOps Workflows",
-								"Pipeline Design",
-								"Continuous Deployment Strategies",
-								"Feature Flags"
+								"Helm Charts",
+								"Custom Controllers",
+								"Operators Pattern",
+								"Advanced Networking",
+								"Security Policies"
 							]
 						},
 						{
-							"type": "Resource",
-							"content": "GitOps Guide",
-							"url": "https://www.weave.works/technologies/gitops/"
+							"type": "Project",
+							"content": "Advanced K8s Projects",
+							"list": [
+								"Create Helm Charts",
+								"Build Custom Operator",
+								"Implement Security Policies"
+							]
 						}
 					]
 				},
 				{
 					"week": 4,
-					"description": "Service Mesh Advanced",
+					"description": "Observability & Monitoring",
 					"tasks": [
 						{
 							"type": "Video",
-							"content": "Istio Deep Dive",
-							"url": "https://www.youtube.com/watch?v=16fgzklcF7Y"
+							"content": "Modern Observability Stack",
+							"url": "https://youtu.be/9TJx7QTrTyo"
 						},
 						{
 							"type": "Learning",
-							"content": "Service Mesh Patterns",
+							"content": "Monitoring Stack",
 							"list": [
-								"Traffic Management",
-								"Security Policies",
-								"Observability",
-								"Multi-cluster Mesh"
+								"Prometheus & Grafana",
+								"Distributed Tracing",
+								"Log Aggregation",
+								"Alerting Systems",
+								"SLOs and SLIs"
 							]
 						},
 						{
-							"type": "Resource",
-							"content": "Istio Handbook",
-							"url": "https://istio.io/latest/docs/"
+							"type": "Project",
+							"content": "Observability Projects",
+							"list": [
+								"Setup Monitoring Stack",
+								"Implement Tracing",
+								"Create Alert Rules"
+							]
 						}
 					]
 				}
@@ -425,92 +418,94 @@
 			"weeks": [
 				{
 					"week": 1,
-					"description": "Observability & Monitoring",
+					"description": "Security and DevSecOps",
 					"tasks": [
 						{
 							"type": "Video",
-							"content": "Prometheus & Grafana",
-							"url": "https://www.youtube.com/watch?v=9TJx7QTrTyo"
-						},
-						{
-							"type": "Learning",
-							"content": "Observability Stack",
-							"list": [
-								"Implement Metrics Collection",
-								"Log Aggregation Systems",
-								"Distributed Tracing with Jaeger",
-								"Alert Management"
-							]
-						},
-						{
-							"type": "Project",
-							"content": "Monitoring Projects",
-							"list": [
-								"Build a custom Prometheus exporter",
-								"Create a log aggregation pipeline",
-								"Implement a monitoring dashboard"
-							]
-						}
-					]
-				},
-				{
-					"week": 2,
-					"description": "Security in DevOps",
-					"tasks": [
-						{
-							"type": "Video",
-							"content": "DevSecOps Basics",
-							"url": "https://youtu.be/gLJdrXPn0ns?si=mF6HhHDmyu_DMdKv"
+							"content": "DevSecOps Fundamentals",
+							"url": "https://youtu.be/gLJdrXPn0ns"
 						},
 						{
 							"type": "Learning",
 							"content": "Security Practices",
 							"list": [
 								"Container Security",
+								"Infrastructure Security",
 								"Secret Management",
 								"Security Scanning",
-								"Compliance as Code"
+								"Compliance Automation"
 							]
 						},
 						{
-							"type": "Resource",
-							"content": "OWASP DevSecOps Guideline",
-							"url": "https://owasp.org/www-project-devsecops-guideline/"
+							"type": "Project",
+							"content": "Security Projects",
+							"list": [
+								"Implement Vault",
+								"Setup Security Scanning",
+								"Automate Compliance Checks"
+							]
+						}
+					]
+				},
+				{
+					"week": 2,
+					"description": "Advanced Microservices",
+					"tasks": [
+						{
+							"type": "Video",
+							"content": "Microservices Architecture",
+							"url": "https://youtu.be/VzBGi_n65iU"
+						},
+						{
+							"type": "Learning",
+							"content": "Microservices Patterns",
+							"list": [
+								"Service Mesh (Istio)",
+								"API Gateway Patterns",
+								"Event-Driven Architecture",
+								"Circuit Breaking",
+								"Distributed Tracing"
+							]
 						},
 						{
 							"type": "Project",
-							"content": "Security Implementation",
+							"content": "Microservices Projects",
 							"list": [
-								"Build a container security scanner",
-								"Implement a secrets management system",
-								"Create an automated security testing pipeline"
+								"Implement Service Mesh",
+								"Build Event-Driven System",
+								"Setup Distributed Tracing"
 							]
 						}
 					]
 				},
 				{
 					"week": 3,
-					"description": "Advanced Monitoring",
+					"description": "Site Reliability Engineering",
 					"tasks": [
 						{
 							"type": "Video",
-							"content": "Advanced Prometheus",
-							"url": "https://www.youtube.com/watch?v=h4Sl21AKiDg"
+							"content": "SRE Fundamentals",
+							"url": "https://youtu.be/uTEL8Ff1Zvk"
 						},
 						{
 							"type": "Learning",
-							"content": "Advanced Observability",
+							"content": "SRE Practices",
 							"list": [
-								"Custom Exporters",
-								"PromQL Advanced",
-								"High Cardinality",
-								"Long-term Storage"
+								"Error Budgets",
+								"SLOs and SLIs",
+								"Capacity Planning",
+								"Incident Management",
+								"Automation and Toil"
 							]
 						},
 						{
-							"type": "Resource",
-							"content": "Prometheus Best Practices",
-							"url": "https://prometheus.io/docs/practices/naming/"
+							"type": "Project",
+							"content": "SRE Implementation",
+							"list": [
+								"Define and Track SLOs",
+								"Implement Error Budgets",
+								"Automate Toil Tasks"
+							]
 						}
 					]
 				},
@@ -520,23 +515,28 @@
 					"tasks": [
 						{
 							"type": "Video",
-							"content": "Chaos Engineering Fundamentals",
-							"url": "https://youtu.be/7UKYnbUbzFM?si=S-2NFYslJ45-sOF4"
+							"content": "Chaos Engineering Basics",
+							"url": "https://youtu.be/7UKYnbUbzFM"
 						},
 						{
 							"type": "Learning",
 							"content": "Chaos Practices",
 							"list": [
-								"Chaos Testing",
-								"Fault Injection",
+								"Principles of Chaos",
+								"Failure Injection",
 								"Resilience Testing",
-								"Game Days"
+								"Game Days",
+								"Recovery Testing"
 							]
 						},
 						{
-							"type": "Resource",
-							"content": "Chaos Engineering Handbook",
-							"url": "https://www.gremlin.com/chaos-engineering/"
+							"type": "Project",
+							"content": "Chaos Projects",
+							"list": [
+								"Implement Chaos Tests",
+								"Run Game Day",
+								"Build Resilience Tests"
+							]
 						}
 					]
 				}
@@ -547,41 +547,31 @@
 			"weeks": [
 				{
 					"week": 1,
-					"description": "Site Reliability Engineering",
+					"description": "Performance Engineering",
 					"tasks": [
 						{
 							"type": "Video",
-							"content": "SRE Fundamentals",
-							"url": "https://www.youtube.com/watch?v=uTEL8Ff1Zvk"
+							"content": "Performance Engineering",
+							"url": "https://youtu.be/VDW5oxTaN00"
 						},
 						{
 							"type": "Learning",
-							"content": "SRE Practices",
+							"content": "Performance Practices",
 							"list": [
-								"Service Level Objectives (SLOs)",
-								"Error Budgets and Risk Management",
-								"Capacity Planning and Forecasting",
-								"Incident Management and Postmortems",
-								"Automation and Toil Reduction"
+								"Load Testing",
+								"Performance Profiling",
+								"Database Optimization",
+								"Caching Strategies",
+								"Resource Optimization"
 							]
 						},
 						{
-							"type": "Resource",
-							"content": "Google SRE Books",
-							"list": [
-								"Site Reliability Engineering",
-								"The Site Reliability Workbook",
-								"Building Secure & Reliable Systems"
-							],
-							"url": "https://sre.google/books/"
-						},
-						{
 							"type": "Project",
-							"content": "SRE Implementation",
+							"content": "Performance Projects",
 							"list": [
-								"Build an SLO monitoring system",
-								"Implement automated incident response",
-								"Create capacity planning tools"
+								"Implement Load Tests",
+								"Profile and Optimize",
+								"Cache Implementation"
 							]
 						}
 					]
@@ -591,122 +581,100 @@
 					"description": "Advanced Cloud Architecture",
 					"tasks": [
 						{
-							"type": "Resource",
-							"content": "Advanced Cloud Architecture Patterns",
-							"url": "https://github.com/ohari5336/book-1/blob/master/%5BCLOUD%5D%5BCloud%20Architecture%20Patterns%5D.pdf"
-						},
-						{
 							"type": "Learning",
-							"content": "Cloud Design Patterns",
+							"content": "Cloud Architecture",
 							"list": [
-								"Event-Driven Architecture Implementation",
-								"Serverless Computing and FaaS",
-								"Multi-Cloud Strategy and Management",
-								"Disaster Recovery and Business Continuity",
-								"Edge Computing Patterns"
+								"Multi-cloud Strategy",
+								"Serverless Architecture",
+								"Event-Driven Design",
+								"Disaster Recovery",
+								"Cost Optimization"
 							]
 						},
 						{
 							"type": "Resource",
 							"content": "Architecture Resources",
 							"list": [
+								"AWS Well-Architected",
 								"Cloud Design Patterns",
-								"AWS Well-Architected Framework",
-								"Google Cloud Architecture Framework"
+								"Serverless Patterns"
 							],
-							"url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/"
+							"url": "https://aws.amazon.com/architecture/well-architected/"
 						},
 						{
 							"type": "Project",
-							"content": "Architecture Implementation",
+							"content": "Architecture Projects",
 							"list": [
-								"Build a serverless event-driven system",
-								"Implement multi-region failover",
-								"Design a edge computing solution"
+								"Multi-cloud Setup",
+								"Serverless System",
+								"DR Implementation"
 							]
 						}
 					]
 				},
 				{
 					"week": 3,
-					"description": "Performance Engineering",
+					"description": "FinOps and Cost Management",
 					"tasks": [
 						{
 							"type": "Video",
-							"content": "Performance Engineering",
-							"url": "https://youtu.be/VDW5oxTaN00?si=Uk2lvrp1dBl2O1kE"
+							"content": "FinOps Fundamentals",
+							"url": "https://youtu.be/GDLpQMsQFz4"
 						},
 						{
 							"type": "Learning",
-							"content": "Performance Optimization",
+							"content": "Cost Management",
 							"list": [
-								"Advanced Load Testing Strategies",
-								"Performance Profiling and Flame Graphs",
-								"Database Performance Optimization",
-								"Network Performance Tuning",
-								"Memory and CPU Optimization"
+								"Resource Optimization",
+								"Cost Monitoring",
+								"Budget Management",
+								"FinOps Practices",
+								"Vendor Management"
 							]
 						},
 						{
-							"type": "Resource",
-							"content": "Performance Resources",
-							"list": [
-								"k6 Load Testing",
-								"pprof Profiling",
-								"Brendan Gregg's Performance Tools",
-								"Database Performance Patterns"
-							],
-							"url": "https://k6.io/docs/"
-						},
-						{
 							"type": "Project",
-							"content": "Performance Projects",
+							"content": "FinOps Projects",
 							"list": [
-								"Build a performance testing framework",
-								"Implement automated performance monitoring",
-								"Create performance optimization tools"
+								"Cost Dashboard",
+								"Budget Alerts",
+								"Optimization Tools"
 							]
 						}
 					]
 				},
 				{
 					"week": 4,
-					"description": "FinOps and Cloud Economics",
+					"description": "Career Development",
 					"tasks": [
 						{
-							"type": "Video",
-							"content": "FinOps Fundamentals",
-							"url": "https://youtu.be/GDLpQMsQFz4?si=ASc7TKhkV_rIWAJX"
-						},
-						{
 							"type": "Learning",
-							"content": "Cloud Cost Management",
+							"content": "Professional Growth",
 							"list": [
-								"Resource Optimization Strategies",
-								"Cost Monitoring and Alerting",
-								"Budget Management and Forecasting",
-								"FinOps Operating Model",
-								"Cloud Vendor Price Optimization"
+								"DevOps Best Practices",
+								"Team Collaboration",
+								"Technical Leadership",
+								"Interview Preparation",
+								"Portfolio Building"
 							]
 						},
 						{
 							"type": "Resource",
-							"content": "FinOps Resources",
+							"content": "Career Resources",
 							"list": [
-								"FinOps Framework",
-								"Cloud Cost Management Tools",
-								"AWS Cost Explorer Best Practices",
-								"GCP Cost Management"
+								"DevOps Roadmap",
+								"Certification Paths",
+								"Community Engagement"
 							],
-							"url": "https://www.finops.org/"
+							"url": "https://roadmap.sh/devops"
 						},
 						{
 							"type": "Project",
-							"content": "FinOps Implementation",
+							"content": "Portfolio Projects",
 							"list": [
-								"Build a cost monitoring dashboard",
-								"Implement automated cost optimization",
-								"Create budget forecasting tools"
+								"Document Journey",
+								"Create Tech Blog",
+								"Open Source Contribution"
 							]
 						}
 					]
