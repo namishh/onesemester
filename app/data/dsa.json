@@ -73,7 +73,7 @@
 						{
 							"type": "Video",
 							"content": "Singly Linked List",
-							"url": "https://www.youtube.com/watch?v=N6dOwBde7-M"
+							"url": "https://www.youtube.com/watch?v=VOpjAHCee7c"
 						},
 						{
 							"type": "Video",
@@ -149,7 +149,7 @@
 							"list": [
 								"Implement a circular queue to store orders",
 								"Handle order placement, retrieval, and cancellation",
-								"Implement a stack called ongoing orders to keep track of orders in progress"	
+								"Implement a queue called ongoing orders to keep track of orders in progress"	
 							]
 						}
 					]
@@ -186,6 +186,56 @@
 								"A very simple autocomplete text input",
 								"CLI based text search tool that efficiently finds patterns in large codebases"
 							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"month": 2,
+			"weeks": [
+				{
+					"week": 1,
+					"description": "Trees and BSTs",
+					"tasks": [
+						{
+							"type": "Video",
+							"content": "Introduction to Trees",
+							"url": "https://www.youtube.com/watch?v=UbhlOk7vjVY"
+						},
+						{
+							"type": "Video",
+							"content": "Binary Tree Traversals",
+							"url": "https://www.youtube.com/watch?v=gm8DUJJhmY4"
+						},
+						{
+							"type": "Resource",
+							"content": "BFS on a Binary Tree",
+							"url": "https://www.enjoyalgorithms.com/blog/level-order-traversal-of-binary-tree"
+						},
+						{
+							"type": "Video",
+							"content": "Video Series for Binary Search Trees",
+							"url": "https://www.youtube.com/watch?v=sf_9w653xdE&list=PLTxllHdfUq4d-DE16EDkpeb8Z68DU7Z_Q&index=1"
+						},
+						{
+							"type": "Video",
+							"content": "AVL Trees Introduction",
+							"url": "https://www.youtube.com/watch?v=FNeL18KsWPc"
+						},
+						{
+							"type": "Project",
+							"content": "CLI Roguelike Adventure Game",
+							"list": [
+								"Build a text-based roguelike dungeon crawler where players navigate procedurally generated dungeons using binary trees, manage loot with a BST, and face enemies balanced by an AVL tree"
+							],
+							"details": {
+								"features": [
+									"Each dungeon floor is a binary tree where nodes represent rooms. Players choose left or right to explore, with risks and rewards in each path.",
+									"Players collect loot (weapons, potions) stored in a BST sorted by power level. Fast search lets players strategize during combat.",
+									"Enemy difficulty scales dynamically using an AVL tree to ensure balanced encounters (no unfair fights!)."
+								]
+							}
 						}
 					]
 				}
