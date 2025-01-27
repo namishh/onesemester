@@ -238,6 +238,81 @@
 							}
 						}
 					]
+				},
+				{
+					"week": 2,
+					"description": "Graphs Basics",
+					"tasks": [
+						{
+							"type": "Video",
+							"content": "Introduction to Graphs",
+							"url": "https://www.youtube.com/watch?v=gXgEDyodOJU"
+						},
+						{
+							"type": "Video",
+							"content": "Edge List Representation",
+							"url": "https://www.youtube.com/watch?v=ZdY1Fp9dKzs"
+						},
+						{
+							"type": "Video",
+							"content": "Adjacency Matrix Representation",
+							"url": "https://www.youtube.com/watch?v=9C2cpQZVRBA"
+						},
+						{
+							"type": "Video",
+							"content": "Adjacency List Representation",
+							"url": "https://www.youtube.com/watch?v=k1wraWzqtvQ"
+						},
+						{
+							"type": "Video",
+							"content": "BFS and DFS",
+							"url": "https://www.youtube.com/watch?v=pcKY4hjDrxk"
+						},
+						{
+							"type": "Video",
+							"content": "Toplogical Sorting",
+							"url": "https://www.youtube.com/watch?v=eL-KzMXSXXI"
+						},
+						{
+							"type": "Resource",
+							"content": "Detecting Cycles",
+							"urls": [
+								"https://www.geeksforgeeks.org/detect-cycle-in-a-graph/",
+								"https://www.geeksforgeeks.org/detect-cycle-undirected-graph/"
+							]
+						},
+						{
+							"type": "Project",
+							"content": "Social Network Friend Recommendation System",
+							"list": [
+								"Use adjacency matrix for direct friendships",
+								"BFS to find friends-of-friends",
+								"Cycle detection to identify close-knit groups",
+								"Add features like mutual friend counting and community detection"
+							]
+						}
+					]
+				},
+				{
+					"week": 3,
+					"description": "Heaps and Priority Queues",
+					"tasks": [
+						{
+							"type": "Video",
+							"content": "Heaps and Heap Sort",
+							"url": "https://www.youtube.com/watch?v=B7hVxCmfPtM"
+						},
+						{
+							"type": "Resource",
+							"content": "Priority Queues",
+							"url": "https://www.sanfoundry.com/cpp-program-implements-priority-queue/"
+						},
+						{
+							"type": "Resource",
+							"content": "K Way Merge",
+							"url": "https://www.geeksforgeeks.org/merge-k-sorted-arrays/"
+						}
+					]
 				}
 			]
 		}
