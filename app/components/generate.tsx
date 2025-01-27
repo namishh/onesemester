@@ -116,6 +116,14 @@ const Generate = ({ learningPlan, defaultMonth = 1, defaultWeek = 1 }: { learnin
 				{isSidebarOpen ? '✕' : '☰'}
 			</button>
 
+			{isSidebarOpen && (
+				<div
+					className="fixed inset-0 z-40 bg-black/50 md:hidden"
+					onClick={() => setIsSidebarOpen(false)}
+				/>
+			)}
+
+
 			<div className="flex w-full md:w-1/2 py-16">
 				{/* Sidebar with mobile responsive styles */}
 				<aside className={`
@@ -171,16 +179,16 @@ const Generate = ({ learningPlan, defaultMonth = 1, defaultWeek = 1 }: { learnin
 						</div>
 					))}
 
-				<a href="/beyond"
-					className="w-full block border-t-[1px] border-neutral-700 text-left  px-4 py-2 transition-color bg-transparent hover:bg-neutral-800"
-				>
-					Beyond
-				</a>
-				<a href="https://github.com/namishh/semester"
-					className="w-full block text-left  px-4 py-2 transition-color bg-transparent hover:bg-neutral-800"
-				>
-					Github
-				</a>
+					<a href="/beyond"
+						className="w-full block border-t-[1px] border-neutral-700 text-left  px-4 py-2 transition-color bg-transparent hover:bg-neutral-800"
+					>
+						Beyond
+					</a>
+					<a href="https://github.com/namishh/semester"
+						className="w-full block text-left  px-4 py-2 transition-color bg-transparent hover:bg-neutral-800"
+					>
+						Github
+					</a>
 				</aside>
 
 				{/* Main content */}
@@ -215,7 +223,7 @@ const Generate = ({ learningPlan, defaultMonth = 1, defaultWeek = 1 }: { learnin
 											className="space-y-4 scroll-mt-16"
 										>
 											<h3 className="text-2xl font-medium px-4">
-											 <span className="text-emerald-400">##</span>	Week {week.week} | {week.description}
+												<span className="text-emerald-400">##</span>	Week {week.week} | {week.description}
 											</h3>
 											{week.tasks.map((task, index) => (
 												<TaskComponent
