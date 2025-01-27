@@ -1,4 +1,3 @@
-
 {
 	"author": {
 		"name": "namishh",
@@ -42,7 +41,7 @@
 						{
 							"type": "Resource",
 							"content": "Multidimensional Arrays",
-							"url": "https://www.cplusoop.com/programming-cplus/module4/dynamic-multidimensional-arrays.php" 
+							"url": "https://www.cplusoop.com/programming-cplus/module4/dynamic-multidimensional-arrays.php"
 						},
 						{
 							"type": "Resource",
@@ -116,7 +115,7 @@
 								"Add features like play next, play previous, shuffle, etc."
 							]
 						}
-					]	
+					]
 				},
 				{
 					"week": 3,
@@ -128,7 +127,6 @@
 							"url": "https://www.youtube.com/watch?v=MuwxQ2IB8lQ"
 						},
 						{
-
 							"type": "Video",
 							"content": "Implement a queue using a linked list",
 							"url": "https://www.youtube.com/watch?v=A5_XdiK4J8A"
@@ -149,7 +147,7 @@
 							"list": [
 								"Implement a circular queue to store orders",
 								"Handle order placement, retrieval, and cancellation",
-								"Implement a queue called ongoing orders to keep track of orders in progress"	
+								"Implement a queue called ongoing orders to keep track of orders in progress"
 							]
 						}
 					]
@@ -166,12 +164,12 @@
 						{
 							"type": "Video",
 							"content": "Collision Handling",
-							"url" : "https://www.youtube.com/watch?v=td0h7cv4cc0" 
+							"url": "https://www.youtube.com/watch?v=td0h7cv4cc0"
 						},
 						{
 							"type": "Video",
 							"content": "Implement a trie",
-							"url" : "https://www.youtube.com/watch?v=3CbFFVHQrk4"
+							"url": "https://www.youtube.com/watch?v=3CbFFVHQrk4"
 						},
 						{
 							"type": "Resource",
@@ -311,6 +309,59 @@
 							"type": "Resource",
 							"content": "K Way Merge",
 							"url": "https://www.geeksforgeeks.org/merge-k-sorted-arrays/"
+						},
+						{
+							"type": "Resource",
+							"content": "Djikstra's Algorithm",
+							"url": "https://www.youtube.com/watch?v=CerlT7tTZfY"
+						},
+						{
+							"type": "Project",
+							"content": "Logistics Network Optimizer",
+							"list": [
+								"Combine heap-based algorithms and graph theory to build a delivery optimization"
+							],
+							"details": {
+								"features": [
+									"Route planning (Dijkstra's with min-heaps)",
+									"Multi-warehouse scheduling (k-way merge)",
+									"Priority-based task management (custom heaps)"
+								]
+							}
+						}
+					]
+				},
+				{
+					"week": 4,
+					"description": "Dynamic Programming",
+					"tasks": [
+						{
+							"type": "Video",
+							"content": "Dynamic Programming Basics",
+							"url": "https://www.youtube.com/watch?v=gK8KmTDtX8E&t=395s"
+						},
+						{
+							"type": "Video",
+							"content": "Complete this playlist",
+							"url": "https://www.youtube.com/watch?v=5dRGRueKU3M&list=PLJULIlvhz0rE83NKhnq7acXYIeA0o1dXb&index=1"
+						},
+						{
+							"type": "Resource",
+							"content": "Memoization",
+							"url": "https://www.geeksforgeeks.org/what-is-memoization-a-complete-tutorial/"
+						},
+						{
+							"type": "Resource",
+							"content": "Tabulation",
+							"url": "https://www.geeksforgeeks.org/tabulation-vs-memoization/"
+						},
+						{
+							"type": "Project",
+							"content": "Music Remix Generator",
+							"list": [
+								"Use dynamic programming to generate a music remix",
+								"Use segments like ('verse', 30, 'V1'), ('chorus', 25, 'C1'), etc and generate the most compatible remix"
+							]
 						}
 					]
 				}
