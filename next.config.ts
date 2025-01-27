@@ -1,13 +1,26 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: 'export',
   webpack(config) {
     config.experiments = { ...config.experiments, topLevelAwait: true }
     return config
   },
   images: {
     remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'bear-images.sfo2.cdn.digitaloceanspaces.com',
+        port: '',
+        pathname: '/**',
+        search: '',
+      },
+      {
+        protocol: 'https',
+        hostname: 'img.youtube.com',
+        port: '',
+        pathname: '/**',
+        search: '',
+      },
       {
         protocol: 'https',
         hostname: 'i.imgur.com',
