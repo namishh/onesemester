@@ -1,0 +1,195 @@
+
+{
+	"author": {
+		"name": "namishh",
+		"url": "https://namishh.me",
+		"image": "https://github.com/namishh.png",
+		"github": "https://github.com/namishh",
+		"twitter": "https://twitter.com/namishh_"
+	},
+	"lesson": "Practical DSA",
+	"months": [
+		{
+			"month": 1,
+			"weeks": [
+				{
+					"week": 1,
+					"description": "Starting Out",
+					"tasks": [
+						{
+							"type": "Video",
+							"content": "C++ Tutorial",
+							"url": "https://www.youtube.com/watch?v=-TkoO8Z07hI"
+						},
+						{
+							"type": "Video",
+							"content": "ImGUI Tutorial",
+							"url": "https://www.youtube.com/watch?v=vWXrFetSH8w",
+							"list": [
+								"You can use imgui to make GUI version of the projects"
+							]
+						},
+						{
+							"type": "Resource",
+							"content": "Static arrays",
+							"url": "https://hank.feild.org/feild-guide-cpp/arrays.html"
+						},
+						{
+							"type": "Video",
+							"content": "Dynamic Arrays",
+							"url": "https://www.youtube.com/watch?v=igSuiwB7pBU"
+						},
+						{
+							"type": "Resource",
+							"content": "Multidimensional Arrays",
+							"url": "https://www.cplusoop.com/programming-cplus/module4/dynamic-multidimensional-arrays.php" 
+						},
+						{
+							"type": "Resource",
+							"content": "Basics of Strings",
+							"url": "https://www.kindsonthegenius.com/cplusplus/c-string-manipulation/"
+						},
+						{
+							"type": "Project",
+							"content": "Dynamic Array Implementation",
+							"list": [
+								"Build a Python-like list with automatic resizing"
+							]
+						},
+						{
+							"type": "Project",
+							"content": "Password Validator and Generator",
+							"list": [
+								"Validate a password based on certain criteria",
+								"Generate a strong password based on user input"
+							]
+						}
+					]
+				},
+				{
+					"week": 2,
+					"description": "Linked Lists",
+					"tasks": [
+						{
+							"type": "Video",
+							"content": "Singly Linked List",
+							"url": "https://www.youtube.com/watch?v=N6dOwBde7-M"
+						},
+						{
+							"type": "Video",
+							"content": "Doubly Linked List",
+							"url": "https://www.youtube.com/watch?v=VOQNf1VxU3Q"
+						},
+						{
+							"type": "Resource",
+							"content": "Circular Linked List",
+							"url": "https://www.softwaretestinghelp.com/circular-linked-list/"
+						},
+						{
+							"type": "Resource",
+							"content": "Cycle Detection in a Linked List",
+							"url": "https://cp-algorithms.com/others/tortoise_and_hare.html"
+						},
+						{
+							"type": "Resource",
+							"content": "Merge Two Sorted Linked Lists",
+							"url": "https://takeuforward.org/data-structure/merge-two-sorted-linked-lists/"
+						},
+						{
+							"type": "Resource",
+							"content": "XOR Linked List",
+							"url": "https://www.geeksforgeeks.org/xor-linked-list-a-memory-efficient-doubly-linked-list-set-1/"
+						},
+						{
+							"type": "Project",
+							"content": "Simulating browser history",
+							"list": [
+								"Using XOR linked list, create a basic browser history implementation where you can go back and forward"
+							]
+						},
+						{
+							"type": "Project",
+							"content": "Make a music player",
+							"list": [
+								"Use doubly linked list to implement a music player",
+								"Enable people to add, remove or move music to different playlists",
+								"Add features like play next, play previous, shuffle, etc."
+							]
+						}
+					]	
+				},
+				{
+					"week": 3,
+					"description": "Stacks and Queues",
+					"tasks": [
+						{
+							"type": "Video",
+							"content": "Implement a stack using a linked list",
+							"url": "https://www.youtube.com/watch?v=MuwxQ2IB8lQ"
+						},
+						{
+
+							"type": "Video",
+							"content": "Implement a queue using a linked list",
+							"url": "https://www.youtube.com/watch?v=A5_XdiK4J8A"
+						},
+						{
+							"type": "Resource",
+							"content": "Monotonic Stack",
+							"url": "https://leetcode.com/discuss/study-guide/2347639/a-comprehensive-guide-and-template-for-monotonic-stack-based-problems"
+						},
+						{
+							"type": "Resource",
+							"content": "Circular Queue",
+							"url": "https://www.geeksforgeeks.org/introduction-to-circular-queue/"
+						},
+						{
+							"type": "Project",
+							"content": "Make and simulate a restaurant order system",
+							"list": [
+								"Implement a circular queue to store orders",
+								"Handle order placement, retrieval, and cancellation",
+								"Implement a stack called ongoing orders to keep track of orders in progress"	
+							]
+						}
+					]
+				},
+				{
+					"week": 4,
+					"description": "Hashtables, Tries and Pattern Matching",
+					"tasks": [
+						{
+							"type": "Video",
+							"content": "Implement a hashtable",
+							"url": "https://www.youtube.com/watch?v=2_3fR-k-LzI"
+						},
+						{
+							"type": "Video",
+							"content": "Collision Handling",
+							"url" : "https://www.youtube.com/watch?v=td0h7cv4cc0" 
+						},
+						{
+							"type": "Video",
+							"content": "Implement a trie",
+							"url" : "https://www.youtube.com/watch?v=3CbFFVHQrk4"
+						},
+						{
+							"type": "Resource",
+							"content": "Boyer Moore String Matching Algorithm",
+							"url": "https://medium.com/@siddharth.21/the-boyer-moore-string-search-algorithm-674906cab162"
+						},
+						{
+							"type": "Projects",
+							"content": "Easy CLI Projects",
+							"list": [
+								"Implement a phone directory with hashmaps",
+								"A very simple autocomplete text input",
+								"CLI based text search tool that efficiently finds patterns in large codebases"
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

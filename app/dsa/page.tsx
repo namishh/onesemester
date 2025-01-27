@@ -1,15 +1,14 @@
 "use client";
 import Generate from "../components/generate";
 import { useEffect, useState } from "react";
-import data from "@/app/data/devops.json"
+import data from "@/app/data/dsa.json"
 import { ProgressProvider } from "../context/progress";
 import ProgressBar from "../components/progressbar";
 import { calculateTotalTasks } from "../utils/util";
 
-const Devops = () => {
+const DSA = () => {
     const [month, setMonth] = useState<number>(1);
     const [week, setWeek] = useState<number>(1);
-
 
     useEffect(() => {
         const params = new URLSearchParams(window.location.search);
@@ -25,10 +24,12 @@ const Devops = () => {
         </div>
     }
 
-    return <ProgressProvider roadmapId="devops">
-        <ProgressBar total={calculateTotalTasks(data)}/>
-        <Generate learningPlan={data} defaultMonth={month} defaultWeek={week} />;
+    return <ProgressProvider roadmapId="dsa">
+     <ProgressBar total={calculateTotalTasks(data)}/>
+     <Generate learningPlan={data} defaultMonth={month} defaultWeek={week} />;
     </ProgressProvider>;
 };
 
-export default Devops;
+export default DSA;
+
+

@@ -45,6 +45,11 @@ export default function Sidebar() {
 				>
 					DevOps
 				</a>
+				<a href="/dsa"
+					className="w-full block text-left  px-4 py-2 transition-color bg-transparent hover:bg-neutral-800"
+				>
+					Practical DSA
+				</a>
 				<a href="/web"
 					className="w-full block text-left  px-4 py-2 transition-color bg-transparent hover:bg-neutral-800"
 				>
