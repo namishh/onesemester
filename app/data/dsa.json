@@ -425,7 +425,7 @@
 			"tasks": [
 				{
 					"type": "Project",
-					"content": "Game Matchmaking & Tournament System",
+					"content": "Matchmaking & Tournament System",
 					"list": [
 						"Trees Used: AVL Tree (skill matching), BST (streak tracking), Binary Tree (tournaments), Graphs (rivalries)",
 						"Skill-Based Matchmaker: AVL tree for range queries of similarly skilled players",
