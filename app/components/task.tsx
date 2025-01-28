@@ -72,7 +72,7 @@ const TaskComponent = memo(({
           {videoLoaded ? (
             <iframe
               width="100%"
-              height="250"
+              height="260"
               loading="lazy"
               src={`https://www.youtube.com/embed/${youTubeId}?autoplay=1`}
               title={task.content}

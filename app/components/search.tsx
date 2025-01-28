@@ -3,11 +3,13 @@ import React, { useState, useEffect, useRef, useMemo } from 'react';
 import webData from '@/app/data/web.json';
 import lowData from '@/app/data/low.json';
 import devopsData from '@/app/data/devops.json';
+import dsaData from '@/app/data/dsa.json';
 
 const searchData = {
 	web: webData,
 	low: lowData,
 	devops: devopsData,
+	dsa: dsaData
 };
 
 const addToIndex = (word: string, item: any, index: Map<string, any[]>) => {

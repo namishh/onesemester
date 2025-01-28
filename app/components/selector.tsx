@@ -7,7 +7,8 @@ const paths = [
   { name: 'low', label: 'C and Rust' },
   { name: 'devops', label: 'DevOps' },
   { name: 'web', label: 'Full Stack Javascript' },
-  {name: "beyond", label: "Beyond One Semester"}
+  { name: 'dsa', label: 'Practical DSA' },
+  { name: "beyond", label: "Beyond One Semester" }
 ];
 
 const PathSelector = () => {
@@ -118,9 +119,8 @@ const PathSelector = () => {
                       key={path.name}
                       href={`/${path.name}`}
                       ref={index === selectedIndex ? linkRef : null}
-                      className={`block w-full text-xl p-4 text-left hover:bg-neutral-800 ${
-                        index === selectedIndex ? 'bg-neutral-800 text-emerald-500' : 'text-white'
-                      } group`}
+                      className={`block w-full text-xl p-4 text-left hover:bg-neutral-800 ${index === selectedIndex ? 'bg-neutral-800 text-emerald-500' : 'text-white'
+                        } group`}
                       onClick={() => {
                         setIsOpen(false);
                         setQuery('');
