@@ -16,6 +16,16 @@
 					"description": "Starting Out",
 					"tasks": [
 						{
+							"type": "Disclaimer",
+							"content": "Please Read",
+							"list": [
+								"This is a very fast paced dsa course as their is simply too much to do.",
+								"And still, the course does not complete 100% of DSA. One semester is NOT enough.",
+								"Some concepts are not given in resources but are taught through the projects.",
+								"Lastly this course DOES NOT focus on Leetcode and Codeforces or job interviews. (The title should have given it away)"
+							]
+						},
+						{
 							"type": "Video",
 							"content": "C++ Tutorial",
 							"url": "https://www.youtube.com/watch?v=-TkoO8Z07hI"
