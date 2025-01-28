@@ -366,6 +366,130 @@
 					]
 				}
 			]
+		},
+		{
+			"month": 3,
+			"tasks": [
+				{
+					"type": "Video",
+					"content": "Video Series on Suffix Trees",
+					"url": "https://www.youtube.com/watch?v=llTjA5SeS7k&list=PL2mpR0RYFQsDFNyRsTNcWkFTHTkxWREeb&index=2"
+				},
+				{
+					"type": "Video",
+					"content": "Compressed Tries",
+					"url": "https://www.youtube.com/watch?v=ASWUw5EeMdo"
+				},
+				{
+					"type": "Resource",
+					"content": "Compressed Tries",
+					"url": "https://www.geeksforgeeks.org/compressed-tries/"
+				},
+				{
+					"type": "Project",
+					"content": "Plagiarism Detector",
+					"list": [
+						"Given two documents, analyze the similarity between them using compressed tries and suffix trees"
+					]
+				},
+				{
+					"type": "Video",
+					"url": "https://www.youtube.com/watch?v=V5-7GzOfADQ",
+					"content": "KMP Pattern Matching"
+				},
+				{
+					"type": "Video",
+					"url": "https://www.youtube.com/watch?v=qQ8vS2btsxI",
+					"content": "Robin Karp Pattern Matching"
+				},
+				{
+					"type": "Project",
+					"content": "DNA Muatation Detector",
+					"list": [
+						"Generate a sample DNA sequence with known patterns and mutations",
+						"Add some example disease patterns",
+						"Analyze sequences and detect mutations and diseases",
+						"Identify disease-causing genetic patterns",
+						"Include drug resistance pattern detection"
+					]
+				},
+				{
+					"type": "Video",
+					"url": "https://www.youtube.com/watch?v=YVZttWzvyw8",
+					"content": "Manacher's Algorithm"
+				}
+			]
+		},
+		{
+			"month": 4,
+			"tasks": [
+				{
+					"type": "Project",
+					"content": "Game Matchmaking & Tournament System",
+					"list": [
+						"Trees Used: AVL Tree (skill matching), BST (streak tracking), Binary Tree (tournaments), Graphs (rivalries)",
+						"Skill-Based Matchmaker: AVL tree for range queries of similarly skilled players",
+						"Tournament Engine: Binary tree for bracket generation and progression tracking",
+						"Rivalry Network: Graph structure tracking player histories and matchup patterns",
+						"Win Streak System: BST optimized for tracking player momentum",
+						"Real-Time Features: Priority queues for live match queueing",
+						"Balancing Features: Tree rotations ensure O(log n) operations as player base grows"
+					]
+				},
+				{
+					"type": "Project",
+					"content": "Stock Trading Simulator",
+					"list": [
+						"Use: Dynamic Programming, Sliding Window, Priority Queues",
+						"Portfolio Optimization: DP for max profit with buy/sell constraints",
+						"Real-Time Alerts: Sliding window for moving price averages",
+						"Order Matching Engine: Priority queues for limit orders"
+					]
+				},
+				{
+					"type": "Project",
+					"content": "Multi-Threaded Web Crawler",
+					"list": [
+						"DSA Used: Concurrency, Hash Tables, Tries.",
+						"Parallel Crawling: Thread-safe queues for URL management",
+						"Duplicate Detection: Bloom filters or hash tables",
+						"Keyword Indexer: Trie for efficient word search"
+					]
+				},
+				{
+					"type": "Project",
+					"content": "Scalable URL Shortener",
+					"list": [
+						"DSA Used: Consistent Hashing, LRU Cache, Base62 Encoding",
+						"Distributed Storage: Consistent hashing for sharding.",
+						"Rate Limiting: Sliding window counters.",
+						"Analytics Dashboard: Hash tables for click tracking."
+					]
+				}
+			]
+		},
+		{
+			"month": 5,
+			"tasks": [
+				{
+					"type": "Project",
+					"content": "2D RPG Game",
+					"image": "https://i.imgur.com/hW5IioL.png",
+					"list": [
+						"Grid-based map with obstacles (trees, rivers).",
+						"Units (e.g., soldiers, tanks) navigate using A* with heaps for priority.",
+						"OPTIONAL: Handle dynamic obstacles (e.g., collapsing bridges) with incremental graph updates",
+						"Efficiently detect collisions between hundreds of units using quadtrees",
+						"Hash tables to track unit positions and states.",
+						"AI builds units/structures based on decision trees",
+						"Use minimax for tactical decisions",
+						"Prioritize common currency vs rare currency collection based on urgency",
+						"Track resources in real-time with hash tables",
+						"OPTIONAL: Use perlin noise to generate random maps with forests, mountains, and chokepoints.",
+						"OPTIONAL: Record and replay matches by storing unit actions in linked lists."
+					]
+				}
+			]
 		}
 	]
 }

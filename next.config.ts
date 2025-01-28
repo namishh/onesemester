@@ -16,6 +16,13 @@ const nextConfig: NextConfig = {
       },
       {
         protocol: 'https',
+        hostname: 'miro.medium.com',
+        port: '',
+        pathname: '/**',
+        search: '',
+      },
+      {
+        protocol: 'https',
         hostname: 'img.youtube.com',
         port: '',
         pathname: '/**',

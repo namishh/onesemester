@@ -39,7 +39,7 @@ export default function Beyond() {
         <Sidebar />
         <main className="flex-1 p-0 md:p-0 w-full md:pl-0 border-l border-neutral-700 ">
           <h1 className="text-3xl md:text-4xl font-bold mb-2 px-4 pt-2">Beyond One Semester</h1>
-          <p className="text-2xl px-4">These are list of some resrouces to go beyond. These topics are outside the scope of one semester and might take a lot of time to even get comfortable.</p>
+          <p className="text-2xl px-4">These are list of some resources to go beyond. These topics are outside the scope of one semester and might take a lot of time to even get comfortable.</p>
           <p className="text-2xl px-4 text-emerald-400">Data structures and Algorithms</p>
 					<ul className="list-disc text-2xl ml-4 px-4 py-2">
 						<li>CSES <a href="https://cses.fi/book/book.pdf" className="text-emerald-400 underline underline-offset-4">Handbook</a></li>
