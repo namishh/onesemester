@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Practical DSA',
     description: 'Learn DSA by making actual projects',
-    images: ['https://i.imgur.com/BwGG7Ch.png'],
+    images: ['https://i.imgur.com/Jxz5y0o.png'],
   },
   openGraph: {
     siteName: "One Semester",
@@ -15,12 +15,12 @@ export const metadata: Metadata = {
     description: 'Learn DSA by making actual projects',
     images: [
       {
-        url: 'https://i.imgur.com/BwGG7Ch.png',
+        url: 'https://i.imgur.com/Jxz5y0o.png',
         width: 800,
         height: 600,
       },
       {
-        url: 'https://i.imgur.com/BwGG7Ch.png',
+        url: 'https://i.imgur.com/Jxz5y0o.png',
         width: 1800,
         height: 1600,
         alt: 'Practical DSA Preview',
