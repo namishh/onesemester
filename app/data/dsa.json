@@ -59,7 +59,7 @@
 							"type": "Project",
 							"content": "Password Validator and Generator",
 							"list": [
-								"Validate a password based on certain criteria",
+								"Validate a password based - atleast 12 characters long, atleast 1 special character, 1 uppercase, 1 lowercase and 1 number",
 								"Generate a strong password based on user input"
 							]
 						}
@@ -453,7 +453,7 @@
 				{
 					"type": "Video",
 					"content": "Sorting Playlist",
-					"url": "https://www.youtube.com/playlist?list=PL2_aWCzGMAwKedT2KfDMB9YA5DgASZb3U"
+					"url": "https://www.youtube.com/watch?v=pkkFqlG0Hds&list=PL2_aWCzGMAwKedT2KfDMB9YA5DgASZb3U&index=1"
 				},
 				{
 					"type": "Video",
