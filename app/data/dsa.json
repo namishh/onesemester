@@ -452,6 +452,11 @@
 				},
 				{
 					"type": "Video",
+					"content": "Sorting Playlist",
+					"url": "https://www.youtube.com/playlist?list=PL2_aWCzGMAwKedT2KfDMB9YA5DgASZb3U"
+				},
+				{
+					"type": "Video",
 					"content": "Parallel C++ Playlist",
 					"url": "https://www.youtube.com/watch?v=Zu5JcxZt_f8&list=PLxNPSjHT5qvsGKsAhirvZn7W73pXhXpfv&index=1"
 				},
@@ -470,9 +475,10 @@
 					"content": "Distributed File Search Engine with Multithreading",
 					"list": [
 						"DSA Used: Trie, Hash Maps, Priority Queues",
-						"File Indexing: Use parallel threads to index files",
+						"File Indexing: Use parallel threads to index files across different folders",
 						"Search Query Execution: Implement multi-threaded query processing to handle multiple user searches concurrently",
 						"Scalability: Design the system to handle thousands of concurrent search queries efficiently",
+						"Sorting: Sort files on the basis of size, modification time, etc",
 						"Real-Time Updates: Ensure new files are indexed and available for search without downtime"
 					]
 				}
