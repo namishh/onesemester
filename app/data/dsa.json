@@ -417,6 +417,64 @@
 					"type": "Video",
 					"url": "https://www.youtube.com/watch?v=YVZttWzvyw8",
 					"content": "Manacher's Algorithm"
+				},
+				{
+					"type": "Video",
+					"content": "LRU Cache",
+					"url": "https://www.youtube.com/watch?v=z9bJUPxzFOw"
+				},
+				{
+					"type": "Video",
+					"content": "LRU Cache But Advanced",
+					"url": "https://www.youtube.com/watch?v=Ud6lzJ_IWIU"
+				},
+				{
+					"type": "Video",
+					"content": "LFU Cache",
+					"url": "https://www.youtube.com/watch?v=rSwmpWaJPG0"
+				},
+				{
+					"type": "Resource",
+					"content": "Write through vs Write around",
+					"url": "https://www.geeksforgeeks.org/write-through-and-write-back-in-cache/"
+				},
+				{
+					"type": "Project",
+					"content": "E-Commerce Product Recommendation Engine",
+					"list": [
+						"DSA Used: LRU Cache, LFU Cache, Bloom Filters",
+						"Browse History: LRU cache for recently viewed products",
+						"Popular Items: LFU cache for frequently purchased items",
+						"Cart System: Two-level cache (session + persistent)",
+						"Search Suggestions: Cached based on popular queries",
+						"A/B Testing: Compare different caching strategies"
+					]
+				},
+				{
+					"type": "Video",
+					"content": "Parallel C++ Playlist",
+					"url": "https://www.youtube.com/watch?v=Zu5JcxZt_f8&list=PLxNPSjHT5qvsGKsAhirvZn7W73pXhXpfv&index=1"
+				},
+				{
+					"type": "Video",
+					"content": "Threading C++ Playlist",
+					"url": "https://www.youtube.com/watch?v=TPVH_coGAQs&list=PLk6CEY9XxSIAeK-EAh3hB4fgNvYkYmghp&index=1"
+				},
+				{
+					"type": "Resource",
+					"content": "Atomic C++",
+					"url": "https://www.modernescpp.com/index.php/atomic-ref/"
+				},
+				{
+					"type": "Project",
+					"content": "Distributed File Search Engine with Multithreading",
+					"list": [
+						"DSA Used: Trie, Hash Maps, Priority Queues",
+						"File Indexing: Use parallel threads to index files",
+						"Search Query Execution: Implement multi-threaded query processing to handle multiple user searches concurrently",
+						"Scalability: Design the system to handle thousands of concurrent search queries efficiently",
+						"Real-Time Updates: Ensure new files are indexed and available for search without downtime"
+					]
 				}
 			]
 		},
@@ -476,6 +534,7 @@
 					"content": "2D RPG Game",
 					"image": "https://i.imgur.com/hW5IioL.png",
 					"list": [
+						"Of course you are not expected to create all the graphics, even flat shapes would work",
 						"Grid-based map with obstacles (trees, rivers).",
 						"Units (e.g., soldiers, tanks) navigate using A* with heaps for priority.",
 						"OPTIONAL: Handle dynamic obstacles (e.g., collapsing bridges) with incremental graph updates",
