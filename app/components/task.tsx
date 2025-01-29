@@ -38,8 +38,16 @@ const TaskComponent = memo(({
   }, [monthId, weekId, taskIndex, toggleTask]);
 
   return (
-    <div className={`py-4 ${className} text-[22px]`}>
-      <div className="flex items-center px-4 mb-2">
+    <div className={`py-4 ${className} text-[22px] ${task.type === "Project" && "bg-emerald-900/20"}`}>
+      {task.type === "Project" && 
+      <div className="px-4 w-full text-lg">
+        <div className="w-full bg-emerald-800/20 mb-4 p-2 items-center gap-4 flex">
+        <svg fill="none" xmlns="http://www.w3.org/2000/svg" className="text-rose-400 h-6 w-6" viewBox="0 0 24 24"> <path d="M13 1h-2v2H9v2H7v2H5v2H3v2H1v2h2v2h2v2h2v2h2v2h2v2h2v-2h2v-2h2v-2h2v-2h2v-2h2v-2h-2V9h-2V7h-2V5h-2V3h-2V1zm0 2v2h2v2h2v2h2v2h2v2h-2v2h-2v2h-2v2h-2v2h-2v-2H9v-2H7v-2H5v-2H3v-2h2V9h2V7h2V5h2V3h2zm0 4h-2v6h2V7zm0 8h-2v2h2v-2z" fill="currentColor"/></svg>
+        <p>Please use AI <a href="/responsible" className="text-emerald-400 hover:text-emerald-500 underline underline-offset-4 text-lg">responsibly</a></p>
+        </div>
+      </div>
+}
+      <div className="flex items-center px-4 pb-2">
         <input
           type="checkbox"
           checked={completed}
@@ -157,7 +165,7 @@ const TaskComponent = memo(({
       ))}
 
       {task.urls && task.urls.map((url, idx) => (
-        <div key={idx} className="mt-4 px-4">
+        <div key={idx} className="px-4">
           <a
             href={url}
             target="_blank"
@@ -170,7 +178,7 @@ const TaskComponent = memo(({
       ))}
 
       {task.list && (
-        <ul className="list-disc mt-4 pl-8 px-4 space-y-2">
+        <ul className="list-disc pl-8 px-4 space-y-2">
           {task.list.map((item, idx) => (
             <li key={idx} className="break-words">{item}</li>
           ))}
@@ -178,7 +186,7 @@ const TaskComponent = memo(({
       )}
 
       {task.details && (
-        <div className="mt-4 px-4">
+        <div className="px-4">
           {task.details.features && (
             <Accordion title="Features">
               <ul className="list-disc pl-5 space-y-2">
@@ -225,6 +233,24 @@ const TaskComponent = memo(({
           )}
         </div>
       )}
+      {task.hints && task.hints.length > 0 &&  <div className="hintbox mt-4 px-4 w-full text-xl">
+        <div className="p-2 w-full bg-emerald-800/20">
+        <div className="flex items-center gap-4">
+        <svg xmlns="http://www.w3.org/2000/svg" className='text-emerald-400 h-6 w-6' fill="currentColor" viewBox="0 0 24 24"> <path d="M8 2h8v2H8V2ZM6 6V4h2v2H6Zm0 6H4V6h2v6Zm2 2H6v-2h2v2Zm2 0H8v4h8v-4h2v-2h2V6h-2V4h-2v2h2v6h-2v2h-2v2h-4v-2Zm2-2v2h-2v-2h2Zm0-2h2v2h-2v-2Zm0-2v2h-2V8h2Zm0 0V6h2v2h-2Zm4 14v-2H8v2h8Z" /> </svg>
+        <span className="text-2xl">Hints</span>
+        </div>
+        <ul className="list-disc mt-4 pl-5 space-y-2">
+      {
+        task.hints && task.hints.map((hint, idx) => (
+          <li key={idx} className="px-2">
+            <span className="text-xl">{hint}</span>
+          </li>
+        ))
+      }
+      </ul>
+      </div>
+      </div>
+    }
     </div>
   );
 });

@@ -220,7 +220,7 @@ const Generate = ({ learningPlan, defaultMonth = 1, defaultWeek = 1 }: { learnin
 										<div
 											key={week.week}
 											id={`week-${month.month}-${week.week}`}
-											className="space-y-4 scroll-mt-16"
+											className="scroll-mt-16"
 										>
 											<h3 className="text-2xl font-medium px-4">
 												<span className="text-emerald-400">##</span>	Week {week.week} | {week.description}
@@ -238,7 +238,7 @@ const Generate = ({ learningPlan, defaultMonth = 1, defaultWeek = 1 }: { learnin
 										</div>
 									))
 								) : (
-									<div className="space-y-4">
+									<div className="">
 										{month.tasks?.map((task, index) => (
 											<TaskComponent
 												key={`${month.month}-null-${index}`}

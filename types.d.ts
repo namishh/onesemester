@@ -6,6 +6,7 @@ interface Task {
   list?: string[];
   images?: string[];  
   image?: string;
+  hints?: string[];
   details?: {
     features?: string[];
     tips?: string[];

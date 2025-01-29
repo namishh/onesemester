@@ -35,7 +35,10 @@
 									"Make the tabs above work only with css",
 									"Make a 3 second loading screen animation"
 								]
-							}
+							},
+							"hints": [
+								"Very obvious: but try breaking down complex ui into smaller grids or flexboxes"
+							]
 						},
 						{
 							"type": "Resource",
@@ -112,7 +115,10 @@
 							"type": "Project",
 							"content": "Frontend Clone of iPad Pro Website",
 							"image": "https://i.imgur.com/tRagYjM.webp",
-							"url": "https://www.apple.com/in/ipad-pro/"
+							"url": "https://www.apple.com/in/ipad-pro/",
+							"hints": [
+								"Look into gsap dot com for animations"
+							]
 						},
 						{
 							"type": "Project",
@@ -127,7 +133,10 @@
 									"Try using the Intersection Observer API to lazy load the comments",
 									"Try rendering the html of the comments with style"
 								]
-							}
+							},
+							"hints": [
+								"You can use wrap the comment in a .comment class and then use .comment > element to style it"
+							]
 						}
 					]
 				},
@@ -163,7 +172,10 @@
 								"examples": [
 									"https://www.radix-ui.com/colors/custom"
 								]
-							}
+							},
+							"hints": [
+								"Use zustand for color management"
+							]
 						},
 						{
 							"type": "Project",
@@ -176,7 +188,12 @@
 									"Allow people to change the background wallpaper",
 									"Draggable deskrop icons"
 								]
-							}
+							},
+							"hints": [
+								"Use react-draggable for making the windows draggable",
+								"Calendar rendering can be done with maths, just THINK",
+								"Use useRef to allow people to instantly change the wallpaper on uploading"
+							]
 						}
 					]
 				},
@@ -231,7 +248,7 @@
 							"content": "Modify Old Desktop As A Website",
 							"details": {
 								"features": [
-									"Add auth and save the state of your operating system with react.",
+									"Add auth with normal emails and gmail and save the state of your operating system with react.",
 									"Let users create their own text files // folders, or let them upload their own files.",
 									"BONUS: Add realtime chat features between two valid users."
 								]
@@ -249,7 +266,12 @@
 									"Create a simple dank memer like economy",
 									"BONUS: make a web app to control and change the settings of the bot per guild."
 								]
-							}
+							},
+							"hints": [
+								"Use discordjs to make the bot",
+								"Try making the codebase eaiser with command handlers and event handlers",
+								"WARNING: discordjs has a very unstable api, so most online tutorials go stale quickly"
+							]
 						}
 					]
 				},
@@ -287,7 +309,11 @@
 								"examples": [
 									"https://github.com/namishh/holmes"
 								]
-							}
+							},
+								"hints": [
+									"Admin passwords should be stored as an environment variable",
+									"Moreover you can also do such that only certain emails can access the admin panel"
+								]
 						},
 						{
 							"type": "Project",
@@ -405,6 +431,9 @@
 								"Add a very basic canvas to draw on",
 								"Establish connection between two users in the form of rooms",
 								"Use websockets for real-time communication and update canvas"
+							],
+							"hints": [
+								"Do not just start making your own custom canvas, just use a package and build on top of it"
 							]
 						}
 					]

@@ -83,6 +83,11 @@
 							"list": [
 								"Validate a password based - atleast 12 characters long, atleast 1 special character, 1 uppercase, 1 lowercase and 1 number",
 								"Generate a strong password based on user input"
+							],
+							"hints": [
+								"Split into validator (check rules) and generator (random chars).",
+								"Use <regex> to match password patterns",
+								"Use rand() or <random> to generate secure passwords"
 							]
 						}
 					]
@@ -126,6 +131,10 @@
 							"content": "Simulating browser history",
 							"list": [
 								"Using XOR linked list, create a basic browser history implementation where you can go back and forward"
+							],
+							"hints": [
+								"Store url + xor_ptr (prev ^ next addresses as uintptr_t)",
+								"Track current node + previous node to compute next"
 							]
 						},
 						{
@@ -170,6 +179,9 @@
 								"Implement a circular queue to store orders",
 								"Handle order placement, retrieval, and cancellation",
 								"Implement a queue called ongoing orders to keep track of orders in progress"
+							],
+							"hints": [
+								"Maintain a second queue for ongoing orders, process orders in progress, and allow cancellation with a dequeue() operation"
 							]
 						}
 					]
@@ -255,7 +267,11 @@
 									"Players collect loot (weapons, potions) stored in a BST sorted by power level. Fast search lets players strategize during combat.",
 									"Enemy difficulty scales dynamically using an AVL tree to ensure balanced encounters (no unfair fights!)."
 								]
-							}
+							},
+							"hints": [
+								"Use recursion to explore left/right in the binary tree, representing rooms.",
+								"Ensure balanced enemy difficulty by performing proper AVL rotations during combat."
+							]
 						}
 					]
 				},
@@ -307,8 +323,13 @@
 							"list": [
 								"Use adjacency matrix for direct friendships",
 								"BFS to find friends-of-friends",
-								"Cycle detection to identify close-knit groups",
+								"Identify close-knit groups",
 								"Add features like mutual friend counting and community detection"
+							],
+							"hints": [
+								"Represent direct friendships as a matrix, where matrix[i][j] is 1 if there's a friendship between users i and j.",
+								"Implement cycle detection (DFS or Union-Find) to identify closely connected groups of users.",
+								"Count mutual friends by checking common neighbors in the adjacency matrix for two users."
 							]
 						}
 					]
@@ -345,11 +366,15 @@
 							],
 							"details": {
 								"features": [
-									"Route planning (Dijkstra's with min-heaps)",
-									"Multi-warehouse scheduling (k-way merge)",
-									"Priority-based task management (custom heaps)"
+									"Route planning",
+									"Multi-warehouse scheduling",
+									"Priority-based task management with custom heaps"
 								]
-							}
+							}, 
+							"hints": [
+								"Use Dijkstra’s algorithm with a min-heap to efficiently find the shortest path",
+								" k-way merge algorithm with heaps to efficiently schedule deliveries across multiple warehouses."
+							]
 						}
 					]
 				},
@@ -383,6 +408,11 @@
 							"list": [
 								"Use dynamic programming to generate a music remix",
 								"Use segments like ('verse', 30, 'V1'), ('chorus', 25, 'C1'), etc and generate the most compatible remix"
+							],
+							"hints": [
+								"Create a matrix to store compatibility scores between different segments",
+								"Track the best possible remix configuration at each step using DP",
+								"Consider both segment order nd total length when selecting segments"
 							]
 						}
 					]
@@ -433,6 +463,9 @@
 						"Analyze sequences and detect mutations and diseases",
 						"Identify disease-causing genetic patterns",
 						"Include drug resistance pattern detection"
+					],
+					"hints": [
+						"Use Rabin-Karp for fast substring search of mutation or disease-causing patterns, and KMP for efficient matching of fixed sequences"
 					]
 				},
 				{
@@ -567,13 +600,21 @@
 						"Units (e.g., soldiers, tanks) navigate using A* with heaps for priority.",
 						"OPTIONAL: Handle dynamic obstacles (e.g., collapsing bridges) with incremental graph updates",
 						"Efficiently detect collisions between hundreds of units using quadtrees",
-						"Hash tables to track unit positions and states.",
+						"Track unit positions and states.",
 						"AI builds units/structures based on decision trees",
 						"Use minimax for tactical decisions",
 						"Prioritize common currency vs rare currency collection based on urgency",
 						"Track resources in real-time with hash tables",
 						"OPTIONAL: Use perlin noise to generate random maps with forests, mountains, and chokepoints.",
-						"OPTIONAL: Record and replay matches by storing unit actions in linked lists."
+						"OPTIONAL: Record and replay matches"
+					],
+					"hints": [
+						"Group your objects into batches based on textures to minimize state changes. Use a single call to glDrawArrays() or glDrawElements() to render large numbers of objects at once.",
+						"Update the graph incrementally when obstacles (e.g., collapsing bridges) change, adjusting the A* algorithm on-the-fly",
+						"Use hash tables to track unit positions and states for quick look-up and updates.",
+						"Implement decision trees for AI to build units/structures based on game state.",
+						"Priotizing the currency should be on the basis of the items in the hash table",
+						"Store unit actions in linked lists to record and replay matches, allowing for game replays."
 					]
 				}
 			]
