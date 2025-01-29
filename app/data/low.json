@@ -398,7 +398,7 @@
                         "url": "https://snakegame.org/",
                         "image": "https://i.imgur.com/8rUsMRp.webp",
                         "hints": [
-                            "You can use the rand crate to generate the apple on the screen. randomly generate the ",
+                            "You can use the rand crate to generate the apple on the screen. randomly generate the coordinate values",
                             "The snake can be drawn by drawing new pixel at start and popping the pixel from the end of snake",
                             "the score increases if the position of head of snake matches the position of the apple.",
                             "depending upon which key the user presses change the direction of snake"
