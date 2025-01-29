@@ -27,7 +27,13 @@
                             "type": "Resource",
                             "content": "Beej's Guide to C",
                             "list": [
-                                "Complete till 7.1"
+                                "Complete till chapter 7",
+                                "Variable and Statements",
+                                "Operators and flow control",
+                                "Functions",
+                                "Pointers",
+                                "Arrays",
+                                "Strings"
                             ],
                             "url": "https://beej.us/guide/bgc/html/split"
                         },
@@ -60,7 +66,7 @@
                             "content": "Beej's Guide to C",
                             "list": [
                                 "Complete till 15. List of topics: ",
-                                "Structs, Enums ",
+                                "Structs, Enums",
                                 "file I/O",
                                 "memory allocation",
                                 "Pointer arithmetic",
@@ -189,7 +195,12 @@
                             "type": "Resource",
                             "content": "Rust Book",
                             "url": "https://doc.rust-lang.org/book/",
-                            "list": ["Read till Chapter 5"]
+                            "list": [
+                                "Read till Chapter 5",
+                                "Common Programming concepts",
+                                "Understanding ownership",
+                                "Structs and impls"
+                            ]
                         },
                         {
                             "type": "Video",
@@ -227,7 +238,15 @@
                             "type": "Resource",
                             "content": "Rust Book",
                             "url": "https://doc.rust-lang.org/book/",
-                            "list": ["Read till Chapter 13"]
+                            "list": [
+                                "Read till Chapter 13",
+                                "Enums and Pattern Matching",
+                                "Modules and Packaging",
+                                "Common Collections",
+                                "Error Handling",
+                                "Generics, Traits, and Lifetimes",
+                                "Writing Tests"
+                            ]
                         },
                         {
                             "type": "Project",
@@ -249,6 +268,10 @@
                             "urls": [
                                 "https://www.geeksforgeeks.org/grep-command-in-unixlinux/",
                                 "https://www.gnu.org/software/grep/manual/grep.html"
+                            ],
+                            "hints": [
+                                "Use the std::env::args or Clap crate to parse command line arguments",
+                                "can use contains method for basic implementation and regex for more advanced pattern matching"
                             ]
                         },
                         {
@@ -305,6 +328,7 @@
                         {
                             "type": "Project",
                             "content": "Make the web server project from rust book",
+                            "url": "https://doc.rust-lang.org/book/ch20-00-final-project-a-web-server.html",
                             "list": [
                                 "After this, you can explore frameworks like Tokio, Actix, Tonic and Rocket",
                                 "Combine this with the Diesel ORM to make a full stack app",
@@ -334,6 +358,11 @@
                                 "Crop videos from specified positions",
                                 "Convert videos to different formats",
                                 "Can also try to make a screen recorder from it"
+                            ],
+                            "url": "https://img.ly/blog/ultimate-guide-to-ffmpeg/",
+                            "hints": [
+                                "use std::process::Command for creating ffmpeg process",
+                                "use Clap crate to parse cli arguments"
                             ]
                         },
                         {
@@ -341,6 +370,10 @@
                             "content": "Parser",
                             "list": [
                                 "Parse markdown or a custom markup format and allow people to create their own webpages"
+                            ],
+                            "hints": [
+                                "think of how markdown can be mapped to html tags. For example-  [foo](https://bar.com) is just anchor tag",
+                                "You can use regex to find, replace and manipulate text."
                             ]
                         }
                     ]
@@ -363,7 +396,13 @@
                         "type": "Project", 
                         "content": "The Snake Game",
                         "url": "https://snakegame.org/",
-                        "image": "https://i.imgur.com/8rUsMRp.webp"
+                        "image": "https://i.imgur.com/8rUsMRp.webp",
+                        "hints": [
+                            "You can use the rand crate to generate the apple on the screen. randomly generate the ",
+                            "The snake can be drawn by drawing new pixel at start and popping the pixel from the end of snake",
+                            "the score increases if the position of head of snake matches the position of the apple.",
+                            "depending upon which key the user presses change the direction of snake"
+                        ]
                        },
                        {
                         "type": "Project", 
