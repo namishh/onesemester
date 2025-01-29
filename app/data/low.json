@@ -442,6 +442,10 @@
                     "content": "Build a image // video to ascii converter",
                     "urls": [
                         "https://youtu.be/gg40RWiaHRY?feature=shared"
+                    ],
+                    "hints": [
+                        "Think how you can map luminance of pixels to ascii characters. For example - @ can be used for darker pixel and , can be used for lighter one. and quantize the luminance to fit total ascii characters you are using.",
+                        "downscale the original image to descrease the number of ascii character placed."
                     ]
                 },
                 {
