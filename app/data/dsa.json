@@ -31,11 +31,23 @@
 							"url": "https://www.youtube.com/watch?v=-TkoO8Z07hI"
 						},
 						{
+							"type": "Project",
+							"content": "CLI Hangman",
+							"list": [
+								"Implement a CLI Hangman game",
+								"Show the ascii character of hangman and then a input prompt at the bottom",
+								"Try using Objetct Oriented Programming for making a cleaner codebase",
+								"Make an infinite game mode: user keeps playing until he loses and words get progressively harder",
+								"Keep a scoreboard and track user's progress of top 5 highscores (make it persistent)",
+								"Add an option where the user can choose the category of words he wants to play"
+							]
+						},
+						{
 							"type": "Video",
 							"content": "ImGUI Tutorial",
 							"url": "https://www.youtube.com/watch?v=vWXrFetSH8w",
 							"list": [
-								"You can use imgui to make GUI version of the projects"
+								"You can use imgui to make GUI version of the projects. Otherwise most of them can be implemented in the cli itself."
 							]
 						},
 						{

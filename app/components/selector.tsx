@@ -18,7 +18,6 @@ const PathSelector = () => {
   const inputRef = useRef<HTMLInputElement>(null);
   const resultsContainerRef = useRef<HTMLDivElement>(null);
   const linkRef = useRef<HTMLAnchorElement>(null);
-  const pathname = usePathname();
 
   const filteredPaths = paths.filter((path) =>
     path.label.toLowerCase().includes(query.toLowerCase())
