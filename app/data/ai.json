@@ -16,6 +16,13 @@
 					"description": "Python Primer",
 					"tasks": [
 						{
+							"type": "Disclaimer",
+							"content": "Unavailble Embeds",
+							"list": [
+								"Some authors do now allow their videos to be run when embedded. So, you might not be able to run those videos. Apologies for the inconvenience."
+							]
+						},
+						{
 							"type": "Resource",
 							"content": "Python for Everyone",
 							"url": "https://www.py4e.com/"
