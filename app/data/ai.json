@@ -481,6 +481,45 @@
 					]
 				}
 			]
+		},
+		{
+			"month": 5,
+			"tasks" : [
+				{
+					"type": "Intro",
+					"content": "The final month",
+					"list": [
+						"You have completed the AI course. This section is entirely about research and specialization."
+					]
+				},
+				{
+					"type": "Resource",
+					"content": "arXiv",
+					"url": "https://arxiv.org",
+					"list": [
+						"The holy grail and repository of research papers",
+						"Try to implement as many interesting papers you can find",
+						"Look into all the recent trending papers and try to implement the hardest looking one"
+					]
+				},
+				{
+					"type": "Video",
+					"content": "Tutorial on Writing Research Papers",
+					"url": "https://www.youtube.com/watch?v=1AYxMbYZQ1Y"
+				},
+				{
+					"type": "Project",
+					"content": "Writing",
+					"list": [
+						"Write a blog post or research paper on your last project findings."
+					]
+				},
+				{
+					"type": "Resource",
+					"content": "Interview Questions",
+					"url": "https://github.com/Zeeshan75/Collection-of-interview-questions-ML-pdfs"
+				}
+			]
 		}
 	]
 }
