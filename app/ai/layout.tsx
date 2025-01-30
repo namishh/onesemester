@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'AI // ML',
     description: 'Learn AI // ML',
-    images: ['https://i.imgur.com/K0LjVKW.png'],
+    images: ['https://i.imgur.com/KnN0ZPb.png'],
   },
   openGraph: {
     siteName: "One Semester",
@@ -15,12 +15,12 @@ export const metadata: Metadata = {
     description: 'Learn AI // ML',
     images: [
       {
-        url: 'https://i.imgur.com/K0LjVKW.png',
+        url: 'https://i.imgur.com/KnN0ZPb.png',
         width: 800,
         height: 600,
       },
       {
-        url: 'https://i.imgur.com/K0LjVKW.png',
+        url: 'https://i.imgur.com/KnN0ZPb.png',
         width: 1800,
         height: 1600,
         alt: 'AI // ML Preview',
