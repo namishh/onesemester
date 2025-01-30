@@ -4,12 +4,14 @@ import webData from '@/app/data/web.json';
 import lowData from '@/app/data/low.json';
 import devopsData from '@/app/data/devops.json';
 import dsaData from '@/app/data/dsa.json';
+import aiData from '@/app/data/ai.json';
 
 const searchData = {
 	web: webData,
 	low: lowData,
 	devops: devopsData,
-	dsa: dsaData
+	dsa: dsaData,
+	ai: aiData
 };
 
 const addToIndex = (word: string, item: any, index: Map<string, any[]>) => {

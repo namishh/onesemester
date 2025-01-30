@@ -4,7 +4,8 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
 const paths = [
-  { name: 'low', label: 'C and Rust' },
+  { name: 'ai', label: 'AI // ML' },
+  { name: 'low', label: 'C // Rust' },
   { name: 'devops', label: 'DevOps' },
   { name: 'web', label: 'Full Stack Javascript' },
   { name: 'dsa', label: 'Practical DSA' },

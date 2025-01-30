@@ -37,10 +37,10 @@ export default function Sidebar() {
 				>
 					Home
 				</a>
-				<a href="/"
+				<a href="/ai"
 					className="w-full block text-left  px-4 py-2 transition-color bg-transparent hover:bg-neutral-800"
 				>
-					AI (soon)
+					AI // ML
 				</a>
 				<a href="/low"
 					className="w-full block text-left  px-4 py-2 transition-color bg-transparent hover:bg-neutral-800"

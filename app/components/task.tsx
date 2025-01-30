@@ -75,7 +75,7 @@ const TaskComponent = memo(({
         </h4>
       </div>
 
-      {task.type === "Video" && task.url && (
+      {(task.type === "Video" || task.type === "Playlist") && task.url && (
         <div className="px-4 mb-4">
           {videoLoaded ? (
             <iframe
@@ -124,7 +124,7 @@ const TaskComponent = memo(({
         </div>
       )}
 
-      {task.type !== "Video" && task.url && (
+      {(task.type !== "Video" && task.type !== "Playlist") && task.url && (
         <div className="px-4 mb-4">
           <a
             href={task.url}

@@ -1,0 +1,4 @@
+- [ ] replace videos with playist where needed 
+- [ ] complete ai
+- [ ] add 404 page
+- [ ] ? move search bar

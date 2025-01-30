@@ -19,7 +19,7 @@
 							"type": "Disclaimer",
 							"content": "Please Read",
 							"list": [
-								"This is a very fast paced dsa course as their is simply too much to do.",
+								"This is a very fast paced dsa course as there is simply too much to do.",
 								"And still, the course does not complete 100% of DSA. One semester is NOT enough.",
 								"Some concepts are not given in resources but are taught through the projects.",
 								"Lastly this course DOES NOT focus on Leetcode and Codeforces or job interviews. (The title should have given it away)"
@@ -388,7 +388,7 @@
 							"url": "https://www.youtube.com/watch?v=gK8KmTDtX8E&t=395s"
 						},
 						{
-							"type": "Video",
+							"type": "Playlist",
 							"content": "Complete this playlist",
 							"url": "https://www.youtube.com/watch?v=5dRGRueKU3M&list=PLJULIlvhz0rE83NKhnq7acXYIeA0o1dXb&index=1"
 						},
@@ -506,18 +506,18 @@
 					]
 				},
 				{
-					"type": "Video",
-					"content": "Sorting Playlist",
+					"type": "Playlist",
+					"content": "Sorting Algorithms",
 					"url": "https://www.youtube.com/watch?v=pkkFqlG0Hds&list=PL2_aWCzGMAwKedT2KfDMB9YA5DgASZb3U&index=1"
 				},
 				{
-					"type": "Video",
-					"content": "Parallel C++ Playlist",
+					"type": "Playlist",
+					"content": "Parallel C++",
 					"url": "https://www.youtube.com/watch?v=Zu5JcxZt_f8&list=PLxNPSjHT5qvsGKsAhirvZn7W73pXhXpfv&index=1"
 				},
 				{
-					"type": "Video",
-					"content": "Threading C++ Playlist",
+					"type": "Playlist",
+					"content": "Threading in C++",
 					"url": "https://www.youtube.com/watch?v=TPVH_coGAQs&list=PLk6CEY9XxSIAeK-EAh3hB4fgNvYkYmghp&index=1"
 				},
 				{

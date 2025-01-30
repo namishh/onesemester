@@ -1,0 +1,163 @@
+{
+	"author": {
+		"name": "cneuralnetwork",
+		"url": "https://cneuralnets.netlify.app/",
+		"image": "https://github.com/cneuralnetwork.png",
+		"github": "https://github.com/cneuralnetwork",
+		"twitter": "https://x.com/cneuralnetwork"
+	},
+	"lesson": "AI // ML",
+	"months": [
+		{
+			"month": 1,
+			"weeks": [
+				{
+					"week": 1,
+					"description": "Python Primer",
+					"tasks": [
+						{
+							"type": "Resource",
+							"content": "Python for Everyone",
+							"url": "https://www.py4e.com/"
+						},
+						{
+							"type": "Video",
+							"content": "Numpy Crash Course",
+							"url": "https://www.youtube.com/watch?v=GB9ByFAIAH4"
+						},
+						{
+							"type": "Project",
+							"content": "Prisoner's Dilemma Simulator",
+							"list": [
+								"Create a tournament based prisoner's dillema simulator where multiple strategies compete against each other",
+								"Implement all the popular strategies such as Greedy, Random, Tit-for-Tat, DoubleTitForTat, Moses, Lucifer etc."
+							],
+							"details": {
+								"examples": [
+									"https://github.com/namishh/captivus"
+								]
+							}
+						}
+					]
+				},
+				{
+					"week": 2,
+					"description": "Linear Algebra",
+					"tasks": [
+						{
+							"type": "Topics to Learn",
+							"content": "Matrices And Vectors",
+							"list": [
+								"Vectors: Operations, dot/cross products, norms.",
+								"Matrices: Multiplication, inverses, determinants, eigenvalues."
+							]
+						},
+						{
+							"type": "Resource",
+							"content": "3b1b's Linear Algebra Text",
+							"url": "https://www.3blue1brown.com/lessons/vectors"
+						},
+						{
+							"type": "Playlist",
+							"content": "Linear Algebra by Gilbert Strang",
+							"url": "https://www.youtube.com/watch?v=ZK3O402wf1c&list=PL49CF3715CB9EF31D&index=1"
+						},
+						{
+							"type": "Course",
+							"content": "MIT 18-06 Linear Algebra",
+							"url": "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/pages/syllabus/",
+							"list": [
+								"Take a look the course tutorials and complete all the assignments"
+							]
+						},
+						{
+							"type": "Project",
+							"content": "Basic Calculations",
+							"list": [
+								"Implement basic vector and matrix operations in Python using NumPy"
+							],
+							"hints": [
+								"Use NumPy’s array structure for vectors (1D) and matrices (2D).",
+								"Explore NumPy’s built-in functions for dot products, transposes, and inverses."
+							]
+						}
+					]
+				},
+				{
+					"week": 3,
+					"description": "Probability Theory",
+					"tasks": [
+						{
+							"type": "Topics to Learn",
+							"content": "Probability",
+							"list": [
+								"Probability theory and statistics",
+								"Random variables and probability distributions"
+							]
+						},
+						{
+							"type": "Book",
+							"content": "Probability by Sheldon Ross",
+							"url": "https://www.amazon.com/Probability-Theory-Applications-Sheldon-Ross/dp/013603313X"
+						},
+						{
+							"type": "Playlist",
+							"content": "Probabilistic Systems Analysis and Applied Probability",
+							"url": "https://www.youtube.com/watch?v=j9WZyLZCBzs&list=PLUl4u3cNGP61MdtwGTqZA0MreSaDybji8&index=1"
+						},
+						{
+							"type": "Course",
+							"content": "MIT 6.041/6.431 Probability",
+							"url": "https://ocw.mit.edu/courses/6-041-probabilistic-systems-analysis-and-applied-probability-fall-2010/pages/syllabus/",
+							"list": [
+								"Take a look the course tutorials and complete all the assignments"
+							]
+						},
+						{
+							"type": "Project",
+							"content": "Simulate Probability Distributions",
+							"list": [
+								"Model a casino dice game where players bet on outcomes. Calculate the expected profit/loss for the casino and simulate whether the game is rigged"
+							],
+							"hints": [
+								"Pick distributions like Binomial (win/loss streaks) or Uniform (fair dice) to model game outcomes",
+								"Simulate 10,000 dice rolls with np.random.choice to test fairness"
+							]
+						}
+					]
+				},
+				{
+					"week": 4,
+					"description": "Calculus",
+					"tasks": [
+						{
+							"type": "Playlist",
+							"content": "3b1b's Calculus Playlist",
+							"url": "https://www.youtube.com/watch?v=WUvTyaaNkzM&list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr&index=1"
+						},
+						{
+							"type": "Book",
+							"content": "Calculus by Michael Spivak",
+							"url": "https://www.amazon.com/Calculus-4th-Michael-Spivak/dp/0914098918"
+						},
+						{
+							"type": "Project",
+							"content": "Gradient Descent for Predicting Pizza Delivery Times",
+							"list": [
+								"Pretend you’re a food delivery startup optimizing delivery time predictions. Use gradient descent to train a model on historical data (distance vs. time)"
+							],
+							"hints": [
+								"Create fake random data with np.random.normal",
+								"Compute gradients for slope/intercept by before hand"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"month": 2,
+			"weeks": []
+		}
+	]
+}

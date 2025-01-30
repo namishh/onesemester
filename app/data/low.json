@@ -6,7 +6,7 @@
         "github": "https://github.com/quantinium03",
         "twitter": "https://twitter.com/quantinium_dev"
     },
-    "lesson": "C and Rust",
+    "lesson": "C // Rust",
     "months": [
         {
             "month": 1,
@@ -219,8 +219,8 @@
                     "description": "Memory and Rust",
                     "tasks": [
                         {
-                            "type": "Resource",
-                            "content": "Playlist on Memory Management",
+                            "type": "Playlist",
+                            "content": "Memory Management",
                             "url": "https://www.youtube.com/playlist?list=PLai5B987bZ9BnS7dBlTF9HRop55vYUL7r"
                         },
                         {
