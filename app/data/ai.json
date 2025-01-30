@@ -157,7 +157,330 @@
 		},
 		{
 			"month": 2,
-			"weeks": []
+			"weeks": [
+				{
+					"week": 1,
+					"description": "Introduction to ML",
+					"tasks": [
+						{
+							"type": "Playlist",
+							"content": "CS229 by Andrew Ng",
+							"url": "https://www.youtube.com/watch?v=jGwO_UgTS7I&list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU"
+						},
+						{
+							"type": "Course",
+							"content": "CS229 by Andrew Ng",
+							"url": "https://see.stanford.edu/Course/CS229",
+							"list": [
+								"Take a look the course notes and complete all the assignments"
+							]
+						},
+						{
+							"type": "Project",
+							"content": "Predict Movie Success (Rotten Tomatoes Scores)",
+							"list": [
+								"Use linear regression to determine if big budgets actually buy good reviews—or if they’re just flops",
+								"Also add outliers: a big-budget flop and a low-budget gem",
+								"Add a second feature (e.g., star power) to make it multivariate"
+							], 
+							"hints": [
+								"Start with synthetic data: budgets vs. scores, but add noise for realism",
+								"Ask: Does spending more really guarantee better reviews?"
+							]
+						}
+					]
+				},
+				{
+					"week": 2,
+					"description": "Supervised Learning",
+					"tasks": [
+						{
+							"type": "Book",
+							"content": "Pattern Recognition and Machine Learning",
+							"url": "https://www.microsoft.com/en-us/research/uploads/prod/2006/01/Bishop-Pattern-Recognition-and-Machine-Learning-2006.pdf"
+						},
+						{
+							"type": "Video",
+							"content": "Supervised Learning - CS229",
+							"url": "https://www.youtube.com/watch?v=gqKaVgQxEJ0"
+						},
+						{
+							"type": "Project",
+							"content": "Battle Arena",
+							"list": [
+								"Implement a k-nearest neighbors (KNN) classifier",
+								"Transform KNN into a game where players create and train warriors with different attributes (strength, speed, agility, etc.)",
+								"Your KNN algorithm will help warriors learn fighting styles from their \"neighbors\" and predict their chances of winning battles"
+							]
+						}		
+					]
+				},
+				{
+					"week": 3,
+					"description": "Unsupervised Learning",
+					"tasks": [
+						{
+							"type": "Resource",
+							"content": "Deep Learning Book",
+							"url": "https://www.deeplearningbook.org/"
+						},
+						{
+							"type": "Project",
+							"content": "Cosmic Colony Discoverer",
+							"list": [
+								"Transform k-means clustering into a space exploration game where you're an AI tasked with identifying and establishing colonies across a galaxy based on planetary conditions"
+							],
+							"hints": [
+								"Think of your cluster centers (centroids) as potential colony headquarters",
+								"You need to group similar planets together to establish the most efficient colonial network."
+							]
+						}
+					]
+				},
+				{
+					"week": 4,
+					"description": "Model Evaluation and Optimization",
+					"tasks": [
+						{
+							"type": "Video",
+							"content": "Evaluation Metrics - CS229",
+							"url": "https://www.youtube.com/watch?v=Lb1-iNIOLBw"
+						},
+						{
+							"type": "Playlist",
+							"content": "Model Optimization",
+							"url": "https://www.youtube.com/watch?v=9hToSoZXM9s&list=PL7y-1rk2cCsDOv91McLOnV4kExFfTB7dU&index=1"
+						},
+						{
+							"type": "Project",
+							"content": "AI Sports Coach",
+							"list": [
+								"Transform hyperparameter tuning into an engaging sports analytics project ",
+								"Your goal is to build the ultimate prediction system for player performance and game outcomes"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"month": 3,
+			"weeks": [
+				{
+					"week": 1,
+					"description": "Neural Networks",
+					"tasks": [
+						{
+							"type": "Resource",
+							"content": "Neural Networks and Deep Learning",
+							"url": "http://neuralnetworksanddeeplearning.com/"
+						},
+						{
+							"type": "Playlist",
+							"content": "CS231N by Andrej Karpathy",
+							"url": "https://www.youtube.com/watch?v=NfnWJUyUJYU&list=PLkt2uSq6rBVctENoVBg1TpCC7OQi31AlC&index=1"
+						},
+						{
+							"type": "Course",
+							"content": "CS231N Resources and Notes",
+							"url": "https://cs231n.github.io/"
+						},
+						{
+							"type": "Project",
+							"content": "Your own Neural Network",
+							"list": [
+								"Implement a simple feedforward neural network using PyTorch",
+								"BONUS: Use 0 libraries (not even numpy or pytorch)"
+							]
+						}
+					]
+				},
+				{
+					"week": 2,
+					"description": "Convolutional Neural Networks",
+					"tasks": [
+						{
+							"type": "Course",
+							"content": "CS231N",
+							"list": [
+								"Continue the course from the last week"
+							]
+						},
+						{
+							"type": "Project",
+							"content": "Image Classification",
+							"list": [
+								"Build a CNN for image classification using CIFAR-10 dataset"
+							]
+						}
+					]
+				},
+				{
+					"week": 3,
+					"description": "Natural Language Processing",
+					"tasks": [
+						{
+							"type": "Course",
+							"content": "CS224N: NLP With Deep Learning",
+							"url": "https://cs224n.stanford.edu/"
+						},
+						{
+							"type": "Playlist",
+							"content": "CS224N",
+							"url": "https://www.youtube.com/watch?v=rmVRLeJRkl4&list=PLoROMvodv4rMFqRtEuo6SGjY4XbRIVRd4"
+						},
+						{
+							"type": "Project",
+							"content": "Movie Plot Detective",
+							"list": [
+								"Use NLP to guess the genre of a movie plot"
+							],
+							"hints": [
+								"Start by thinking of word embeddings as your AI's \"movie vocabulary.\". \"spaceship\" screams scifi for example"
+							]
+						}
+					]
+				},
+				{
+					"week": 4,
+					"description": "Reinforcement Learning",
+					"tasks": [
+						{
+							"type": "Course",
+							"content": "CS234 - Reinforcement Learning",
+							"url": "http://web.stanford.edu/class/cs234/"
+						},
+						{
+							"type": "Playlist",
+							"content": "CS234 - Reinforcement Learning",
+							"url": "https://www.youtube.com/watch?v=WsvFL-LjA6U&list=PLoROMvodv4rN4wG6Nk6sNpTEbuOSosZdX&index=1"
+						},
+						{
+							"type": "Project",
+							"content": "Treasure Hunter Bot",
+							"list": [
+								"Build a reinforcement learning agent to navigate a grid world filled with treasures and pits"
+							],
+							"hints": [
+								"Begin with a simple 5x5 grid where your AI explorer needs to find treasure while avoiding traps",
+								"Instead of thinking about Q-tables as just numbers, visualize them as your AI's adventure memory" 
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"month": 4,
+			"weeks": [
+				{
+					"week": 1,
+					"description": "Kaggle Competitions",
+					"tasks": [
+						{
+							"type": "Resource",
+							"content": "Official Kaggle Tutorials",
+							"url": "https://www.kaggle.com/learn-guide/kaggle-competitions"
+						},
+						{
+							"type": "Project",
+							"content": "Kaggle Compeitions",
+							"list": ["Participate in a Kaggle competition and submit your first model"]
+						}
+					]
+				},
+				{
+					"week": 2,
+					"description": "Advanced Model Architectures",
+					"tasks": [
+						{
+							"type": "Course Slides",
+							"content": "Deep Learning Specialization by Andrew Ng",
+							"url": "https://www.deeplearning.ai/courses/deep-learning-specialization/"
+						},
+						{
+							"type": "Playlists",
+							"content": "ALL parts of Deep Learning Specialization",
+							"urls": [
+								"https://www.youtube.com/playlist?list=PLkDaE6sCZn6Ec-XTbcX1uRg2_u4xOEky0",
+								"https://www.youtube.com/playlist?list=PLkDaE6sCZn6Hn0vK8co82zjQtt3T2Nkqc"
+							]
+						}
+					]
+				},
+				{
+					"week": 3,
+					"description": "Model Architectures and Deployment",
+					"tasks": [
+						{
+							"type": "Playlists",
+							"content": "Continue Deep Learning Specialization",
+							"urls": [
+								"https://www.youtube.com/playlist?list=PLkDaE6sCZn6E7jZ9sN_xHwSHOdjUxUW_b",
+								"https://www.youtube.com/playlist?list=PLkDaE6sCZn6Gl29AoE31iwdVwSG-KnDzF",
+								"https://www.youtube.com/playlist?list=PLkDaE6sCZn6F6wUI9tvS_Gw1vaFAx6rd6"
+							]
+						},
+						{
+							"type": "Project",
+							"content": "Implementing models",
+							"list": [
+								"Implement a more complex model, such as a ResNet or LSTM",
+								"For example Cinematography Style Detector (ResNet) or Historical Music Generator (LSTM)"
+							]
+						},
+						{
+							"type": "Playlist",
+							"content": "Deploying Models",
+							"url": "https://www.youtube.com/watch?v=bjsJOl8gz5k&list=PLZoTAELRMXVOAvUbePX1lTdxQR8EY35Z1"
+						},
+						{
+							"type": "Video",
+							"content": "Basic Flask Tutorial",
+							"url": "https://www.youtube.com/watch?v=Z1RJmh_OqeA"
+						},
+						{
+							"type": "Video",
+							"content": "Fast Api Crash Course",
+							"url": "https://www.youtube.com/watch?v=tLKKmouUams"
+						},
+						{
+							"type": "Project",
+							"content": "Deploying models",
+							"list": [
+								"Deploy a machine learning model using Flask or FastAPI"
+							]
+						}
+					]
+				},
+				{
+					"week": 4,
+					"description": "The Final Project. Pick any 1 of these or you can make your own.",
+					"tasks": [
+						{
+							"type": "Project",
+							"content": "AI Dungeon Roguelike",
+							"list": [
+								"Players and AI co-create a fantasy story where the AI dynamically adjusts quests, NPCs, and plot twists based on player choices",
+								"NLP (GPT-like models) to generate dialogue for quirky NPCs",
+								"Reinforcement Learning to make the AI Dungeon Master learn from players’ favorite moments",
+								"Deploy as a Discord bot"
+							]
+						},
+						{
+							"type": "Project",
+							"content": "AI Stand-up Standoff",
+							"list": [
+								"Train two AI comedians (one supervised, one RL-based) to roast each other, with live audience voting deciding the winner",
+								"Probability for joke success rates (e.g., \"Dad jokes have 95% cringe, 5% laughter\")",
+								"Sentiment analysis (NLP) to detect heckler insults from the crowd",
+								"RL agents that learn which jokes work by trial/error",
+								"Deploy as a discord bot with live audience feedback"
+							]
+						}
+					]
+				}
+			]
 		}
 	]
 }
