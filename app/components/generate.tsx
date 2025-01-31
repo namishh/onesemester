@@ -106,6 +106,40 @@ const Generate = ({ learningPlan, defaultMonth = 1, defaultWeek = 1 }: { learnin
 		return () => window.removeEventListener('keydown', handleKeyDown);
 	}, [defaultWeek, defaultMonth, selectedMonth]);
 
+	useEffect(() => {
+		const scrollToElement = (elementId: string, retryCount = 0) => {
+			const element = document.getElementById(elementId);
+			if (element) {
+				setTimeout(() => {
+					element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+				}, 100); 
+			} else if (retryCount < 5) {
+				setTimeout(() => {
+					scrollToElement(elementId, retryCount + 1);
+				}, 200);
+			}
+		};
+
+		// Handle URL parameters and hash
+		const handleUrlNavigation = () => {
+			const urlParams = new URLSearchParams(window.location.search);
+			const month = urlParams.get('m');
+			const week = urlParams.get('w');
+			const hash = window.location.hash.slice(1); // Remove the # symbol
+
+			if (month) {
+				setSelectedMonth(parseInt(month));
+				setExpandedMonth(parseInt(month));
+			}
+
+			if (hash) {
+				scrollToElement(hash);
+			}
+		};
+
+		handleUrlNavigation();
+	}, []);
+
 	return (
 		<div className="flex flex-col min-h-screen items-center justify-center relative">
 			{/* Mobile Toggle Button */}

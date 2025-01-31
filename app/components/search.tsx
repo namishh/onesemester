@@ -114,6 +114,7 @@ const SearchBar = () => {
 
 	const searchIndex = useMemo(() => createSearchIndex(), []);
 
+
 	const handleSearch = (searchQuery: string) => {
 		if (!searchQuery.trim()) {
 			setResults([]);
@@ -237,18 +238,29 @@ const SearchBar = () => {
 		}
 	}, [selectedIndex, results]);
 
-  const handleResultClick = (result: any) => {
-    const baseUrl = `/${result.path}`;
-    const queryString = result.week 
-      ? `?m=${result.month}&w=${result.week}`
-      : `?m=${result.month}`;
+	const handleResultClick = (result: any) => {
+		const baseUrl = `/${result.path}`;
+		const contentId = encodeURIComponent(result.type + "-" + result.content)
+			.toLowerCase()
+			.replace(/%20/g, "-")
+			.replace(/[^a-z0-9-]/g, "");
 
-    window.location.href = baseUrl + queryString;
+		const queryString = result.week
+			? `?m=${result.month}&w=${result.week}#${contentId}`
+			: `?m=${result.month}#${contentId}`;
 
-    setIsOpen(false);
-    setQuery('');
-    setResults([]);
-  };
+		window.location.href = baseUrl + queryString;
+
+		const element = document.getElementById(contentId);
+		if (element) {
+			element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+		}
+
+
+		setIsOpen(false);
+		setQuery('');
+		setResults([]);
+	};
 
 
 	return (

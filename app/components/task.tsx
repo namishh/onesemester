@@ -11,17 +11,17 @@ interface TaskComponentProps {
   taskIndex: number;
 }
 
-const TaskComponent = memo(({ 
-  task, 
-  className = "", 
+const TaskComponent = memo(({
+  task,
+  className = "",
   monthId,
   weekId,
-  taskIndex 
+  taskIndex
 }: TaskComponentProps) => {
   const [videoLoaded, setVideoLoaded] = useState(false);
   const [imageLoaded, setImageLoaded] = useState(false);
   const { isTaskComplete, toggleTask } = useProgress();
-  
+
   const completed = isTaskComplete(monthId, weekId, taskIndex);
 
   const getYouTubeId = useCallback((url: string) => {
@@ -29,6 +29,13 @@ const TaskComponent = memo(({
     const match = url.match(regExp);
     return (match && match[2].length === 11) ? match[2] : null;
   }, []);
+
+  const makeIdOfContent = () => {
+    return encodeURIComponent(task.type + "-" + task.content)
+      .toLowerCase()
+      .replace(/%20/g, "-")
+      .replace(/[^a-z0-9-]/g, "");
+  };
 
   const youTubeId = task.url ? getYouTubeId(task.url) : null;
   const thumbnailUrl = youTubeId ? `https://img.youtube.com/vi/${youTubeId}/hqdefault.jpg` : null;
@@ -38,15 +45,15 @@ const TaskComponent = memo(({
   }, [monthId, weekId, taskIndex, toggleTask]);
 
   return (
-    <div className={`py-4 ${className} text-[22px] ${task.type === "Project" && "bg-emerald-900/20"}`}>
-      {task.type === "Project" && 
-      <div className="px-4 w-full text-lg">
-        <div className="w-full bg-emerald-800/20 mb-4 p-2 items-center gap-4 flex">
-        <svg fill="none" xmlns="http://www.w3.org/2000/svg" className="text-rose-400 h-6 w-6" viewBox="0 0 24 24"> <path d="M13 1h-2v2H9v2H7v2H5v2H3v2H1v2h2v2h2v2h2v2h2v2h2v2h2v-2h2v-2h2v-2h2v-2h2v-2h2v-2h-2V9h-2V7h-2V5h-2V3h-2V1zm0 2v2h2v2h2v2h2v2h2v2h-2v2h-2v2h-2v2h-2v2h-2v-2H9v-2H7v-2H5v-2H3v-2h2V9h2V7h2V5h2V3h2zm0 4h-2v6h2V7zm0 8h-2v2h2v-2z" fill="currentColor"/></svg>
-        <p>Please use AI <a href="/responsible" className="text-emerald-400 hover:text-emerald-500 underline underline-offset-4 text-lg">responsibly</a></p>
+    <div id={makeIdOfContent()} className={`py-4 ${className} text-[22px] ${task.type === "Project" && "bg-emerald-900/20"}`}>
+      {task.type === "Project" &&
+        <div className="px-4 w-full text-lg">
+          <div className="w-full bg-emerald-800/20 mb-4 p-2 items-center gap-4 flex">
+            <svg fill="none" xmlns="http://www.w3.org/2000/svg" className="text-rose-400 h-6 w-6" viewBox="0 0 24 24"> <path d="M13 1h-2v2H9v2H7v2H5v2H3v2H1v2h2v2h2v2h2v2h2v2h2v2h2v-2h2v-2h2v-2h2v-2h2v-2h2v-2h-2V9h-2V7h-2V5h-2V3h-2V1zm0 2v2h2v2h2v2h2v2h2v2h-2v2h-2v2h-2v2h-2v2h-2v-2H9v-2H7v-2H5v-2H3v-2h2V9h2V7h2V5h2V3h2zm0 4h-2v6h2V7zm0 8h-2v2h2v-2z" fill="currentColor" /></svg>
+            <p>Please use AI <a href="/responsible" className="text-emerald-400 hover:text-emerald-500 underline underline-offset-4 text-lg">responsibly</a></p>
+          </div>
         </div>
-      </div>
-}
+      }
       <div className="flex items-center px-4 pb-2">
         <input
           type="checkbox"
@@ -61,12 +68,12 @@ const TaskComponent = memo(({
         >
           {completed ? (
             <svg className="text-emerald-500 h-6 w-6" viewBox="0 0 24 24">
-              <path d="M5 3H3v18h18V3H5zm0 2h14v14H5V5zm4 7H7v2h2v2h2v-2h2v-2h2v-2h2V8h-2v2h-2v2h-2v2H9v-2z" 
-                fill="currentColor"/>
+              <path d="M5 3H3v18h18V3H5zm0 2h14v14H5V5zm4 7H7v2h2v2h2v-2h2v-2h2v-2h2V8h-2v2h-2v2h-2v2H9v-2z"
+                fill="currentColor" />
             </svg>
           ) : (
             <svg className="text-neutral-400 h-6 w-6" viewBox="0 0 24 24">
-              <path d="M3 3h18v18H3V3zm16 16V5H5v14h14z" fill="currentColor"/>
+              <path d="M3 3h18v18H3V3zm16 16V5H5v14h14z" fill="currentColor" />
             </svg>
           )}
         </label>
@@ -89,7 +96,7 @@ const TaskComponent = memo(({
               className="mb-4 aspect-video"
             />
           ) : (
-            <div 
+            <div
               className="relative bg-neutral-800 aspect-video w-full overflow-hidden cursor-pointer"
               onClick={() => setVideoLoaded(true)}
               role="button"
@@ -138,16 +145,16 @@ const TaskComponent = memo(({
       )}
 
       {task.image && (
-  <div className="relative w-full aspect-video">
-    <Image
-      src={`${task.image}`}
-      alt={task.content}
-      fill
-      className="object-contain p-4"
-      quality={60}
-      sizes="(max-width: 768px) 100vw, 70vw"
-    />
-  </div>
+        <div className="relative w-full aspect-video">
+          <Image
+            src={`${task.image}`}
+            alt={task.content}
+            fill
+            className="object-contain p-4"
+            quality={60}
+            sizes="(max-width: 768px) 100vw, 70vw"
+          />
+        </div>
       )}
 
       {task.images && task.images.map((image, idx) => (
@@ -233,24 +240,24 @@ const TaskComponent = memo(({
           )}
         </div>
       )}
-      {task.hints && task.hints.length > 0 &&  <div className="hintbox mt-4 px-4 w-full text-xl">
+      {task.hints && task.hints.length > 0 && <div className="hintbox mt-4 px-4 w-full text-xl">
         <div className="p-2 w-full bg-emerald-800/20">
-        <div className="flex items-center gap-4">
-        <svg xmlns="http://www.w3.org/2000/svg" className='text-emerald-400 h-6 w-6' fill="currentColor" viewBox="0 0 24 24"> <path d="M8 2h8v2H8V2ZM6 6V4h2v2H6Zm0 6H4V6h2v6Zm2 2H6v-2h2v2Zm2 0H8v4h8v-4h2v-2h2V6h-2V4h-2v2h2v6h-2v2h-2v2h-4v-2Zm2-2v2h-2v-2h2Zm0-2h2v2h-2v-2Zm0-2v2h-2V8h2Zm0 0V6h2v2h-2Zm4 14v-2H8v2h8Z" /> </svg>
-        <span className="text-2xl">Hints</span>
+          <div className="flex items-center gap-4">
+            <svg xmlns="http://www.w3.org/2000/svg" className='text-emerald-400 h-6 w-6' fill="currentColor" viewBox="0 0 24 24"> <path d="M8 2h8v2H8V2ZM6 6V4h2v2H6Zm0 6H4V6h2v6Zm2 2H6v-2h2v2Zm2 0H8v4h8v-4h2v-2h2V6h-2V4h-2v2h2v6h-2v2h-2v2h-4v-2Zm2-2v2h-2v-2h2Zm0-2h2v2h-2v-2Zm0-2v2h-2V8h2Zm0 0V6h2v2h-2Zm4 14v-2H8v2h8Z" /> </svg>
+            <span className="text-2xl">Hints</span>
+          </div>
+          <ul className="list-disc mt-4 pl-5 space-y-2">
+            {
+              task.hints && task.hints.map((hint, idx) => (
+                <li key={idx} className="px-2">
+                  <span className="text-xl">{hint}</span>
+                </li>
+              ))
+            }
+          </ul>
         </div>
-        <ul className="list-disc mt-4 pl-5 space-y-2">
-      {
-        task.hints && task.hints.map((hint, idx) => (
-          <li key={idx} className="px-2">
-            <span className="text-xl">{hint}</span>
-          </li>
-        ))
+      </div>
       }
-      </ul>
-      </div>
-      </div>
-    }
     </div>
   );
 });
