@@ -60,6 +60,11 @@
 							]
 						},
 						{
+							"type": "Book",
+							"content": "Linear Algebra By Justin Skycak",
+							"url": "https://www.justinmath.com/files/justinmath-linearAlgebra.pdf"
+						},
+						{
 							"type": "Resource",
 							"content": "3b1b's Linear Algebra Text",
 							"url": "https://www.3blue1brown.com/lessons/vectors"
@@ -111,6 +116,11 @@
 							"type": "Playlist",
 							"content": "Probabilistic Systems Analysis and Applied Probability",
 							"url": "https://www.youtube.com/watch?v=j9WZyLZCBzs&list=PLUl4u3cNGP61MdtwGTqZA0MreSaDybji8&index=1"
+						},
+						{
+							"type": "Playlist",
+							"content": "Essence of Probability - 3b1b",
+							"url": "https://www.youtube.com/watch?v=HZGCoVF3YvM&list=PLiAulSm0XXgvCGe63mrAkda9UQ9478YQv&index=1"
 						},
 						{
 							"type": "Course",
@@ -175,6 +185,11 @@
 							"url": "https://www.youtube.com/watch?v=jGwO_UgTS7I&list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU"
 						},
 						{
+							"type": "Playlist",
+							"content": "Alternative Playlist For ML",
+							"url": "https://www.youtube.com/watch?v=Gv9_4yMHFhI&list=PLblh5JKOoLUICTaGLRoHQDuF_7q2GfuJF&index=1"
+						},
+						{
 							"type": "Course",
 							"content": "CS229 by Andrew Ng",
 							"url": "https://see.stanford.edu/Course/CS229",
@@ -232,6 +247,11 @@
 							"url": "https://www.deeplearningbook.org/"
 						},
 						{
+							"type": "Playlist",
+							"content": "Alternative Playlist For DL",
+							"url": "https://www.youtube.com/watch?v=aPfkYu_qiF4&list=PLEAYkSg4uSQ1r-2XrJ_GBzzS6I-f8yfRU&index=1"
+						},
+						{
 							"type": "Project",
 							"content": "Cosmic Colony Discoverer",
 							"list": [
@@ -284,6 +304,16 @@
 						},
 						{
 							"type": "Playlist",
+							"content": "Neural Networks by 3b1b",
+							"url": "https://www.youtube.com/watch?v=aircAruvnKk&list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi&index=1"
+						},
+						{
+							"type": "Playlist",
+							"content": "Alternative Playlist For DL/Neural Networks",
+							"url": "https://www.youtube.com/watch?v=CqOfi41LfDw&list=PLblh5JKOoLUIxGDQs4LFFD--41Vzf-ME1&index=2"
+						},
+						{
+							"type": "Playlist",
 							"content": "CS231N by Andrej Karpathy",
 							"url": "https://www.youtube.com/watch?v=NfnWJUyUJYU&list=PLkt2uSq6rBVctENoVBg1TpCC7OQi31AlC&index=1"
 						},
@@ -314,6 +344,11 @@
 							]
 						},
 						{
+							"type": "Video",
+							"content": "The Independent Code: CNN Maths + Code",
+							"url": "https://www.youtube.com/watch?v=Lakz2MoHy6o"
+						},
+						{
 							"type": "Project",
 							"content": "Image Classification",
 							"list": [
@@ -335,6 +370,11 @@
 							"type": "Playlist",
 							"content": "CS224N",
 							"url": "https://www.youtube.com/watch?v=rmVRLeJRkl4&list=PLoROMvodv4rMFqRtEuo6SGjY4XbRIVRd4"
+						},
+						{
+							"type": "Playlist",
+							"content": "Optional!! Advanced NLP",
+							"url": "https://www.youtube.com/watch?v=dir7e3uozQU&list=PLWnsVgP6CzafDszSy-njjdqnliv5qT0EW&index=1"
 						},
 						{
 							"type": "Project",
@@ -525,6 +565,11 @@
 					"type": "Resource",
 					"content": "Interview Questions",
 					"url": "https://github.com/Zeeshan75/Collection-of-interview-questions-ML-pdfs"
+				},
+				{
+					"type": "Resource",
+					"content": "Andrej Karpathy's Channel",
+					"url": "https://www.youtube.com/@AndrejKarpathy"
 				}
 			]
 		}
