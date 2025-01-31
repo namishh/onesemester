@@ -124,7 +124,6 @@ const Generate = ({ learningPlan, defaultMonth = 1, defaultWeek = 1 }: { learnin
 		const handleUrlNavigation = () => {
 			const urlParams = new URLSearchParams(window.location.search);
 			const month = urlParams.get('m');
-			const week = urlParams.get('w');
 			const hash = window.location.hash.slice(1); // Remove the # symbol
 
 			if (month) {
@@ -138,6 +137,9 @@ const Generate = ({ learningPlan, defaultMonth = 1, defaultWeek = 1 }: { learnin
 		};
 
 		handleUrlNavigation();
+		window.addEventListener('popstate', handleUrlNavigation);
+		return () => window.removeEventListener('popstate', handleUrlNavigation);
+
 	}, []);
 
 	return (
