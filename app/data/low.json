@@ -118,6 +118,11 @@
                             "url": "https://www.youtube.com/watch?v=nrO_pXGZc3Y"
                         },
                         {
+                            "type": "Video",
+                            "content": "Memory Management in C",
+                            "url": "https://youtu.be/rJrd2QMVbGM?si=TISqO_-Q3fGwqmkj"
+                        },
+                        {
                             "type": "Project",
                             "content": "Make a mini grep",
                             "list": [
@@ -205,14 +210,16 @@
                         {
                             "type": "Video",
                             "content": "Let's Get Rusty",
-                            "list": ["Literally the video version of the rust book."],
+                            "list": [
+                                "Literally the video version of the rust book."
+                            ],
                             "url": "https://www.youtube.com/watch?v=OX9HJsJUDxA&list=PLai5B987bZ9CoVR-QEIN9foz4QCJ0H2Y8"
                         },
                         {
                             "type": "Project",
                             "content": "Simple Number Guessing Game",
                             "url": "https://rust-book.cs.brown.edu/ch02-00-guessing-game-tutorial.html"
-                        }, 
+                        },
                         {
                             "type": "Exercise",
                             "content": "Solve rustlings",
@@ -221,8 +228,10 @@
                         {
                             "type": "Project",
                             "content": "Calculate area of different shapes",
-                            "list": ["Try to use structs and impls"]
-                        } 
+                            "list": [
+                                "Try to use structs and impls"
+                            ]
+                        }
                     ]
                 },
                 {
@@ -289,7 +298,9 @@
                             "type": "Resource",
                             "content": "Rust Book",
                             "url": "https://doc.rust-lang.org/book/",
-                            "list": ["Read till Chapter 18"]
+                            "list": [
+                                "Read till Chapter 18"
+                            ]
                         },
                         {
                             "type": "Project",
@@ -303,7 +314,7 @@
                                 "Make a tracker for yourself, counts number of keypresses, mouse click, mouse travel, screenshot images every defined interval and saves them."
                             ],
                             "details": {
-                                "examples" : [
+                                "examples": [
                                     "https://github.com/nanovin/gaze"
                                 ]
                             }
@@ -316,14 +327,16 @@
             "month": 3,
             "weeks": [
                 {
-                    "week": 1, 
+                    "week": 1,
                     "description": "Completing the book",
                     "tasks": [
                         {
                             "type": "Resource",
                             "content": "Rust Book",
                             "url": "https://doc.rust-lang.org/book/",
-                            "list": ["Complete the rust book"]
+                            "list": [
+                                "Complete the rust book"
+                            ]
                         },
                         {
                             "type": "Project",
@@ -335,11 +348,11 @@
                                 "Maybe combine this with your personal tracker so you can show your stats to all."
                             ]
                         }
-                    ] 
+                    ]
                 },
                 {
                     "week": 2,
-                    "description": "Miscellaneous Projects", 
+                    "description": "Miscellaneous Projects",
                     "tasks": [
                         {
                             "type": "Project",
@@ -379,66 +392,66 @@
                     ]
                 },
                 {
-                    "week": 3, 
+                    "week": 3,
                     "description": "Graphics with Raylib // Bevy",
                     "tasks": [
-                       {
-                           "type": "Resource",
-                           "content": "Raylib Rust Bindings",
-                           "url": "https://docs.rs/raylib/latest/raylib/"
-                       } ,
-                       {
-                        "type": "Resource",
-                        "content": "Bevy Quick Start",
-                        "url": "https://bevyengine.org/learn/quick-start/introduction/"
-                       },
-                       {
-                        "type": "Project", 
-                        "content": "The Snake Game",
-                        "url": "https://snakegame.org/",
-                        "image": "https://i.imgur.com/8rUsMRp.webp",
-                        "hints": [
-                            "You can use the rand crate to generate the apple on the screen. randomly generate the coordinate values",
-                            "The snake can be drawn by drawing new pixel at start and popping the pixel from the end of snake",
-                            "the score increases if the position of head of snake matches the position of the apple.",
-                            "depending upon which key the user presses change the direction of snake"
-                        ]
-                       },
-                       {
-                        "type": "Project", 
-                        "content": "Asteroids",
-                        "url": "https://www.echalk.co.uk/amusements/Games/asteroidsClassic/ateroids.html",
-                        "image": "https://i.imgur.com/6tVrK4r.webp"
-                       },
-                       {
-                        "type": "Project", 
-                        "content": "Galaga Clone",
-                        "url": "https://www.retrogames.cz/play_018-NES.php",
-                        "image": "https://i.imgur.com/4hg8lIc.webp"
-                       }
+                        {
+                            "type": "Resource",
+                            "content": "Raylib Rust Bindings",
+                            "url": "https://docs.rs/raylib/latest/raylib/"
+                        },
+                        {
+                            "type": "Resource",
+                            "content": "Bevy Quick Start",
+                            "url": "https://bevyengine.org/learn/quick-start/introduction/"
+                        },
+                        {
+                            "type": "Project",
+                            "content": "The Snake Game",
+                            "url": "https://snakegame.org/",
+                            "image": "https://i.imgur.com/8rUsMRp.webp",
+                            "hints": [
+                                "You can use the rand crate to generate the apple on the screen. randomly generate the coordinate values",
+                                "The snake can be drawn by drawing new pixel at start and popping the pixel from the end of snake",
+                                "the score increases if the position of head of snake matches the position of the apple.",
+                                "depending upon which key the user presses change the direction of snake"
+                            ]
+                        },
+                        {
+                            "type": "Project",
+                            "content": "Asteroids",
+                            "url": "https://www.echalk.co.uk/amusements/Games/asteroidsClassic/ateroids.html",
+                            "image": "https://i.imgur.com/6tVrK4r.webp"
+                        },
+                        {
+                            "type": "Project",
+                            "content": "Galaga Clone",
+                            "url": "https://www.retrogames.cz/play_018-NES.php",
+                            "image": "https://i.imgur.com/4hg8lIc.webp"
+                        }
                     ]
                 },
                 {
-                    "week": 4, 
+                    "week": 4,
                     "description": "Garbage Truck Ahead",
                     "tasks": [
                         {
                             "type": "Project",
                             "content": "Build your own garbage collector",
-                            "urls" : [
+                            "urls": [
                                 "https://manishearth.github.io/blog/2021/04/05/a-tour-of-safe-tracing-gc-designs-in-rust/",
                                 "https://manishearth.github.io/blog/2015/09/01/designing-a-gc-in-rust/"
                             ]
                         }
                     ]
-                } 
+                }
             ]
         },
         {
             "month": 4,
             "tasks": [
                 {
-                    "type": "Project", 
+                    "type": "Project",
                     "content": "Build a image // video to ascii converter",
                     "urls": [
                         "https://youtu.be/gg40RWiaHRY?feature=shared"
@@ -449,7 +462,6 @@
                     ]
                 },
                 {
-
                     "type": "Project",
                     "content": "Create your own text editor",
                     "url": "https://flenker.blog/hecto/",
@@ -470,8 +482,8 @@
             ]
         },
         {
-            "month": 5, 
-            "tasks" : [
+            "month": 5,
+            "tasks": [
                 {
                     "type": "Project",
                     "content": "Build a 3D WASM renderer",
