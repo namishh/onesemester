@@ -52,7 +52,7 @@ export default function Home() {
 
             </p> 
           <p className="text-2xl px-4 text-emerald-400">Contact</p>
-          <p className="text-2xl px-4 py-2 mb-6">Shoot us a mail at <a className="text-emerald-400 underline underline-offset-4" href="mailto:contact@onesemester.tech">contact@onesemester.tech</a></p>
+          <p className="text-2xl px-4 py-2 mb-6">Shoot us a mail at <a className="text-emerald-400 underline underline-offset-4" href="mailto:hey@namishh.com">hey@namishh.com</a></p>
         </main>
       </div>
     </div>
